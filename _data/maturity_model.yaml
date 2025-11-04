@@ -1,7 +1,7 @@
 version:
-  versionNumber: 0.1.5
-  versionDescription: Strategy updates by Vassilios
-  timestamp: '2025-11-03T13:40:29.498Z'
+  versionNumber: 1.0.0
+  versionDescription: Initial release
+  timestamp: '2025-11-04T15:24:26.077Z'
 domains:
 - domainName: '[1] Strategy and sustainability'
   domainDescription: 'This area covers the development and maintenance of strategies
