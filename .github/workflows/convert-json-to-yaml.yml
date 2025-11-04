@@ -1,7 +1,8 @@
-name: Convert JSON to YAML and Commit
+name: Convert JSON to YAML and commit
 
 on:
   push:
+    branches: [ main ]
     paths:
       - '_data/maturity_model.json'
   workflow_dispatch:
