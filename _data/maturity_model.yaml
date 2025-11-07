@@ -1,16 +1,16 @@
 version:
   versionNumber: 1.0.0
   versionDescription: Initial release
-  timestamp: '2025-11-04T15:24:26.077Z'
+  timestamp: '2025-11-07T16:03:40.828Z'
 domains:
 - domainName: '[1] Strategy and sustainability'
   domainDescription: 'This area covers the development and maintenance of strategies
     and sustainability of RDM services necessary for the organisation '
-- domainName: '[2] Legal'
+- domainName: '[2] Legal and governance'
   domainDescription: This area covers legal, ethical, and regulatory aspects of research
     data management, including data protection, IT security, ethics and ELSI, and
     intellectual property
-- domainName: '[3] Support'
+- domainName: '[3] RDM support'
   domainDescription: This area covers research data management support, including
     training, information resources, formalised services, communication, and networking
     opportunities
@@ -136,7 +136,7 @@ indicators:
   - '1'
   indicatorDescription: 'Indicates the diversity of funding models to support the
     RDM strategy implementation '
-- domain: '[2] Legal'
+- domain: '[2] Legal and governance'
   subdomain: '[2.1] Legal framework'
   indicatorLevel: 2.1.1
   indicator: Legal framework for research data
@@ -148,7 +148,7 @@ indicators:
     used. The legal department exists but does not yet support project initiation
     or have fully defined processes for RDM issues.
   - The legal framework is well-defined and standardized across the organization.
-    A dedicated personelle is responsible for supporting the establishment of a legal
+    A dedicated personel is responsible for supporting the establishment of a legal
     framework covering RDM requirements. Comprehensive templates and standardized
     contractual clauses for RDM issues.
   - Continuously improved and optimized legal framework for research data; regularly
@@ -161,7 +161,7 @@ indicators:
   - '1'
   indicatorDescription: Indicates the maturity of the legal framework for research
     data, established in the organisation
-- domain: '[2] Legal'
+- domain: '[2] Legal and governance'
   subdomain: '[2.2] IT security'
   indicatorLevel: 2.2.1
   indicator: IT security for research data (RD) and associated services
@@ -186,7 +186,7 @@ indicators:
   - '1'
   indicatorDescription: Indicates the maturity of IT security for research data, ranging
     from minimal, reactive protections to certified systems and automated responses
-- domain: '[2] Legal'
+- domain: '[2] Legal and governance'
   subdomain: '[2.3] Data protection'
   indicatorLevel: 2.3.1
   indicator: Data protection compliancy of research data
@@ -214,7 +214,7 @@ indicators:
   - '1'
   indicatorDescription: Indicates the level of data protection compliance, the implementation
     of roles and compliance systems within the organisation
-- domain: '[2] Legal'
+- domain: '[2] Legal and governance'
   subdomain: '[2.4] Ethics'
   indicatorLevel: 2.4.1
   indicator: 'Ethics / ELSI for research data
@@ -239,7 +239,7 @@ indicators:
   - Starts from non-zero as something is there
   indicatorDescription: Indicates the level of ethical awareness from minimal considerations
     to guidelines and standard compliance
-- domain: '[3] Support'
+- domain: '[3] RDM support'
   subdomain: '[3.1] Training'
   indicatorLevel: 3.1.1
   indicator: RDM Training
@@ -255,7 +255,7 @@ indicators:
   - '1'
   indicatorDescription: Indicates how RDM training is organised within the organisation,
     including the existence, structure, and comprehensiveness
-- domain: '[3] Support'
+- domain: '[3] RDM support'
   subdomain: '[3.1] Training'
   indicatorLevel: 3.1.2
   indicator: Availability of RDM training material
@@ -271,7 +271,7 @@ indicators:
   - '1'
   indicatorDescription: Indicates how RDM training materials are made available within
     the organisation and beyond, including their accessibility, openness, and visibility
-- domain: '[3] Support'
+- domain: '[3] RDM support'
   subdomain: '[3.2] Expert network'
   indicatorLevel: 3.2.1
   indicator: Framework for different levels (e.g., local, national, international)
@@ -281,7 +281,7 @@ indicators:
     the organization, i.e., no further networking
   - Informal interaction with external RDM experts – Sharing and exchange of RDM expertise
     is reaching beyond the own institute, but only informally
-  - Minimal network participation -- Formal interaction with external RDM expert network(s)
+  - Minimal network participation - Formal interaction with external RDM expert network(s)
     with occasional collaboration with external partners
   - Formal support for RDM expert networking participation – Encouragement and/or
     funds to attend regular forums, meetings, or platforms enable regular collaboration
@@ -294,7 +294,7 @@ indicators:
   indicatorDescription: Indicates how RDM expertise within the organisation is supported
     through structured networking opportunities at different levels (e.g., local,
     national, international level)
-- domain: '[3] Support'
+- domain: '[3] RDM support'
   subdomain: '[3.3] Guidelines for researchers'
   indicatorLevel: 3.3.1
   indicator: RDM information / guidelines for researchers
@@ -313,7 +313,7 @@ indicators:
   - '1'
   indicatorDescription: Indicates how clearly RDM information and guidelines are communicated
     to researchers, and whether they are centralised, maintained, and actively shared
-- domain: '[3] Support'
+- domain: '[3] RDM support'
   subdomain: '[3.3] Guidelines for researchers'
   indicatorLevel: 3.3.2
   indicator: Flow of RDM communication and responsiveness
@@ -330,7 +330,7 @@ indicators:
   indicatorDescription: Indicates how well communication about data management is
     maintained within the organisation, particularly the extent to which it is consultive,
     interactive, responsive, and fosters dialogue
-- domain: '[3] Support'
+- domain: '[3] RDM support'
   subdomain: '[3.4] DM support infrastructure'
   indicatorLevel: 3.4.1
   indicator: Formalization of support for RDM services (e.g., tools as service, and
@@ -441,10 +441,9 @@ indicators:
   indicatorLevel: 4.6.1
   indicator: Catalog of data assets
   maturityLevels:
-  - Lists of data assets capturing basic (non-standardized) infomation do not exist
+  - Lists of data assets capturing basic (non-standardized) information do not exist
     or exist within separate sub-units.
-  - Central catalog exists (although incomplete) with basic metatadata about data
-    assets.
+  - Central catalog exists (although incomplete) with basic metadata about data assets.
   - Central catalog exists. Procedures are in place to capture most of the datasets
     of organizational interest. Search allows to find data asset of interest only
     based on basic metadata.
