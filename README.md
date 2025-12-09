@@ -1,3 +1,5 @@
+[![MM format conversion](https://github.com/elixir-europe/rdm-maturity-model/actions/workflows/convert-json-to-yaml.yml/badge.svg)](https://github.com/elixir-europe/rdm-maturity-model/actions/workflows/convert-json-to-yaml.yml)
+
 # RDM Maturity Model
 
 The **Research Data Management (RDM) Maturity Model** is a framework designed to assess the capabilities of institutions in managing research data effectively.
