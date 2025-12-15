@@ -1,7 +1,7 @@
 version:
-  versionNumber: 1.1.0
-  versionDescription: Remove subdomains
-  timestamp: '2025-12-03T11:26:40.304Z'
+  versionNumber: 1.2.0
+  versionDescription: Add indicator ID
+  timestamp: '2025-12-15T11:01:17.942Z'
 domains:
 - domainName: Strategy and sustainability
   domainLevel: '1'
@@ -23,6 +23,7 @@ domains:
     data life cycle
 indicators:
 - domain: Strategy and sustainability
+  indicatorId: mm-strategy-defined
   indicatorLevel: '1.1'
   indicator: Strategy for RDM
   maturityLevels:
@@ -41,6 +42,7 @@ indicators:
     activities has been defined and implemented
   domainLevel: '1'
 - domain: Strategy and sustainability
+  indicatorId: mm-strategy-personnel
   indicatorLevel: '1.2'
   indicator: Personnel for RDM
   maturityLevels:
@@ -57,6 +59,7 @@ indicators:
     by dedicated personnel within the organisation
   domainLevel: '1'
 - domain: Strategy and sustainability
+  indicatorId: mm-strategy-goals-kpis
   indicatorLevel: '1.3'
   indicator: Internal RDM goals and KPIs (operational improvement)
   maturityLevels:
@@ -73,6 +76,7 @@ indicators:
     are used to monitor and guide operational improvement
   domainLevel: '1'
 - domain: Strategy and sustainability
+  indicatorId: mm-strategy-policy-adherence
   indicatorLevel: '1.4'
   indicator: Adherence to relevant governing RDM policies on international, European,
     national, local, organisational level
@@ -89,6 +93,7 @@ indicators:
     and international level
   domainLevel: '1'
 - domain: Strategy and sustainability
+  indicatorId: mm-strategy-policies-and-procedures
   indicatorLevel: '1.5'
   indicator: 'Research data governance: policies and procedures'
   maturityLevels:
@@ -108,6 +113,7 @@ indicators:
     and implemented in the organisation
   domainLevel: '1'
 - domain: Strategy and sustainability
+  indicatorId: mm-strategy-align-with-best-practices
   indicatorLevel: '1.6'
   indicator: 'Organizational RDM efforts align with relevant RDM best practices on
     international, European, national, local, organisational level (harmonisation) '
@@ -124,6 +130,7 @@ indicators:
     international) best practices
   domainLevel: '1'
 - domain: Strategy and sustainability
+  indicatorId: mm-strategy-funding
   indicatorLevel: '1.7'
   indicator: Funding sources for RDM efforts
   maturityLevels:
@@ -141,6 +148,7 @@ indicators:
     RDM strategy implementation '
   domainLevel: '1'
 - domain: Legal and governance
+  indicatorId: mm-legal-framework
   indicatorLevel: '2.1'
   indicator: Legal framework for research data
   maturityLevels:
@@ -166,6 +174,7 @@ indicators:
     data, established in the organisation
   domainLevel: '2'
 - domain: Legal and governance
+  indicatorId: mm-legal-security
   indicatorLevel: '2.2'
   indicator: IT security for research data (RD) and associated services
   maturityLevels:
@@ -191,6 +200,7 @@ indicators:
     from minimal, reactive protections to certified systems and automated responses
   domainLevel: '2'
 - domain: Legal and governance
+  indicatorId: mm-legal-gdpr
   indicatorLevel: '2.3'
   indicator: Data protection compliancy of research data
   maturityLevels:
@@ -219,6 +229,7 @@ indicators:
     of roles and compliance systems within the organisation
   domainLevel: '2'
 - domain: Legal and governance
+  indicatorId: mm-legal-ethics
   indicatorLevel: '2.4'
   indicator: 'Ethics / ELSI for research data
 
@@ -244,6 +255,7 @@ indicators:
     to guidelines and standard compliance
   domainLevel: '2'
 - domain: RDM support
+  indicatorId: mm-support-training
   indicatorLevel: '3.1'
   indicator: RDM Training
   maturityLevels:
@@ -260,6 +272,7 @@ indicators:
     including the existence, structure, and comprehensiveness
   domainLevel: '3'
 - domain: RDM support
+  indicatorId: mm-support-training-materials
   indicatorLevel: '3.2'
   indicator: Availability of RDM training material
   maturityLevels:
@@ -276,6 +289,7 @@ indicators:
     the organisation and beyond, including their accessibility, openness, and visibility
   domainLevel: '3'
 - domain: RDM support
+  indicatorId: mm-support-network
   indicatorLevel: '3.3'
   indicator: Framework for different levels (e.g., local, national, international)
     of networking opportunities for the organizational RDM expertise
@@ -299,6 +313,7 @@ indicators:
     national, international level)
   domainLevel: '3'
 - domain: RDM support
+  indicatorId: mm-support-guidelines-researchers
   indicatorLevel: '3.4'
   indicator: RDM information / guidelines for researchers
   maturityLevels:
@@ -318,6 +333,7 @@ indicators:
     to researchers, and whether they are centralised, maintained, and actively shared
   domainLevel: '3'
 - domain: RDM support
+  indicatorId: mm-support-communication
   indicatorLevel: '3.5'
   indicator: Flow of RDM communication and responsiveness
   maturityLevels:
@@ -335,6 +351,7 @@ indicators:
     interactive, responsive, and fosters dialogue
   domainLevel: '3'
 - domain: RDM support
+  indicatorId: mm-support-services
   indicatorLevel: '3.6'
   indicator: Formalization of support for RDM services (e.g., tools as service, and
     similar)
@@ -351,6 +368,7 @@ indicators:
     including whether it is documented and integrated with institutional infrastructure
   domainLevel: '3'
 - domain: Data and metadata management
+  indicatorId: mm-data-resources
   indicatorLevel: '4.1'
   indicator: RDM software and resources used by end-users
   maturityLevels:
@@ -369,6 +387,7 @@ indicators:
     organisation
   domainLevel: '4'
 - domain: Data and metadata management
+  indicatorId: mm-data-standards-rdm
   indicatorLevel: '4.2'
   indicator: Research data organisation standards
   maturityLevels:
@@ -387,6 +406,7 @@ indicators:
     practices and guidelines provided by the organisation
   domainLevel: '4'
 - domain: Data and metadata management
+  indicatorId: mm-data-standards-documentation
   indicatorLevel: '4.3'
   indicator: Documentation standards
   maturityLevels:
@@ -405,6 +425,7 @@ indicators:
     best practices and guidelines provided by the organisation
   domainLevel: '4'
 - domain: Data and metadata management
+  indicatorId: mm-data-infrastructure
   indicatorLevel: '4.4'
   indicator: Technical research infrastructure
   maturityLevels:
@@ -419,6 +440,7 @@ indicators:
     infrastructure provided by the organisation
   domainLevel: '4'
 - domain: Data and metadata management
+  indicatorId: mm-data-publication
   indicatorLevel: '4.5'
   indicator: Research data publication
   maturityLevels:
@@ -436,6 +458,7 @@ indicators:
     standards and support for RD publications and the level of adoption by end users
   domainLevel: '4'
 - domain: Data and metadata management
+  indicatorId: mm-data-assets
   indicatorLevel: '4.6'
   indicator: Catalog of data assets
   maturityLevels:
@@ -457,6 +480,7 @@ indicators:
     of data assets provided by the organisation
   domainLevel: '4'
 - domain: Data and metadata management
+  indicatorId: mm-data-accessibility
   indicatorLevel: '4.7'
   indicator: Accessibility of research data
   maturityLevels:
@@ -478,6 +502,7 @@ indicators:
     from manual processes to standardized, secure, and automated systems
   domainLevel: '4'
 - domain: Data and metadata management
+  indicatorId: mm-data-dmp
   indicatorLevel: '4.8'
   indicator: Data management planning
   maturityLevels:
