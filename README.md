@@ -29,4 +29,4 @@ It can be downloaded as [JSON](_data/maturity_model.json) and
 
 ## Version information
 Version: 1.2.0 [Add indicator ID]  
-Release date: 2025-12-03
+Release date: 2025-12-15
