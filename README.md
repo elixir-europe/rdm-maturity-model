@@ -28,5 +28,5 @@ It can be downloaded as [JSON](_data/maturity_model.json) and
 [rdm-maturity-model](https://github.com/elixir-europe/rdm-maturity-model) repository.
 
 ## Version information
-Version: 1.1.0 [Remove subdomains]  
+Version: 1.2.0 [Add indicator ID]  
 Release date: 2025-12-03
