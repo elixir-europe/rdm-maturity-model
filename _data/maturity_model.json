@@ -1,8 +1,8 @@
 {
   "version": {
-    "versionNumber": "1.1.0",
-    "versionDescription": "Remove subdomains",
-    "timestamp": "2025-12-03T11:26:40.304Z"
+    "versionNumber": "1.2.0",
+    "versionDescription": "Add indicator ID",
+    "timestamp": "2025-12-15T11:01:17.942Z"
   },
   "domains": [
     {
@@ -29,6 +29,7 @@
   "indicators": [
     {
       "domain": "Strategy and sustainability",
+      "indicatorId": "mm-strategy-defined",
       "indicatorLevel": "1.1",
       "indicator": "Strategy for RDM",
       "maturityLevels": [
@@ -50,6 +51,7 @@
     },
     {
       "domain": "Strategy and sustainability",
+      "indicatorId": "mm-strategy-personnel",
       "indicatorLevel": "1.2",
       "indicator": "Personnel for RDM",
       "maturityLevels": [
@@ -69,6 +71,7 @@
     },
     {
       "domain": "Strategy and sustainability",
+      "indicatorId": "mm-strategy-goals-kpis",
       "indicatorLevel": "1.3",
       "indicator": "Internal RDM goals and KPIs (operational improvement)",
       "maturityLevels": [
@@ -88,6 +91,7 @@
     },
     {
       "domain": "Strategy and sustainability",
+      "indicatorId": "mm-strategy-policy-adherence",
       "indicatorLevel": "1.4",
       "indicator": "Adherence to relevant governing RDM policies on international, European, national, local, organisational level",
       "maturityLevels": [
@@ -105,6 +109,7 @@
     },
     {
       "domain": "Strategy and sustainability",
+      "indicatorId": "mm-strategy-policies-and-procedures",
       "indicatorLevel": "1.5",
       "indicator": "Research data governance: policies and procedures",
       "maturityLevels": [
@@ -124,6 +129,7 @@
     },
     {
       "domain": "Strategy and sustainability",
+      "indicatorId": "mm-strategy-align-with-best-practices",
       "indicatorLevel": "1.6",
       "indicator": "Organizational RDM efforts align with relevant RDM best practices on international, European, national, local, organisational level (harmonisation) ",
       "maturityLevels": [
@@ -141,6 +147,7 @@
     },
     {
       "domain": "Strategy and sustainability",
+      "indicatorId": "mm-strategy-funding",
       "indicatorLevel": "1.7",
       "indicator": "Funding sources for RDM efforts",
       "maturityLevels": [
@@ -160,6 +167,7 @@
     },
     {
       "domain": "Legal and governance",
+      "indicatorId": "mm-legal-framework",
       "indicatorLevel": "2.1",
       "indicator": "Legal framework for research data",
       "maturityLevels": [
@@ -179,6 +187,7 @@
     },
     {
       "domain": "Legal and governance",
+      "indicatorId": "mm-legal-security",
       "indicatorLevel": "2.2",
       "indicator": "IT security for research data (RD) and associated services",
       "maturityLevels": [
@@ -198,6 +207,7 @@
     },
     {
       "domain": "Legal and governance",
+      "indicatorId": "mm-legal-gdpr",
       "indicatorLevel": "2.3",
       "indicator": "Data protection compliancy of research data",
       "maturityLevels": [
@@ -218,6 +228,7 @@
     },
     {
       "domain": "Legal and governance",
+      "indicatorId": "mm-legal-ethics",
       "indicatorLevel": "2.4",
       "indicator": "Ethics / ELSI for research data\n(regarding animal / human subjects, Nagoya matters)",
       "maturityLevels": [
@@ -238,6 +249,7 @@
     },
     {
       "domain": "RDM support",
+      "indicatorId": "mm-support-training",
       "indicatorLevel": "3.1",
       "indicator": "RDM Training",
       "maturityLevels": [
@@ -257,6 +269,7 @@
     },
     {
       "domain": "RDM support",
+      "indicatorId": "mm-support-training-materials",
       "indicatorLevel": "3.2",
       "indicator": "Availability of RDM training material",
       "maturityLevels": [
@@ -276,6 +289,7 @@
     },
     {
       "domain": "RDM support",
+      "indicatorId": "mm-support-network",
       "indicatorLevel": "3.3",
       "indicator": "Framework for different levels (e.g., local, national, international) of networking opportunities for the organizational RDM expertise",
       "maturityLevels": [
@@ -295,6 +309,7 @@
     },
     {
       "domain": "RDM support",
+      "indicatorId": "mm-support-guidelines-researchers",
       "indicatorLevel": "3.4",
       "indicator": "RDM information / guidelines for researchers",
       "maturityLevels": [
@@ -314,6 +329,7 @@
     },
     {
       "domain": "RDM support",
+      "indicatorId": "mm-support-communication",
       "indicatorLevel": "3.5",
       "indicator": "Flow of RDM communication and responsiveness",
       "maturityLevels": [
@@ -331,6 +347,7 @@
     },
     {
       "domain": "RDM support",
+      "indicatorId": "mm-support-services",
       "indicatorLevel": "3.6",
       "indicator": "Formalization of support for RDM services (e.g., tools as service, and similar)",
       "maturityLevels": [
@@ -348,6 +365,7 @@
     },
     {
       "domain": "Data and metadata management",
+      "indicatorId": "mm-data-resources",
       "indicatorLevel": "4.1",
       "indicator": "RDM software and resources used by end-users",
       "maturityLevels": [
@@ -367,6 +385,7 @@
     },
     {
       "domain": "Data and metadata management",
+      "indicatorId": "mm-data-standards-rdm",
       "indicatorLevel": "4.2",
       "indicator": "Research data organisation standards",
       "maturityLevels": [
@@ -386,6 +405,7 @@
     },
     {
       "domain": "Data and metadata management",
+      "indicatorId": "mm-data-standards-documentation",
       "indicatorLevel": "4.3",
       "indicator": "Documentation standards",
       "maturityLevels": [
@@ -405,6 +425,7 @@
     },
     {
       "domain": "Data and metadata management",
+      "indicatorId": "mm-data-infrastructure",
       "indicatorLevel": "4.4",
       "indicator": "Technical research infrastructure",
       "maturityLevels": [
@@ -421,6 +442,7 @@
     },
     {
       "domain": "Data and metadata management",
+      "indicatorId": "mm-data-publication",
       "indicatorLevel": "4.5",
       "indicator": "Research data publication",
       "maturityLevels": [
@@ -440,6 +462,7 @@
     },
     {
       "domain": "Data and metadata management",
+      "indicatorId": "mm-data-assets",
       "indicatorLevel": "4.6",
       "indicator": "Catalog of data assets",
       "maturityLevels": [
@@ -459,6 +482,7 @@
     },
     {
       "domain": "Data and metadata management",
+      "indicatorId": "mm-data-accessibility",
       "indicatorLevel": "4.7",
       "indicator": "Accessibility of research data",
       "maturityLevels": [
@@ -478,6 +502,7 @@
     },
     {
       "domain": "Data and metadata management",
+      "indicatorId": "mm-data-dmp",
       "indicatorLevel": "4.8",
       "indicator": "Data management planning",
       "maturityLevels": [
