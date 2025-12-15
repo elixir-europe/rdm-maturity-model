@@ -1,7 +1,7 @@
 version:
-  versionNumber: 1.2.0
-  versionDescription: Add indicator ID
-  timestamp: '2025-12-15T11:01:17.942Z'
+  versionNumber: 1.2.1
+  versionDescription: Fix mm-data-infrastructure
+  timestamp: '2025-12-15T15:40:23.420Z'
 domains:
 - domainName: Strategy and sustainability
   domainLevel: '1'
@@ -429,8 +429,13 @@ indicators:
   indicatorLevel: '4.4'
   indicator: Technical research infrastructure
   maturityLevels:
-  - mm-data-resources, mm-data-standards-rdm, mm-data-standards-documentation, mm-data-infrastructure,
-    mm-data-publication, mm-data-assets, mm-data-accessibility, mm-data-dmp
+  - No technical infrastructure for research / RDM is available
+  - Technical infrastructure for research / RDM is available; general usage recommendation
+  - Technical infrastructure for research / RDM facilitates data handling along the
+    research data life cycle; more specific usage recommendations
+  - Usage guidelines (and/or SOPs) and automated processes are present in the technical
+    infrastructure for research / RDM regarding, e.g., storage conditions, archiving
+    rules, deletion rules
   weights:
   - '0'
   - '0.33'
