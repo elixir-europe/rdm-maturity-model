@@ -9646,6 +9646,24 @@
           "entityUuid": "a9c3432c-5716-4cc6-88ff-2a6d3fc4b7c2",
           "parentUuid": "5c28bcf0-9552-4782-82db-e300e0824db7",
           "uuid": "e018b360-e78b-4f2b-8345-a28ab9bb9d6c"
+        },
+        {
+          "content": {
+            "eventType": "DeleteQuestionEvent"
+          },
+          "createdAt": "2025-05-14T07:52:37Z",
+          "entityUuid": "b296c940-0be1-4c70-8842-2a27b433dba3",
+          "parentUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
+          "uuid": "a34dba63-80d1-424f-90a5-6d767a981e3b"
+        },
+        {
+          "content": {
+            "eventType": "DeleteQuestionEvent"
+          },
+          "createdAt": "2025-05-14T07:52:38Z",
+          "entityUuid": "782e3dc3-aafa-43cc-b098-e6826f17f684",
+          "parentUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
+          "uuid": "a46acda4-1866-416d-9b29-6cf979859fbc"
         }
       ],
       "forkOfPackageId": "datarex:RDM-MM:0.1.1",
