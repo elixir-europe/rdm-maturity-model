@@ -139,3 +139,44 @@ Weights run from `0` (lowest level) to `1.0` (highest level), distributed evenly
 - Use **plain language**. Avoid jargon unless it is standard in the RDM field and would be familiar to the target audience.
 - Be **institution-neutral**: prefer *"the organisation"* over *"the university"* or *"the institute"*.
 - Keep tense and voice consistent within a domain.
+
+---
+
+### Versioning
+
+The model follows [Semantic Versioning](https://semver.org/) (`MAJOR.MINOR.PATCH`). The key question when choosing a version bump is: **would a previous self-assessment score still be comparable to a new one?**
+
+#### Patch — `0.1.x` → `0.1.x+1`
+
+Backwards-compatible fixes that do not change scoring or meaning:
+
+- Typo, grammar, or punctuation corrections
+- Clarifications that do not alter the intent of a level description
+- Adding or correcting a `domainLevel` / `indicatorId` annotation without changing content
+- Fixing a weight that was clearly incorrect (e.g. a level accidentally assigned the wrong value)
+- Updating metadata fields (timestamp, description string)
+
+#### Minor — `0.x.0` → `0.x+1.0`
+
+Backwards-compatible additions or improvements that extend the model:
+
+- Adding a new indicator to an existing domain
+- Adding a new domain
+- Extending an indicator with an additional highest maturity level (raising the ceiling)
+- Substantive rewording of level descriptions that sharpens precision without changing the scoring threshold
+- Deprecating an indicator (marking it as deprecated while keeping it in place)
+- Changes to the generated JSON/YAML schema that are additive (new fields, no removals)
+
+#### Major — `x.0.0` → `x+1.0.0`
+
+Breaking changes that make previous self-assessment scores incomparable or invalid:
+
+- Removing or merging indicators
+- Removing a domain
+- Adding or removing a level from an existing indicator (changes the scoring distribution)
+- Significant reordering of levels that changes what a given score means
+- Changing weights in a way that materially affects aggregated scores
+- Renaming an indicator's `indicatorId` (breaks downstream references)
+- Breaking changes to the JSON/YAML schema (removing or renaming existing fields)
+
+> When in doubt between minor and major, ask: *"If an organisation scored themselves last year using the previous version, would their score still be valid today?"* If yes, it is a minor or patch bump. If not, it is a major bump.
