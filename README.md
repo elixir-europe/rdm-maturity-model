@@ -27,6 +27,9 @@ It can be downloaded as [JSON](_data/maturity_model.json) and
 [YAML](_data/maturity_model.yaml) formats from the
 [rdm-maturity-model](https://github.com/elixir-europe/rdm-maturity-model) repository.
 
+It is also available as a knowledge model in the [DSW Registry](https://registry.ds-wizard.org/knowledge-models/),
+enabling direct use within [Data Stewardship Wizard](https://ds-wizard.org/) instances.
+
 ## Version information
 Version: 1.2.1 [Fix mm-data-infrastructure]  
 Release date: 2025-12-15
