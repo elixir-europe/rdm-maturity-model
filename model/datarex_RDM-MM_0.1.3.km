@@ -1,5 +1,5 @@
 {
-  "id": "datarex:RDM-MM:0.1.2",
+  "id": "datarex:RDM-MM:0.1.3",
   "kmId": "RDM-MM",
   "metamodelVersion": 20,
   "name": "Maturity Model of Research Data Management ",
@@ -3027,7 +3027,7 @@
     },
     {
       "createdAt": "2025-03-26T13:36:43.247331Z",
-      "description": "Maturity Model for organization’s RDM services/support (self-evaluation tool)",
+      "description": "Maturity Model for organization\u2019s RDM services/support (self-evaluation tool)",
       "events": [
         {
           "content": {
@@ -3077,7 +3077,7 @@
     },
     {
       "createdAt": "2025-03-26T14:19:14.736233Z",
-      "description": "Maturity Model for organization’s RDM services/support (self-evaluation tool)",
+      "description": "Maturity Model for organization\u2019s RDM services/support (self-evaluation tool)",
       "events": [
         {
           "content": {
@@ -6209,7 +6209,7 @@
     },
     {
       "createdAt": "2025-03-26T15:34:23.540334Z",
-      "description": "Maturity Model for organization’s RDM services/support (self-evaluation tool)",
+      "description": "Maturity Model for organization\u2019s RDM services/support (self-evaluation tool)",
       "events": [],
       "forkOfPackageId": null,
       "id": "datarex:RDM-MM:0.0.4",
@@ -6227,7 +6227,7 @@
     },
     {
       "createdAt": "2025-03-27T11:35:06.768717Z",
-      "description": "Maturity Model for organization’s RDM services/support (self-evaluation tool)",
+      "description": "Maturity Model for organization\u2019s RDM services/support (self-evaluation tool)",
       "events": [
         {
           "content": {
@@ -6990,7 +6990,7 @@
             },
             "label": {
               "changed": true,
-              "value": "Informal interaction – Some informal networking opportunities or ad hoc events exist"
+              "value": "Informal interaction \u2013 Some informal networking opportunities or ad hoc events exist"
             },
             "metricMeasures": {
               "changed": true,
@@ -7035,7 +7035,7 @@
             },
             "label": {
               "changed": true,
-              "value": "Formal support for RDM expert networking opportunities – Possibility and/or funds to attend regular forums, meetings, or platforms enable collaboration and sharing of RDM expertise"
+              "value": "Formal support for RDM expert networking opportunities \u2013 Possibility and/or funds to attend regular forums, meetings, or platforms enable collaboration and sharing of RDM expertise"
             },
             "metricMeasures": {
               "changed": true,
@@ -7192,7 +7192,7 @@
             },
             "label": {
               "changed": true,
-              "value": "Unclear and hard to find – Information is scattered or outdated; staff don’t know where to look"
+              "value": "Unclear and hard to find \u2013 Information is scattered or outdated; staff don\u2019t know where to look"
             },
             "metricMeasures": {
               "changed": true,
@@ -7237,7 +7237,7 @@
             },
             "label": {
               "changed": true,
-              "value": "Partially available – Some centralised sources exist and are occasionally updated; visibility varies"
+              "value": "Partially available \u2013 Some centralised sources exist and are occasionally updated; visibility varies"
             },
             "metricMeasures": {
               "changed": true,
@@ -7328,7 +7328,7 @@
             },
             "label": {
               "changed": true,
-              "value": "Clearly visible and maintained – There are accessible, up-to-date sources that are actively shared across the organisation"
+              "value": "Clearly visible and maintained \u2013 There are accessible, up-to-date sources that are actively shared across the organisation"
             },
             "metricMeasures": {
               "changed": true,
@@ -7408,7 +7408,7 @@
             },
             "label": {
               "changed": true,
-              "value": "One-way and slow – Information is shared top-down only; feedback is rare or unanswered"
+              "value": "One-way and slow \u2013 Information is shared top-down only; feedback is rare or unanswered"
             },
             "metricMeasures": {
               "changed": true,
@@ -7453,7 +7453,7 @@
             },
             "label": {
               "changed": true,
-              "value": "Some feedback and interaction – Staff can ask questions or raise issues, but response time and engagement vary"
+              "value": "Some feedback and interaction \u2013 Staff can ask questions or raise issues, but response time and engagement vary"
             },
             "metricMeasures": {
               "changed": true,
@@ -7529,7 +7529,7 @@
             },
             "label": {
               "changed": true,
-              "value": "Responsive and two-way – Communication is timely and interactive, with active listening and feedback loops in place"
+              "value": "Responsive and two-way \u2013 Communication is timely and interactive, with active listening and feedback loops in place"
             },
             "metricMeasures": {
               "changed": true,
@@ -7794,7 +7794,7 @@
     },
     {
       "createdAt": "2025-04-30T14:05:49.149788Z",
-      "description": "Maturity Model for organization’s RDM services/support (self-evaluation tool)",
+      "description": "Maturity Model for organization\u2019s RDM services/support (self-evaluation tool)",
       "events": [
         {
           "content": {
@@ -9025,12 +9025,12 @@
       "organizationId": "datarex",
       "phase": "ReleasedKnowledgeModelPackagePhase",
       "previousPackageId": "datarex:RDM-MM:0.0.5",
-      "readme": "This is DSW representation of results of [DATAREX](https://elixir-europe.org/internal-projects/commissioned-services/datarex) F2F event in Bari 24-26 March 2025.\n\nJust a list of indicators with description and maturity levels  but without links to guidelines.\n\nAuthors in alphabetical order:\nMinna Ahokas\nFederico Bianchini\nKorbinian Bösl\nAlessandro Cestaro\nFlora D'Anna\nVilém Děd\nNazeefa Fatima\nNiclas Jareborg\nMijke Jetten\nLuka Kranjc\nBrane Leskošek\nFlavio Licciulli\nAída Moure Fernández\nIvan Mičetić\nMinna Ahokas\nAnna Niehues\nXenia Perez Sitja\nDiana Pilvar\nGil Poiares-Oliveira\nMarina Popleteeva\nAmir Szitenberg\nJeanne Wilbrandt\n\n",
+      "readme": "This is DSW representation of results of [DATAREX](https://elixir-europe.org/internal-projects/commissioned-services/datarex) F2F event in Bari 24-26 March 2025.\n\nJust a list of indicators with description and maturity levels  but without links to guidelines.\n\nAuthors in alphabetical order:\nMinna Ahokas\nFederico Bianchini\nKorbinian B\u00f6sl\nAlessandro Cestaro\nFlora D'Anna\nVil\u00e9m D\u011bd\nNazeefa Fatima\nNiclas Jareborg\nMijke Jetten\nLuka Kranjc\nBrane Lesko\u0161ek\nFlavio Licciulli\nA\u00edda Moure Fern\u00e1ndez\nIvan Mi\u010deti\u0107\nMinna Ahokas\nAnna Niehues\nXenia Perez Sitja\nDiana Pilvar\nGil Poiares-Oliveira\nMarina Popleteeva\nAmir Szitenberg\nJeanne Wilbrandt\n\n",
       "version": "0.1.0"
     },
     {
       "createdAt": "2025-04-30T14:21:24.237645Z",
-      "description": "Maturity Model for organization’s RDM services/support (self-evaluation tool)",
+      "description": "Maturity Model for organization\u2019s RDM services/support (self-evaluation tool)",
       "events": [
         {
           "content": {
@@ -9527,12 +9527,12 @@
       "organizationId": "datarex",
       "phase": "ReleasedKnowledgeModelPackagePhase",
       "previousPackageId": "datarex:RDM-MM:0.1.0",
-      "readme": "This is DSW representation of results of [DATAREX](https://elixir-europe.org/internal-projects/commissioned-services/datarex) F2F event in Bari 24-26 March 2025.\n\nJust a list of indicators with description and maturity levels  but without links to guidelines.\n\nAuthors in alphabetical order:\nMinna Ahokas\nFederico Bianchini\nKorbinian Bösl\nAlessandro Cestaro\nFlora D'Anna\nVilém Děd\nNazeefa Fatima\nNiclas Jareborg\nMijke Jetten\nLuka Kranjc\nBrane Leskošek\nFlavio Licciulli\nAída Moure Fernández\nIvan Mičetić\nMinna Ahokas\nAnna Niehues\nXenia Perez Sitja\nDiana Pilvar\nGil Poiares-Oliveira\nMarina Popleteeva\nAmir Szitenberg\nJeanne Wilbrandt\n\n",
+      "readme": "This is DSW representation of results of [DATAREX](https://elixir-europe.org/internal-projects/commissioned-services/datarex) F2F event in Bari 24-26 March 2025.\n\nJust a list of indicators with description and maturity levels  but without links to guidelines.\n\nAuthors in alphabetical order:\nMinna Ahokas\nFederico Bianchini\nKorbinian B\u00f6sl\nAlessandro Cestaro\nFlora D'Anna\nVil\u00e9m D\u011bd\nNazeefa Fatima\nNiclas Jareborg\nMijke Jetten\nLuka Kranjc\nBrane Lesko\u0161ek\nFlavio Licciulli\nA\u00edda Moure Fern\u00e1ndez\nIvan Mi\u010deti\u0107\nMinna Ahokas\nAnna Niehues\nXenia Perez Sitja\nDiana Pilvar\nGil Poiares-Oliveira\nMarina Popleteeva\nAmir Szitenberg\nJeanne Wilbrandt\n\n",
       "version": "0.1.1"
     },
     {
-      "createdAt": "2025-05-14T14:39:37.261797Z",
-      "description": "Maturity Model for organization’s RDM services/support (self-evaluation tool)",
+      "createdAt": "2026-05-19T12:00:00.000000Z",
+      "description": "Maturity Model for organization\u2019s RDM services/support (self-evaluation tool)",
       "events": [
         {
           "content": {
@@ -9566,7 +9566,7 @@
             },
             "description": {
               "changed": true,
-              "value": "The legal and governance domain evaluates the maturity of an organisation’s research data governance and security. This assesses the robustness of its legal framework, IT security measures, and compliance with GDPR and data protection regulations, including the implementation of roles and systems to ensure adherence."
+              "value": "The legal and governance domain evaluates the maturity of an organisation\u2019s research data governance and security. This assesses the robustness of its legal framework, IT security measures, and compliance with GDPR and data protection regulations, including the implementation of roles and systems to ensure adherence."
             },
             "eventType": "EditMetricEvent",
             "title": {
@@ -9588,7 +9588,7 @@
             },
             "description": {
               "changed": true,
-              "value": "RDM support domain assesses the organisation’s approach to Research Data Management (RDM) training, expertise, and communication. This evaluates the structure, accessibility, and visibility of training activities and materials, as well as opportunities for networking at various levels."
+              "value": "RDM support domain assesses the organisation\u2019s approach to Research Data Management (RDM) training, expertise, and communication. This evaluates the structure, accessibility, and visibility of training activities and materials, as well as opportunities for networking at various levels."
             },
             "eventType": "EditMetricEvent",
             "title": {
@@ -9664,22 +9664,2549 @@
           "entityUuid": "782e3dc3-aafa-43cc-b098-e6826f17f684",
           "parentUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
           "uuid": "a46acda4-1866-416d-9b29-6cf979859fbc"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": true,
+              "value": "Strategy for RDM"
+            }
+          },
+          "createdAt": "2026-05-19T10:00:00Z",
+          "entityUuid": "d42983fd-6709-4d5f-9719-29e20aa5edde",
+          "parentUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
+          "uuid": "80471b64-5bc8-4739-8f01-4dbe556afe54"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": true,
+              "value": "Internal RDM goals and KPIs (operational improvement)"
+            }
+          },
+          "createdAt": "2026-05-19T10:00:00Z",
+          "entityUuid": "567bb8e7-1c57-497b-aeac-490916d7b9e9",
+          "parentUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
+          "uuid": "cd963f34-ec26-477c-a0d5-6f3c52afb3ab"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": true,
+              "value": "IT security for research data (RD) and associated services"
+            }
+          },
+          "createdAt": "2026-05-19T10:00:00Z",
+          "entityUuid": "0927e56a-2e30-4dca-b952-05fdf32675aa",
+          "parentUuid": "255f8355-c6df-49aa-af4c-c9843790e94a",
+          "uuid": "3a0a5410-25b1-4fd9-af6f-10eb69c599e9"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": true,
+              "value": "Data protection compliancy of research data"
+            }
+          },
+          "createdAt": "2026-05-19T10:00:00Z",
+          "entityUuid": "03ef7ba7-2e2a-40b1-bea6-21059ada2d7c",
+          "parentUuid": "255f8355-c6df-49aa-af4c-c9843790e94a",
+          "uuid": "262d67af-ca4c-4474-9718-8f69088c7dc1"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": true,
+              "value": "Framework for different levels (e.g., local, national, international) of networking opportunities for the organizational RDM expertise"
+            }
+          },
+          "createdAt": "2026-05-19T10:00:00Z",
+          "entityUuid": "99494c07-f2c0-480d-adee-1ee50df2a5bc",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "ee11dd45-2786-426b-897d-3089334638d4"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": true,
+              "value": "Flow of RDM communication and responsiveness"
+            }
+          },
+          "createdAt": "2026-05-19T10:00:00Z",
+          "entityUuid": "ea8c050d-efc0-4d40-8652-e34af981876d",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "f09379da-350d-4a2b-add1-dc6e36995663"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": true,
+              "value": "Formalization of support for RDM services (e.g., tools as service, and similar)"
+            }
+          },
+          "createdAt": "2026-05-19T10:00:00Z",
+          "entityUuid": "0196d94a-214c-41f4-ae84-7fe0f0a3c4e4",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "f87df05c-f13e-4737-9a1f-e6fafe230d08"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": true,
+              "value": "RDM software and resources used by end-users"
+            }
+          },
+          "createdAt": "2026-05-19T10:00:00Z",
+          "entityUuid": "71ae242a-97ad-4c02-b33c-86d75c3427bd",
+          "parentUuid": "b49edb4f-2e3a-4a02-aa72-1439a9b1f5fc",
+          "uuid": "d2a6fe4a-1010-4110-9aed-53ed3932f264"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-strategy-defined"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "d42983fd-6709-4d5f-9719-29e20aa5edde",
+          "parentUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
+          "uuid": "bde44fda-9631-4ece-8ca3-d395037b72c1"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-strategy-personnel"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "5c28bcf0-9552-4782-82db-e300e0824db7",
+          "parentUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
+          "uuid": "8c520a9e-4500-433c-821c-498636d31054"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-strategy-goals-kpis"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "567bb8e7-1c57-497b-aeac-490916d7b9e9",
+          "parentUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
+          "uuid": "654c8c77-dec3-446a-b0ea-8d56badd545b"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-strategy-policy-adherence"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "0bd02af2-89e5-4bf0-b680-aa591282249c",
+          "parentUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
+          "uuid": "5b1b8e92-1d12-4f9c-99ee-dcc9d67f15d4"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-strategy-policies-and-procedures"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "634b5cd3-4e25-4750-a9a6-70e69fca061f",
+          "parentUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
+          "uuid": "49a4b11a-a97a-4584-b268-09b645cf2f0c"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-strategy-align-with-best-practices"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "94670d44-8198-4e43-a687-6bbfa9f87592",
+          "parentUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
+          "uuid": "f9fd7732-8fde-4edb-9459-56302c4966c3"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-strategy-funding"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "5a3add41-20ea-49e7-8f95-70ade70188ba",
+          "parentUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
+          "uuid": "34960ce8-c199-4cb5-b11b-ac5962693359"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-legal-framework"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "2f89335f-c100-4895-a976-509f1e3fbdf1",
+          "parentUuid": "255f8355-c6df-49aa-af4c-c9843790e94a",
+          "uuid": "483a841c-b29a-45ca-8dbb-0d9cc53ed449"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-legal-security"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "0927e56a-2e30-4dca-b952-05fdf32675aa",
+          "parentUuid": "255f8355-c6df-49aa-af4c-c9843790e94a",
+          "uuid": "dbffeba2-7c66-4e76-85d8-20245c19cbd2"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-legal-gdpr"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "03ef7ba7-2e2a-40b1-bea6-21059ada2d7c",
+          "parentUuid": "255f8355-c6df-49aa-af4c-c9843790e94a",
+          "uuid": "70ef9938-9ded-419a-9c9d-a7ec8e99f0c1"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-legal-ethics"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "9acfbb4a-6cb9-4c16-8fda-5fbe79a68cb1",
+          "parentUuid": "255f8355-c6df-49aa-af4c-c9843790e94a",
+          "uuid": "7b6327ad-d795-4f9d-94be-ef13f9358af2"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-support-training"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "219dcd38-c611-4361-8a08-2a92e3a94f8c",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "12f5bf46-f704-46cd-a70d-a3bfed1f807f"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-support-training-materials"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "1a830d89-ee46-4f13-8655-96048897003d",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "6e9a6edb-2d76-4d7b-b0b2-88a1fe640bea"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-support-network"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "99494c07-f2c0-480d-adee-1ee50df2a5bc",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "bd89dc3e-a786-4814-8ce5-19c79025bd5f"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-support-guidelines-researchers"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "9e9b29fd-6535-4f9d-96f4-80dc61a4aca9",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "616870af-a2f2-4954-9e80-fa606df0fe05"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-support-communication"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "ea8c050d-efc0-4d40-8652-e34af981876d",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "c32147be-c8d7-4e07-bf0c-a27731b72b1e"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-support-services"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "0196d94a-214c-41f4-ae84-7fe0f0a3c4e4",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "01c6c5e2-5eb1-48c5-ae18-07ddf5cce5a3"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-data-resources"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "71ae242a-97ad-4c02-b33c-86d75c3427bd",
+          "parentUuid": "b49edb4f-2e3a-4a02-aa72-1439a9b1f5fc",
+          "uuid": "2377d996-0d90-464d-a0fe-3042bcf0222e"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-data-standards-rdm"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "0d106933-bd7b-4892-b836-6875bb5fbe0a",
+          "parentUuid": "b49edb4f-2e3a-4a02-aa72-1439a9b1f5fc",
+          "uuid": "5ef329a2-fd7e-41e9-ab49-db8a6936ae86"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-data-standards-documentation"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "0a7c806b-9b9a-4b12-991b-38ba36988267",
+          "parentUuid": "b49edb4f-2e3a-4a02-aa72-1439a9b1f5fc",
+          "uuid": "35717946-1826-43ed-8691-1d6e29cd6542"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-data-infrastructure"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "0f16f040-3d09-4f9f-82e0-6c07b2353cc7",
+          "parentUuid": "b49edb4f-2e3a-4a02-aa72-1439a9b1f5fc",
+          "uuid": "b2caeb60-e360-471e-b274-f48fda3275ea"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-data-publication"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "d8a2e287-9bf8-4ebd-9a89-78bda2504439",
+          "parentUuid": "b49edb4f-2e3a-4a02-aa72-1439a9b1f5fc",
+          "uuid": "6561f046-ffe4-4edd-8d24-f3b8d015cafb"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-data-assets"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "ca64c027-2546-43f6-a53a-ec7ebc9228b4",
+          "parentUuid": "b49edb4f-2e3a-4a02-aa72-1439a9b1f5fc",
+          "uuid": "0c826ba1-8244-4bbf-8b87-0bad3b8c7e2b"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-data-accessibility"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "d486d032-a72d-4a84-b6f2-6399c8e9df81",
+          "parentUuid": "b49edb4f-2e3a-4a02-aa72-1439a9b1f5fc",
+          "uuid": "fdcbb077-1431-445c-9881-1ee6f8c322e2"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": true,
+              "value": [
+                {
+                  "key": "indicatorId",
+                  "value": "mm-data-dmp"
+                }
+              ]
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T11:00:00Z",
+          "entityUuid": "9fedf1c0-a1b6-441d-9530-4a20b8526b93",
+          "parentUuid": "b49edb4f-2e3a-4a02-aa72-1439a9b1f5fc",
+          "uuid": "799be4cd-49f4-484c-ba09-74c78a7079a4"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditChapterEvent",
+            "questionUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": true,
+              "value": "This area covers the development and maintenance of strategies and sustainability of RDM services necessary for the organisation"
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
+          "parentUuid": "00000000-0000-0000-0000-000000000000",
+          "uuid": "4671e03b-7686-49af-9f0e-39aba072ae30"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditChapterEvent",
+            "questionUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": true,
+              "value": "This area covers legal, ethical, and regulatory aspects of research data management, including data protection, IT security, ethics and ELSI, and intellectual property"
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "255f8355-c6df-49aa-af4c-c9843790e94a",
+          "parentUuid": "00000000-0000-0000-0000-000000000000",
+          "uuid": "665f581c-e74e-4136-af3b-f073bd6c37fe"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditChapterEvent",
+            "questionUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": true,
+              "value": "This area covers research data management support, including training, information resources, formalised services, communication, and networking opportunities"
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "parentUuid": "00000000-0000-0000-0000-000000000000",
+          "uuid": "21760b53-0c97-472d-bf84-66023bd9f83d"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditChapterEvent",
+            "questionUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": true,
+              "value": "This area covers data and metadata management throughout the data life cycle"
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "b49edb4f-2e3a-4a02-aa72-1439a9b1f5fc",
+          "parentUuid": "00000000-0000-0000-0000-000000000000",
+          "uuid": "c5957838-7cd1-461a-9d8c-5dfd7512577a"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": true,
+              "value": "Adherence to relevant governing RDM policies on international, European, national, local, organisational level"
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "0bd02af2-89e5-4bf0-b680-aa591282249c",
+          "parentUuid": "eb4da221-f172-4cce-b08d-b456e6e9069c",
+          "uuid": "5e12c2c3-40fb-44eb-a7d5-b0836c5b00d0"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": true,
+              "value": "Indicates the presence and adoption of RD standards, best practices and guidelines provided by the organisation"
+            },
+            "title": {
+              "changed": true,
+              "value": "Research data organisation standards"
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "0d106933-bd7b-4892-b836-6875bb5fbe0a",
+          "parentUuid": "b49edb4f-2e3a-4a02-aa72-1439a9b1f5fc",
+          "uuid": "391c7be3-3387-47d3-a8ea-e6124622fb66"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": true,
+              "value": "Indicates the presence and adoption of DM documentation standards, best practices and guidelines provided by the organisation"
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "0a7c806b-9b9a-4b12-991b-38ba36988267",
+          "parentUuid": "b49edb4f-2e3a-4a02-aa72-1439a9b1f5fc",
+          "uuid": "24afcbc2-54bb-4959-b4d2-08b807b05a5a"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": true,
+              "value": "Indicates organisation provided guidelines, best practices, standards and support for RD publications and the level of adoption by end users"
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "d8a2e287-9bf8-4ebd-9a89-78bda2504439",
+          "parentUuid": "b49edb4f-2e3a-4a02-aa72-1439a9b1f5fc",
+          "uuid": "e7e7ae2b-0aa5-4c33-9a42-22e124c3b555"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": true,
+              "value": "Indicates the level of data protection compliance, the implementation of roles and compliance systems within the organisation"
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "03ef7ba7-2e2a-40b1-bea6-21059ada2d7c",
+          "parentUuid": "255f8355-c6df-49aa-af4c-c9843790e94a",
+          "uuid": "a1c96ffd-6be0-43eb-a7b7-84f79dec842a"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": true,
+              "value": "Indicates how well communication about data management is maintained within the organisation, particularly the extent to which it is consultive, interactive, responsive, and fosters dialogue"
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "ea8c050d-efc0-4d40-8652-e34af981876d",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "bc472d01-dbd8-447b-b17e-3abec151e857"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": true,
+              "value": "Indicates how RDM expertise within the organisation is supported through structured networking opportunities at different levels (e.g., local, national, international level)"
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "99494c07-f2c0-480d-adee-1ee50df2a5bc",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "c7e0cf80-e31d-4d78-98d1-ce69fa773a73"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": true,
+              "value": "Indicates how RDM service support is organised and delivered, including whether it is documented and integrated with institutional infrastructure"
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "0196d94a-214c-41f4-ae84-7fe0f0a3c4e4",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "d1b6d25f-845b-44d3-a6a9-a9e8516f1063"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": false
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": true,
+              "value": "Indicates how RDM training is organised within the organisation, including the existence, structure, and comprehensiveness"
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "219dcd38-c611-4361-8a08-2a92e3a94f8c",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "50888e0e-c4ec-4e21-a02c-671dac150475"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "RDM strategy is actively communicated"
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "e8769cfe-f0ee-4176-89bd-db5048af3e42",
+          "parentUuid": "d42983fd-6709-4d5f-9719-29e20aa5edde",
+          "uuid": "9570934f-de45-4b81-88e4-2988c58773c4"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "No staff has explicit DM duties"
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "a9c3432c-5716-4cc6-88ff-2a6d3fc4b7c2",
+          "parentUuid": "5c28bcf0-9552-4782-82db-e300e0824db7",
+          "uuid": "02c6529b-5ee1-4864-885b-362c0bb1f819"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "There are dedicated DM staff"
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "570f3a77-4801-4ad8-b425-542b1de2d8eb",
+          "parentUuid": "5c28bcf0-9552-4782-82db-e300e0824db7",
+          "uuid": "1e49ada8-1f9d-4500-bbea-8bdbb7b210a7"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "There is a dedicated DM coordination team"
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "6f7de261-46eb-4d4e-bcbe-4bb6cddada7d",
+          "parentUuid": "5c28bcf0-9552-4782-82db-e300e0824db7",
+          "uuid": "8d917403-271d-4447-aff0-33dd38827a82"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Minimal or no documented RDM policies and procedures. Individual researchers or departments manage research data independently."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "e176f472-89dd-4096-9058-6a88362eed3f",
+          "parentUuid": "634b5cd3-4e25-4750-a9a6-70e69fca061f",
+          "uuid": "f7d2ee58-72a2-4f1c-a34d-84bbaa6c08c3"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Some RDM policies and procedures are defined but not yet fully implemented across the organization."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "6d13e391-14bf-493e-9831-392f2cc9c8f5",
+          "parentUuid": "634b5cd3-4e25-4750-a9a6-70e69fca061f",
+          "uuid": "636b0a75-98b9-42c9-a483-cc28dd14a68c"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Well-defined and written RDM policies and processes, supported by technology and formal oversight. A unified approach to research data management in the organisation."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "7724bf88-58a1-4943-8f19-ecd5f7013ab3",
+          "parentUuid": "634b5cd3-4e25-4750-a9a6-70e69fca061f",
+          "uuid": "6f6be19d-7896-4e92-bc97-ef5def0e5ead"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Legal processes are ad hoc and reactive, with no standardized framework or templates regarding RDM. Legal tasks are handled informally by various departments. Agreements go through minimal review."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "5e08302d-3507-4b90-91e8-0bec8138231f",
+          "parentUuid": "2f89335f-c100-4895-a976-509f1e3fbdf1",
+          "uuid": "736c1332-546c-4496-a7d5-ac6293187c99"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "The legal framework is well-defined and standardized across the organization. A dedicated personel is responsible for supporting the establishment of a legal framework covering RDM requirements. Comprehensive templates and standardized contractual clauses for RDM issues."
+            },
+            "metricMeasures": {
+              "changed": true,
+              "value": [
+                {
+                  "metricUuid": "18c62f4b-e853-4499-bad0-b49a6715c4a5",
+                  "measure": 0.8,
+                  "weight": 1.0
+                }
+              ]
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "72877524-0948-48b8-96a3-855c42923179",
+          "parentUuid": "2f89335f-c100-4895-a976-509f1e3fbdf1",
+          "uuid": "6e8fb7be-f5d4-4825-870a-a8e12749718e"
+        },
+        {
+          "content": {
+            "eventType": "DeleteAnswerEvent"
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "9a873b6d-c609-4e68-a09c-90cad591cdf8",
+          "parentUuid": "03ef7ba7-2e2a-40b1-bea6-21059ada2d7c",
+          "uuid": "9e40bbc9-4210-40b1-aa7f-64d25c8474d1"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "The organisation has a part-time Data Protection Officer (DPO) with general responsibilities (consulting) for RD. Active monitoring for data protection compliance by the DPO. Mostly, there is no standardised framework or templates regarding RDM, and most of the work is reactive."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "40049bf5-3fd4-44cd-a156-3a70dcbe3b97",
+          "parentUuid": "03ef7ba7-2e2a-40b1-bea6-21059ada2d7c",
+          "uuid": "9909ca02-5b40-4943-92da-df742022825b"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Organisation has a full-time DPO. Guidelines, documentations and consultations are actively done by DPO for RD. No procedures in place to involve the DPO."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "ccc09cd3-3ab8-45ff-9809-64f5dca470a8",
+          "parentUuid": "03ef7ba7-2e2a-40b1-bea6-21059ada2d7c",
+          "uuid": "a748eec7-09e2-4b50-9474-b72a1a0bdd9b"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Established systems for Data Protection legislation compliance (ROPA, consent management, DPIA, etc.) of RD. No procedures in place to involve the DPO. Sometimes a DPO is involved at the planning stages, but not always."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "1df2582c-c5c2-4e3e-840d-a6ef0d003a65",
+          "parentUuid": "03ef7ba7-2e2a-40b1-bea6-21059ada2d7c",
+          "uuid": "f9d8a1eb-709e-4631-a2d2-ad1f37b30b49"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Procedures are in place and the organisation is willing and actively involves a DPO at the right stages of the project. The top leaders of the organisation understand the necessity of the DPO and the processes regarding data protection. The organisation does regular auditing (internal or external), and the ongoing evaluation is taking place regarding data protection for RD. Established procedures for the exercise of Data Subject Rights."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "018a7793-59e5-482e-9c41-8f670d434d09",
+          "parentUuid": "03ef7ba7-2e2a-40b1-bea6-21059ada2d7c",
+          "uuid": "542825ef-1809-4562-a01c-2b535af3a364"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Security measures for RD and services are ad hoc or minimal. There are few or no documented policies and/or procedures. Staff have limited awareness of IT security. Basic protections like antivirus software and standard firewalls are used reactively."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "f84cc37b-9869-4d92-987e-6f91236d8124",
+          "parentUuid": "0927e56a-2e30-4dca-b952-05fdf32675aa",
+          "uuid": "67ca9c2c-7828-4e18-aee8-97627fb7f0d2"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Implementation of documented policies/procedures for security of RD; regular staff training of recognition and response to cyber threats; access control and password management systems are in place; regular software updates and patches."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "4bcf66a1-9ddc-487e-8bb1-2f2305d7661b",
+          "parentUuid": "0927e56a-2e30-4dca-b952-05fdf32675aa",
+          "uuid": "4c8ae181-e2e4-48ff-825f-3b8e9931b502"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Incident response and disaster recovery plans for RD are in place and tested; proactive security measures, vulnerability testing and assessment; Multi-Factor Authentication (MFA) is enforced for sensitive systems; tools for advanced threat detection and response are in place."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "ed7fcd09-42a9-4b30-80ae-9fc41de03e25",
+          "parentUuid": "0927e56a-2e30-4dca-b952-05fdf32675aa",
+          "uuid": "ab87c777-f656-4bd0-b480-6f540e68d7c0"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Accessible to staff and partners only"
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "6021badb-f0b1-4796-a8b4-60ce0f73c8fe",
+          "parentUuid": "1a830d89-ee46-4f13-8655-96048897003d",
+          "uuid": "771cd3cd-d7e8-42ec-ab9f-8e2ba43023c9"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Open, multilingual/English and widely promoted"
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "be9a6d1d-eb81-4edb-813e-aaf7bcc15ab4",
+          "parentUuid": "1a830d89-ee46-4f13-8655-96048897003d",
+          "uuid": "04a8bf11-399b-45c8-beb8-15260cec9baa"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Informal interaction with external RDM experts \u2013 Sharing and exchange of RDM expertise is reaching beyond the own institute, but only informally"
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "13c3d977-010f-443e-b55e-6616be348c9a",
+          "parentUuid": "99494c07-f2c0-480d-adee-1ee50df2a5bc",
+          "uuid": "3342ffcc-68be-49cc-8992-57283184b7e6"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Minimal network participation - Formal interaction with external RDM expert network(s) with occasional collaboration with external partners"
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "b78837f6-3592-481e-9d82-a85c34bd01bd",
+          "parentUuid": "99494c07-f2c0-480d-adee-1ee50df2a5bc",
+          "uuid": "e07326c6-1cb1-4517-815e-1dcc76b6612e"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Formal support for RDM expert networking participation \u2013 Encouragement and/or funds to attend regular forums, meetings, or platforms enable regular collaboration and sharing of RDM expertise"
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "29890908-7e10-40a1-85f7-7f2a936a261a",
+          "parentUuid": "99494c07-f2c0-480d-adee-1ee50df2a5bc",
+          "uuid": "99d40ced-252a-4fc6-8e74-dc0d3c54f87e"
+        },
+        {
+          "content": {
+            "advice": null,
+            "annotations": [],
+            "eventType": "AddAnswerEvent",
+            "label": "Only internal interaction - RDM expertise is only shared and accumulated within the organization, i.e., no further networking",
+            "metricMeasures": [
+              {
+                "metricUuid": "71be6293-a566-4044-b443-35f20f1caa19",
+                "measure": 0.0,
+                "weight": 1.0
+              }
+            ]
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "12940825-9710-43af-bb61-42d1de9f1017",
+          "parentUuid": "99494c07-f2c0-480d-adee-1ee50df2a5bc",
+          "uuid": "1e490480-eeda-4927-8bde-252a68507feb"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": true,
+              "value": [
+                "12940825-9710-43af-bb61-42d1de9f1017",
+                "13c3d977-010f-443e-b55e-6616be348c9a",
+                "b78837f6-3592-481e-9d82-a85c34bd01bd",
+                "29890908-7e10-40a1-85f7-7f2a936a261a"
+              ]
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "99494c07-f2c0-480d-adee-1ee50df2a5bc",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "f8cbe97c-d707-43cc-bee7-89e2d6ca1473"
+        },
+        {
+          "content": {
+            "advice": null,
+            "annotations": [],
+            "eventType": "AddAnswerEvent",
+            "label": "None",
+            "metricMeasures": [
+              {
+                "metricUuid": "71be6293-a566-4044-b443-35f20f1caa19",
+                "measure": 0.0,
+                "weight": 1.0
+              }
+            ]
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "6b565b5a-70f9-4cc5-af1d-fbc876de82e7",
+          "parentUuid": "9e9b29fd-6535-4f9d-96f4-80dc61a4aca9",
+          "uuid": "d3accfe0-e71a-45b4-a38b-eb8138123c20"
+        },
+        {
+          "content": {
+            "annotations": {
+              "changed": false
+            },
+            "answerUuids": {
+              "changed": true,
+              "value": [
+                "6b565b5a-70f9-4cc5-af1d-fbc876de82e7",
+                "1ef64451-80ed-4b16-a371-7a9ff20b8057",
+                "c272379f-2730-4ca5-ab3e-ed72ebbd496f",
+                "a4bbde44-49fe-4a80-8062-8ca23d4624ee"
+              ]
+            },
+            "eventType": "EditQuestionEvent",
+            "expertUuids": {
+              "changed": false
+            },
+            "questionType": "OptionsQuestion",
+            "referenceUuids": {
+              "changed": false
+            },
+            "requiredPhaseUuid": {
+              "changed": false
+            },
+            "tagUuids": {
+              "changed": false
+            },
+            "text": {
+              "changed": false
+            },
+            "title": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "9e9b29fd-6535-4f9d-96f4-80dc61a4aca9",
+          "parentUuid": "6417f016-dbbb-49ad-a1b3-cb972b664843",
+          "uuid": "d8e1dad5-2f55-4f7d-b39f-274c5b3c0ca0"
+        },
+        {
+          "content": {
+            "eventType": "DeleteAnswerEvent"
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "7a771c2f-90d0-437d-a8dd-f04de857f507",
+          "parentUuid": "0196d94a-214c-41f4-ae84-7fe0f0a3c4e4",
+          "uuid": "db3b7a34-36d8-4b39-b5e4-3491ae57d7de"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Services present but only informally supported"
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "b035e959-d4b4-4b02-8653-e8cbfb670d77",
+          "parentUuid": "0196d94a-214c-41f4-ae84-7fe0f0a3c4e4",
+          "uuid": "0d827b67-72dd-4751-b4a0-956a01e0c78d"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Services formally supported and documented"
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "4f8b397e-f1dd-45aa-bf6c-525144d9b1be",
+          "parentUuid": "0196d94a-214c-41f4-ae84-7fe0f0a3c4e4",
+          "uuid": "d871c753-d1bc-46f6-b50a-1bcbf13ce53f"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Lists of data assets capturing basic (non-standardized) information do not exist or exist within separate sub-units."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "eb887d81-042e-49a5-90f1-535f7af3636a",
+          "parentUuid": "ca64c027-2546-43f6-a53a-ec7ebc9228b4",
+          "uuid": "a55c14d7-b361-4ce0-b07d-7096088cf529"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Central catalog exists (although incomplete) with basic metadata about data assets."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "56f898bf-f9cf-4974-afe5-5f0192826a8a",
+          "parentUuid": "ca64c027-2546-43f6-a53a-ec7ebc9228b4",
+          "uuid": "0a719cba-c138-472f-98a0-9a1ede4850ea"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "Centralized searchable catalog with standardized metadata allowing search of datasets in alignment with organizational goals and retrieval of metadata via API. All assets have a unique accession number."
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "baec64eb-5b2a-4202-9d39-b9e306bf8e9b",
+          "parentUuid": "ca64c027-2546-43f6-a53a-ec7ebc9228b4",
+          "uuid": "e52d18e1-5ead-42ab-a8ac-be4a2c1b1aa3"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "No standard present or recommended"
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "85f85e21-b9d9-4ea8-b210-c4dbd5df6137",
+          "parentUuid": "0d106933-bd7b-4892-b836-6875bb5fbe0a",
+          "uuid": "5b13577e-76e1-423d-b349-9b6435289179"
+        },
+        {
+          "content": {
+            "advice": {
+              "changed": false
+            },
+            "annotations": {
+              "changed": false
+            },
+            "eventType": "EditAnswerEvent",
+            "followUpUuids": {
+              "changed": false
+            },
+            "label": {
+              "changed": true,
+              "value": "No standard present or recommended"
+            },
+            "metricMeasures": {
+              "changed": false
+            }
+          },
+          "createdAt": "2026-05-19T13:00:00Z",
+          "entityUuid": "a8d64453-4c72-4ceb-86e6-161ac46e6239",
+          "parentUuid": "0a7c806b-9b9a-4b12-991b-38ba36988267",
+          "uuid": "fab25833-e9dd-4436-a66d-bc0eae6f8436"
         }
       ],
-      "forkOfPackageId": "datarex:RDM-MM:0.1.1",
-      "id": "datarex:RDM-MM:0.1.2",
+      "forkOfPackageId": "datarex:RDM-MM:0.1.2",
+      "id": "datarex:RDM-MM:0.1.3",
       "kmId": "RDM-MM",
       "license": "ELIXIR",
-      "mergeCheckpointPackageId": "datarex:RDM-MM:0.1.1",
+      "mergeCheckpointPackageId": "datarex:RDM-MM:0.1.2",
       "metamodelVersion": 20,
       "name": "Maturity Model of Research Data Management ",
       "nonEditable": false,
       "organizationId": "datarex",
       "phase": "ReleasedKnowledgeModelPackagePhase",
-      "previousPackageId": "datarex:RDM-MM:0.1.1",
-      "readme": "# Maturity Model of Research Data Management \nThis is a DSW representation of Research Data Management (RDM) Maturity Model. The Maturity Model is a structured framework that helps institutes assess and systematically improve their RDM services by defining progressive levels of capability across key areas. The model enables instituts to evaluate their status across 27 indicators in four domains: strategy, legal, training, and data.\n\nCurrent version of the Maturity Model contains only a list of indicators (with description) and maturity levels. Future development will add links and guidelines on how to progress between levels.\n\n## Acknowledgement:\nRDM Maturity Model is [ELIXIR RDM community](https://elixir-europe.org/communities/research-data-management) driven project. \n\nThis work was supported by ELIXIR, the research infrastructure for life science data. In particular through ELIXIR Implementation Study [DATAREX](https://elixir-europe.org/internal-projects/commissioned-services/datarex) (Data Management for Research in ELIXIR).\n\n**Authors in alphabetical order:**\n- Minna Ahokas\n- Federico Bianchini\n- Korbinian Bösl\n- Alessandro Cestaro\n- Flora D'Anna\n- Vilém Děd\n- Nazeefa Fatima\n- Niclas Jareborg\n- Mijke Jetten\n- Luka Kranjc\n- Brane Leskošek\n- Flavio Licciulli\n- Aída Moure Fernández\n- Ivan Mičetić\n- Minna Ahokas\n- Anna Niehues\n- Xenia Perez Sitja\n- Diana Pilvar\n- Gil Poiares-Oliveira\n- Marina Popleteeva\n- Amir Szitenberg\n- Jeanne Wilbrandt\n\n## Changelog:\n- 0.1.2 Prepared for publishing in DSW Registry\n- 0.1.1 Initial version created as part of [DATAREX](https://elixir-europe.org/internal-projects/commissioned-services/datarex) event in Bari 24-26 March 2025.\n\n",
-      "version": "0.1.2"
+      "previousPackageId": "datarex:RDM-MM:0.1.2",
+      "readme": "# Maturity Model of Research Data Management \nThis is a DSW representation of Research Data Management (RDM) Maturity Model. The Maturity Model is a structured framework that helps institutes assess and systematically improve their RDM services by defining progressive levels of capability across key areas. The model enables instituts to evaluate their status across 27 indicators in four domains: strategy, legal, training, and data.\n\nCurrent version of the Maturity Model contains only a list of indicators (with description) and maturity levels. Future development will add links and guidelines on how to progress between levels.\n\n## Acknowledgement:\nRDM Maturity Model is [ELIXIR RDM community](https://elixir-europe.org/communities/research-data-management) driven project. \n\nThis work was supported by ELIXIR, the research infrastructure for life science data. In particular through ELIXIR Implementation Study [DATAREX](https://elixir-europe.org/internal-projects/commissioned-services/datarex) (Data Management for Research in ELIXIR).\n\n**Authors in alphabetical order:**\n- Minna Ahokas\n- Federico Bianchini\n- Korbinian B\u00f6sl\n- Alessandro Cestaro\n- Flora D'Anna\n- Vil\u00e9m D\u011bd\n- Nazeefa Fatima\n- Niclas Jareborg\n- Mijke Jetten\n- Luka Kranjc\n- Brane Lesko\u0161ek\n- Flavio Licciulli\n- A\u00edda Moure Fern\u00e1ndez\n- Ivan Mi\u010deti\u0107\n- Minna Ahokas\n- Anna Niehues\n- Xenia Perez Sitja\n- Diana Pilvar\n- Gil Poiares-Oliveira\n- Marina Popleteeva\n- Amir Szitenberg\n- Jeanne Wilbrandt\n\n## Changelog:\n- 0.1.2 Prepared for publishing in DSW Registry\n- 0.1.1 Initial version created as part of [DATAREX](https://elixir-europe.org/internal-projects/commissioned-services/datarex) event in Bari 24-26 March 2025.\n\n",
+      "version": "0.1.3"
     }
   ],
-  "version": "0.1.2"
+  "version": "0.1.3"
 }
