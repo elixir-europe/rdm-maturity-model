@@ -66,3 +66,76 @@ To confirm the full pipeline worked, compare the version numbers and comments ac
 | RDM Maturity Model Google Sheet | Last non-empty row in [data!A5:A](https://docs.google.com/spreadsheets/d/1Uw3BYs5B49jZXAqP7PTOF4jfvVGpO8JhQ74fd2mcKCU/edit?gid=1393024628#gid=1393024628&range=A4) |
 | `rdm-maturity-model` repository | `maturity_model.json` [version](https://github.com/elixir-europe/rdm-maturity-model/blob/122e52ecca70929450bb00096936f8ef5f86a690/_data/maturity_model.json#L3) |
 | `ds-handbook` website | [Version information](https://elixir-europe.github.io/ds-handbook/maturity-model#version-information) |
+
+---
+
+## Content Authoring Guidelines
+
+This section describes the intended meaning and conventions for each structural element of the model, to help keep content consistent across domains and versions.
+
+### Domains
+
+A **domain** is a thematic area grouping related indicators. The model currently has **4 domains**:
+
+| # | Domain |
+|---|---|
+| 1 | Strategy and sustainability |
+| 2 | Legal and governance |
+| 3 | RDM support |
+| 4 | Data and metadata management |
+
+New domains should be introduced only when a coherent cluster of indicators does not fit any existing domain. The `domainLevel` annotation (set in DSW or in the `.km` file) controls display order and must be set explicitly when adding a domain.
+
+**Domain description:** 1–2 sentences covering the thematic scope. Aim for 80–170 characters. Write in the form *"This area covers …"*.
+
+---
+
+### Indicators
+
+An **indicator** is a single measurable aspect of RDM maturity within a domain. The model currently has **25 indicators** (7 / 4 / 6 / 8 per domain). Before adding a new indicator, check that it is not already captured by an existing one.
+
+**Indicator title:** Short noun phrase (3–6 words), e.g. *"Strategy for RDM"*, *"IT security framework"*.
+
+**Indicator description:** One sentence, starting with *"Indicates …"*, describing what the indicator measures and for whom. Aim for 80–160 characters. Avoid repeating the title verbatim.
+
+**`indicatorId` annotation:** A stable kebab-case slug prefixed with `mm-`, e.g. `mm-strategy-defined`. Set this explicitly so the ID survives future title edits. If omitted, the script auto-derives it from the first six words of the title.
+
+**Numbering (`indicatorLevel`):** Assigned automatically based on domain and question order in DSW. Do not hard-code numbers in descriptions.
+
+---
+
+### Maturity Levels
+
+Each indicator has **3–5 maturity levels** (answers), ordered from lowest to highest maturity. Use **4 levels** as the default; add a 5th only when a meaningful intermediate step cannot be collapsed. Fewer than 3 levels is not allowed.
+
+#### Progression pattern
+
+| Position | Typical meaning |
+|---|---|
+| Level 1 (lowest) | Nothing in place — absent, ad hoc, or purely reactive |
+| Level 2 | Initial / planned / informal — awareness exists but not formalised |
+| Level 3 | Formalised / documented / approved — a defined process or policy exists |
+| Level 4 | Actively used, communicated, or enforced across the organisation |
+| Level 5 (optional) | Continuously reviewed, optimised, or institutionally embedded |
+
+Each level must be a strict superset of the previous: reaching level *n* implies that levels 1 through *n−1* are also satisfied.
+
+#### Wording
+
+- Write each level as a **complete, self-contained statement** — a reader should understand it without reading the others.
+- Use **present tense**, third person: *"RDM training is provided ad hoc…"*, not *"We provide…"* or *"Training will be…"*.
+- Avoid vague qualifiers like *"some"*, *"a little"*, *"quite"*. Prefer observable criteria: *"approved by management"*, *"documented and publicly available"*.
+- **Length:** Concise indicators (binary or near-binary criteria) may use 20–60 characters per level. Indicators covering complex or multi-faceted practices may use 100–250 characters. Do not pad short levels for the sake of consistency.
+
+#### Weights
+
+Weights run from `0` (lowest level) to `1.0` (highest level), distributed evenly. For a 4-level indicator the default weights are `0`, `0.33`, `0.66`, `1.0`. Do not assign a non-zero weight to the lowest level.
+
+---
+
+### General style notes
+
+- Write for a **self-assessment audience**: the reader is an RDM professional evaluating their own institution, not an external auditor.
+- Use **plain language**. Avoid jargon unless it is standard in the RDM field and would be familiar to the target audience.
+- Be **institution-neutral**: prefer *"the organisation"* over *"the university"* or *"the institute"*.
+- Keep tense and voice consistent within a domain.
