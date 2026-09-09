@@ -1,4 +1,4 @@
-[![MM format conversion](https://github.com/elixir-europe/rdm-maturity-model/actions/workflows/convert-json-to-yaml.yml/badge.svg?branch=main)](https://github.com/elixir-europe/rdm-maturity-model/actions/workflows/convert-json-to-yaml.yml)
+[![Validate model](https://github.com/elixir-europe/rdm-maturity-model/actions/workflows/validate-model.yml/badge.svg?branch=main)](https://github.com/elixir-europe/rdm-maturity-model/actions/workflows/validate-model.yml)
 [![Model version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Felixir-europe%2Frdm-maturity-model%2Fmain%2F_data%2Fmaturity_model.json&query=%24.version.versionNumber&label=model%20version&color=blue)](_data/maturity_model.json)
 
 # RDM Maturity Model
@@ -26,8 +26,7 @@ please refer to the
 ## Availability
 The RDM Maturity Model is available under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
 
-It can be downloaded as [JSON](_data/maturity_model.json) and
-[YAML](_data/maturity_model.yaml) formats from the
+It can be downloaded as [JSON](_data/maturity_model.json) from the
 [rdm-maturity-model](https://github.com/elixir-europe/rdm-maturity-model) repository.
 
 ## Version information
