@@ -1,0 +1,48 @@
+name: Validate model
+
+on:
+  pull_request:
+    paths:
+      - '_data/maturity_model.json'
+      - '_data/maturity_model.yaml'
+      - '_data/maturity_model.schema.json'
+      - 'scripts/validate_model.py'
+      - '.github/workflows/validate-model.yml'
+  push:
+    branches: [ main ]
+    paths:
+      - '_data/maturity_model.json'
+      - '_data/maturity_model.yaml'
+      - '_data/maturity_model.schema.json'
+      - 'scripts/validate_model.py'
+      - '.github/workflows/validate-model.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install check-jsonschema pyyaml
+
+      # Shape of the file: types, required keys, id patterns, string hygiene.
+      - name: Check the model against the schema
+        run: |
+          check-jsonschema \
+            --schemafile _data/maturity_model.schema.json \
+            _data/maturity_model.json
+
+      # Rules that compare one field with another, which a schema cannot express.
+      - name: Check the model for internal consistency
+        run: python scripts/validate_model.py
