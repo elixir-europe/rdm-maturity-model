@@ -2,38 +2,38 @@
 
 **Note!** *This information is under development. Be aware that some information might not up to date.*
 
-## _TODO_
- - Get rid of the Google Sheet as the Main Source of Truth (MSOT)
-   - Make sure all information in the Google Sheet is captured and kept in this repository
-   - Decide date from which the Google Sheet will be deprecated
-     - Edit the Google Sheet to make it obvious that it is deprecated and which file is the MSOT
-   - Update workflow description
- - Idea for the future: consider using a DSW Knowledge Model to be the MSOT
-
 ## MM Workflow
 
-The Maturity Model workflow is straightforward. Maintain the Maturity Model in the **master Google Sheet** ([RDM Maturity Model](https://docs.google.com/spreadsheets/d/1Uw3BYs5B49jZXAqP7PTOF4jfvVGpO8JhQ74fd2mcKCU/edit?gid=1393024628#gid=1393024628)) and then add it to the [rdm-maturity-model](https://github.com/elixir-europe/rdm-maturity-model) repo. Follow the steps below.
+`_data/maturity_model.json` is the source of truth for the Maturity Model. Edit it directly in this repository — there is no separate authoring surface to export from, and no generated copy of the model in another format.
+
+> A [DSW Knowledge Model](https://registry.ds-wizard.org/knowledge-models/datarex:RDM-MM:0.1.2) of the model exists in the DSW Registry and may become the way the model is managed in future. Until that happens, `maturity_model.json` is the file to edit.
 
 ---
 
 ### Step-by-Step Instructions
 
-#### 1. Make changes to the [RDM Maturity Model](https://docs.google.com/spreadsheets/d/1Uw3BYs5B49jZXAqP7PTOF4jfvVGpO8JhQ74fd2mcKCU/edit?gid=1393024628#gid=1393024628) sheet
+#### 1. Edit the model
 
-- Bump the **version** and **description** in columns `A`, `B` of the `data` sheet.
-- Optionally, name the current version in sheet history: _File > Version history > Name current version_.
+Change [`_data/maturity_model.json`](https://github.com/elixir-europe/rdm-maturity-model/blob/main/_data/maturity_model.json) by either:
 
-#### 2. Export to JSON
+- Cloning the repo locally, editing on a branch, and committing, **or**
+- Editing the file directly on GitHub.
 
-- From the top menu go to **Export** and click **"MM in JSON format"** _(approve the script on first run)_.
-- Copy the JSON from the dialog and save it as `maturity_model.json`.
+See the [Content Authoring Guidelines](#content-authoring-guidelines) below for what each field means and how to word it.
 
-#### 3. Update the model in the GitHub repository
+#### 2. Bump the version
 
-Update [rdm-maturity-model/_data/maturity_model.json](https://github.com/elixir-europe/rdm-maturity-model/blob/main/_data/maturity_model.json) by either:
+Update `versionNumber`, `versionDescription` and `timestamp` in the `version` block at the top of the file. [Versioning](#versioning) explains how to choose between a patch, minor and major bump.
 
-- Cloning the repo locally, replacing the file, and committing, **or**
-- Editing the file directly on GitHub and committing.
+#### 3. Validate before opening the pull request
+
+```bash
+pip install check-jsonschema
+check-jsonschema --schemafile _data/maturity_model.schema.json _data/maturity_model.json
+python scripts/validate_model.py
+```
+
+Both run in CI as well, but catching a problem locally is faster than waiting for the action.
 
 #### 4. Automated validation (no action needed)
 
@@ -58,12 +58,11 @@ Every new build of `ds-handbook` (via the _Jekyll site CI_ action) will include 
 
 ### Verifying the Pipeline
 
-To confirm the full pipeline worked, compare the version numbers and comments across all three locations — they should all match:
+To confirm the change reached the website, compare the version number and description in both locations — they should match:
 
 | Source | Where to check |
 |--------|---------------|
-| RDM Maturity Model Google Sheet | Last non-empty row in [data!A5:A](https://docs.google.com/spreadsheets/d/1Uw3BYs5B49jZXAqP7PTOF4jfvVGpO8JhQ74fd2mcKCU/edit?gid=1393024628#gid=1393024628&range=A4) |
-| `rdm-maturity-model` repository | `maturity_model.json` [version](https://github.com/elixir-europe/rdm-maturity-model/blob/122e52ecca70929450bb00096936f8ef5f86a690/_data/maturity_model.json#L3) |
+| `rdm-maturity-model` repository | `maturity_model.json` [version](https://github.com/elixir-europe/rdm-maturity-model/blob/main/_data/maturity_model.json#L2-L6) |
 | `ds-handbook` website | [Version information](https://elixir-europe.github.io/ds-handbook/maturity-model#version-information) |
 
 ---
