@@ -30,6 +30,12 @@ It can be downloaded as [JSON](_data/maturity_model.json) and
 [YAML](_data/maturity_model.yaml) formats from the
 [rdm-maturity-model](https://github.com/elixir-europe/rdm-maturity-model) repository.
 
+The model is also published as a knowledge model in the
+[DSW Registry](https://registry.ds-wizard.org/knowledge-models/datarex:RDM-MM:0.1.2),
+so it can be imported into any [Data Stewardship Wizard](https://ds-wizard.org/) instance.
+Knowledge model `datarex:RDM-MM:0.1.2` carries its own version numbering and corresponds to
+model version 1.2.1.
+
 ## Version information
 [![Model version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Felixir-europe%2Frdm-maturity-model%2Fmain%2F_data%2Fmaturity_model.json&query=%24.version.versionNumber&label=model%20version&color=blue)](_data/maturity_model.json)
 [![Version description](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Felixir-europe%2Frdm-maturity-model%2Fmain%2F_data%2Fmaturity_model.json&query=%24.version.versionDescription&label=description&color=lightgrey)](_data/maturity_model.json)
