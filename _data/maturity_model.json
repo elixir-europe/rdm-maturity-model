@@ -131,7 +131,7 @@
       "domain": "Strategy and sustainability",
       "indicatorId": "mm-strategy-align-with-best-practices",
       "indicatorLevel": "1.6",
-      "indicator": "Organizational RDM efforts align with relevant RDM best practices on international, European, national, local, organisational level (harmonisation) ",
+      "indicator": "Organizational RDM efforts align with relevant RDM best practices on international, European, national, local, organisational level (harmonisation)",
       "maturityLevels": [
         "No consideration",
         "Some mentioned in strategy",
@@ -162,7 +162,7 @@
         "0.66",
         "1"
       ],
-      "indicatorDescription": "Indicates the diversity of funding models to support the RDM strategy implementation ",
+      "indicatorDescription": "Indicates the diversity of funding models to support the RDM strategy implementation",
       "domainLevel": "1"
     },
     {
@@ -229,7 +229,7 @@
       "domain": "Legal and governance",
       "indicatorId": "mm-legal-ethics",
       "indicatorLevel": "2.4",
-      "indicator": "Ethics / ELSI for research data\n(regarding animal / human subjects, Nagoya matters)",
+      "indicator": "Ethics / ELSI for research data (regarding animal / human subjects, Nagoya matters)",
       "maturityLevels": [
         "Ethical considerations for RD are minimal and reactive. There are no formal guidelines or processes for ensuring ethical compliance in research.",
         "Basic ethical guidelines are established, but not consistently applied. Awareness of ethical issues is growing, and some training is provided.",
