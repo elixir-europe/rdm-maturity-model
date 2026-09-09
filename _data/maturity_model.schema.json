@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/elixir-europe/rdm-maturity-model/main/_data/maturity_model.schema.json",
+  "title": "RDM Maturity Model",
+  "description": "Shape of _data/maturity_model.json. Relational rules that compare one field with another (for example that weights and maturityLevels are the same length) cannot be expressed in JSON Schema and live in scripts/validate_model.py instead.",
+
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "domains", "indicators"],
+
+  "$defs": {
+    "cleanString": {
+      "description": "Human-readable text: no leading or trailing whitespace, no line breaks or tabs.",
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^\\S(?:[^\\n\\r\\t]*\\S)?$"
+    },
+    "level": {
+      "description": "Domain number, as a string: 1, 2, 3 ...",
+      "type": "string",
+      "pattern": "^[1-9][0-9]*$"
+    },
+    "weight": {
+      "description": "Score contribution of one maturity level, as a string between \"0\" and \"1\". Strings rather than numbers is the current convention, shared with the DSW knowledge model export.",
+      "type": "string",
+      "pattern": "^(0|1|0\\.[0-9]{1,2})$"
+    }
+  },
+
+  "properties": {
+    "version": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["versionNumber", "versionDescription", "timestamp"],
+      "properties": {
+        "versionNumber": {
+          "description": "Semantic version of the model, bumped on every release.",
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "versionDescription": { "$ref": "#/$defs/cleanString" },
+        "timestamp": {
+          "description": "Release timestamp, ISO 8601 in UTC.",
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z$"
+        }
+      }
+    },
+
+    "domains": {
+      "description": "The areas the model is divided into. Referenced by name from each indicator.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["domainName", "domainLevel", "domainDescription"],
+        "properties": {
+          "domainName": { "$ref": "#/$defs/cleanString" },
+          "domainLevel": { "$ref": "#/$defs/level" },
+          "domainDescription": { "$ref": "#/$defs/cleanString" }
+        }
+      }
+    },
+
+    "indicators": {
+      "description": "One entry per indicator. indicatorId is the stable identifier: the DS Handbook uses it as the page_id of the matching indicator page.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "domain",
+          "indicatorId",
+          "indicatorLevel",
+          "indicator",
+          "maturityLevels",
+          "weights",
+          "indicatorDescription",
+          "domainLevel"
+        ],
+        "properties": {
+          "domain": {
+            "description": "Must match the domainName of one entry in domains.",
+            "$ref": "#/$defs/cleanString"
+          },
+          "indicatorId": {
+            "description": "Stable identifier, also the page_id of the handbook page for this indicator.",
+            "type": "string",
+            "pattern": "^mm-[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "indicatorLevel": {
+            "description": "Position in the model as domain.indicator, for example 3.2. The part before the dot must equal domainLevel.",
+            "type": "string",
+            "pattern": "^[1-9][0-9]*\\.[1-9][0-9]*$"
+          },
+          "domainLevel": { "$ref": "#/$defs/level" },
+          "indicator": {
+            "description": "Indicator title.",
+            "$ref": "#/$defs/cleanString"
+          },
+          "indicatorDescription": {
+            "description": "One or two sentences on what the indicator measures. Reused verbatim as the description of the handbook page.",
+            "$ref": "#/$defs/cleanString"
+          },
+          "maturityLevels": {
+            "description": "Level descriptions, lowest first. Three to five levels; five only where a fifth is genuinely needed.",
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 5,
+            "items": { "$ref": "#/$defs/cleanString" }
+          },
+          "weights": {
+            "description": "Score for each maturity level, in the same order and the same number as maturityLevels.",
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 5,
+            "items": { "$ref": "#/$defs/weight" }
+          }
+        }
+      }
+    }
+  }
+}
