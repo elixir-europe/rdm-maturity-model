@@ -217,7 +217,6 @@
         "Procedures are in place and the organisation is willing and actively involves a DPO at the right stages of the project. The top leaders of the organisation understand the necessity of the DPO and the processes regarding data protection. The organisation does regular auditing (internal or external), and the ongoing evaluation is taking place regarding data protection for RD. Established procedures for the exercise of Data Subject Rights."
       ],
       "weights": [
-        "0",
         "0.25",
         "0.5",
         "0.75",
@@ -241,8 +240,7 @@
         "0.25",
         "0.5",
         "0.75",
-        "1",
-        "Starts from non-zero as something is there"
+        "1"
       ],
       "indicatorDescription": "Indicates the level of ethical awareness from minimal considerations to guidelines and standard compliance",
       "domainLevel": "2"
