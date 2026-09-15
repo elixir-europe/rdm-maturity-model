@@ -10,6 +10,8 @@ that compares one field with another, so those live here:
   * indicatorId and indicatorLevel are unique
   * every indicator's domain exists in the domains list
   * indicatorLevel's prefix and domainLevel agree with that domain
+  * each level's order runs 1..n, and its levelId is indicatorId + order
+  * a level's briefDescription says more than its title
 
 Usage:
     python scripts/validate_model.py [path/to/maturity_model.json] [--check-yaml]
@@ -62,6 +64,42 @@ def check_weights(model: dict) -> list[str]:
                 f"{ref}: highest level scores {weights[-1]}, expected \"1\" "
                 f"-- a fully mature indicator should score 1"
             )
+    return problems
+
+
+def check_levels(model: dict) -> list[str]:
+    """Levels are numbered 1..n and identify themselves by indicatorId and order."""
+    problems = []
+    for ind in model.get("indicators", []):
+        ref = ind.get("indicatorId", "?")
+        for position, level in enumerate(ind.get("maturityLevels") or [], start=1):
+            if not isinstance(level, dict):
+                problems.append(
+                    f"{ref}: level {position} is {type(level).__name__}, not an object "
+                    f"-- levels became objects in model 2.0.0"
+                )
+                continue
+
+            order = level.get("order")
+            if order != position:
+                problems.append(
+                    f"{ref}: level at position {position} has order {order!r} "
+                    f"-- order follows the array, lowest level first"
+                )
+
+            expected = f"{ref}-{order}"
+            if level.get("levelId") != expected:
+                problems.append(
+                    f"{ref}: level {position} has levelId {level.get('levelId')!r}, "
+                    f"expected {expected!r}"
+                )
+
+            brief = level.get("briefDescription")
+            if brief is not None and brief == level.get("title"):
+                problems.append(
+                    f"{ref}: level {position} repeats its title as briefDescription "
+                    f"-- drop it, briefDescription is for wording that says more"
+                )
     return problems
 
 
@@ -141,7 +179,7 @@ def check_yaml_matches_json(model: dict, json_path: Path) -> list[str]:
     return []
 
 
-CHECKS = (check_weights, check_identifiers, check_domain_references)
+CHECKS = (check_weights, check_levels, check_identifiers, check_domain_references)
 
 
 # ---------------------------------------------------------------- entry point
