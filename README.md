@@ -45,3 +45,11 @@ The badges above are read directly from the `version` block of
 [`_data/maturity_model.json`](_data/maturity_model.json) on `main`, so they follow the model without manual updates.
 The same version is shown on the
 [DS Handbook maturity model page](https://elixir-europe.github.io/ds-handbook/maturity-model#version-information).
+
+## Contributors
+
+The model is the work of contributors from across the RDM Community, listed with
+their affiliations and ORCIDs in [`_data/contributors.yaml`](_data/contributors.yaml).
+
+The DS Handbook renders that list on its
+[maturity model page](https://elixir-europe.github.io/ds-handbook/maturity-model#contributors).
