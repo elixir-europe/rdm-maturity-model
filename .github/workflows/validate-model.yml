@@ -1,12 +1,9 @@
 name: Validate model
 
 on:
+  # No path filter on pull requests: this check is required for merging into
+  # main, and a required check that never runs leaves the pull request blocked.
   pull_request:
-    paths:
-      - '_data/maturity_model.json'
-      - '_data/maturity_model.schema.json'
-      - 'scripts/validate_model.py'
-      - '.github/workflows/validate-model.yml'
   push:
     branches: [ main ]
     paths:

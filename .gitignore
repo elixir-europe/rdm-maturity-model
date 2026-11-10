@@ -15,7 +15,7 @@ env/
 *.egg-info/
 .ipynb_checkpoints/
 
-# Spreadsheet / Office temp and lock files from model exports
+# Editor and Office temp and lock files
 ~$*
 *.tmp
 
