@@ -1,7 +1,7 @@
 {
   "version": {
-    "versionNumber": "1.2.1",
-    "versionDescription": "Fix mm-data-infrastructure",
+    "versionNumber": "2.0.0",
+    "versionDescription": "Maturity levels become objects carrying briefDescription, impact and criteria; indicator content migrated from the DS Handbook",
     "timestamp": "2025-12-15T15:40:23.420Z"
   },
   "domains": [
@@ -29,15 +29,61 @@
   "indicators": [
     {
       "domain": "Strategy and sustainability",
+      "domainLevel": "1",
       "indicatorId": "mm-strategy-defined",
       "indicatorLevel": "1.1",
       "indicator": "Strategy for RDM",
+      "indicatorDescription": "Indicates at what level the strategy for RDM services and activities has been defined and implemented",
+      "indicatorLongDescription": "This indicator assesses at what level the strategy for RDM services and activities has been defined and implemented.",
       "maturityLevels": [
-        "No RDM strategy is defined",
-        "Initial RDM strategy planned or drafted",
-        "RDM strategy approved by the organisation",
-        "RDM strategy is actively communicated",
-        "RDM strategy fully implemented with regular revisions"
+        {
+          "levelId": "mm-strategy-defined-1",
+          "order": 1,
+          "title": "No RDM strategy is defined",
+          "impact": "RDM activities may occur, but are usually uncoordinated and without clear objectives at the organization level.",
+          "criteria": [
+            "The organisation has not defined a strategy for its RDM activities."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-defined-2",
+          "order": 2,
+          "title": "Initial RDM strategy planned or drafted",
+          "impact": "The importance of an RDM strategy for the activities is acknowledged, and work has started to formulate it.",
+          "criteria": [
+            "The organisation is constructing or planning a strategy"
+          ]
+        },
+        {
+          "levelId": "mm-strategy-defined-3",
+          "order": 3,
+          "title": "RDM strategy approved by the organisation",
+          "briefDescription": "RDM strategy approved and published for the organisation",
+          "impact": "The RDM objectives are clear, so that activities can be aligned within the organisation. This will improve efficiency and remove potential redundant activities. The strategy is available to all members of the organization, but there is no further communication, to build a common understanding of the RDM strategy and work towards a coordinated effort for RDM inside the organization.",
+          "criteria": [
+            "The objectives and how to reach them (missions), including the resources involved are established.",
+            "The RDM strategy is available to all members of the organisation through an internal channel, but not actively communicated."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-defined-4",
+          "order": 4,
+          "title": "RDM strategy is actively communicated",
+          "briefDescription": "and part of the mandatory onboarding for relevant staff/stakeholders",
+          "impact": "Increased awareness of the RDM strategy enabling a high-level of RDM maturity in the organization",
+          "criteria": [
+            "The RDM strategy is actively communicated to all members of the organisation, and is a formal component of onboarding for all new researchers/staff, especially those handling data."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-defined-5",
+          "order": 5,
+          "title": "RDM strategy fully implemented with regular revisions",
+          "impact": "RDM activities are aligned within the organisation and performed more efficiently.",
+          "criteria": [
+            "There are activities in place to work towards all objectives, and the objectives and activities are regularly reviewed and re-assessed"
+          ]
+        }
       ],
       "weights": [
         "0",
@@ -45,481 +91,1473 @@
         "0.5",
         "0.75",
         "1"
-      ],
-      "indicatorDescription": "Indicates at what level the strategy for RDM services and activities has been defined and implemented",
-      "domainLevel": "1"
+      ]
     },
     {
       "domain": "Strategy and sustainability",
+      "domainLevel": "1",
       "indicatorId": "mm-strategy-personnel",
       "indicatorLevel": "1.2",
-      "indicator": "Personnel for RDM",
+      "indicator": "RDM personnel",
+      "indicatorDescription": "Indicates how well RDM services and activities are supported by dedicated personnel within the organisation",
+      "indicatorLongDescription": "This indicator examines how responsibilities for research data management are distributed and supported within an organisation. It considers the presence, roles and coordination of staff who provide RDM expertise and guidance. Maturity reflects a progression from informal, individual efforts to structured and well-coordinated teams that ensure continuity, quality and long-term sustainability of RDM services.",
       "maturityLevels": [
-        "No staff has explicit DM duties",
-        "There are staff that has DM duties",
-        "There are dedicated DM staff",
-        "There is a dedicated DM coordination team"
+        {
+          "levelId": "mm-strategy-personnel-1",
+          "order": 1,
+          "title": "No staff has explicit DM duties",
+          "impact": "RDM activities are inconsistent and depend entirely on individual initiatives. Knowledge is not retained and institutional responsibility is absent.",
+          "criteria": [
+            "**Unassigned responsibilities**: RDM responsibilities are not formally defined, assigned or recognised within the organisation.",
+            "**Reactive**: RDM tasks are carried out when the occasion arises, without structure, procedures or clear accountability.",
+            "**No support**: Researchers rely on informal help, personal experience or external support for RDM questions."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-personnel-2",
+          "order": 2,
+          "title": "There are staff that have DM duties",
+          "impact": "RDM support is beginning to develop but remains fragmented and unsustainable. Success depends on individual motivation rather than organisational structure.",
+          "criteria": [
+            "**Partial responsibility**: Some staff include RDM-related tasks in their broader roles but it is not their sole focus.",
+            "**Informal practice**: Approaches differ across departments and processes are rarely documented.",
+            "**Low coordination**: Communication between staff performing RDM duties is limited or non-existent.",
+            "**Emerging awareness**: The value of RDM is recognised but roles and priorities are still unclear."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-personnel-3",
+          "order": 3,
+          "title": "There are dedicated DM staff",
+          "impact": "RDM support is consistent and professional, but coordination across the organisation is still limited and services may vary in scope or coverage.",
+          "criteria": [
+            "**Defined roles**: Specific staff have RDM as their primary responsibility, supported by clear job descriptions.",
+            "**Regular support**: RDM staff provide structured support, training and guidance to researchers.",
+            "**Growing collaboration** – Data stewards and related roles begin to share knowledge and align practices."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-personnel-4",
+          "order": 4,
+          "title": "There is a dedicated DM coordination team",
+          "impact": "RDM support is cohesive, sustainable and strategically embedded in the organisation’s research environment. Coordination ensures efficiency, shared learning and long-term institutional growth.",
+          "criteria": [
+            "**Formal structure**: Dedicated RDM staff are organised into a recognised coordination team.",
+            "**Harmonised activities**: Roles, workflows and communication are aligned across departments and services.",
+            "**Strategic role**: The team contributes to policy development, planning and continuous improvement of RDM practices.",
+            "**Embedded culture**: RDM responsibilities are part of institutional strategy and professional development pathways."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates how well RDM services and activities are supported by dedicated personnel within the organisation",
-      "domainLevel": "1"
+      ]
     },
     {
       "domain": "Strategy and sustainability",
+      "domainLevel": "1",
       "indicatorId": "mm-strategy-goals-kpis",
       "indicatorLevel": "1.3",
-      "indicator": "Internal RDM goals and KPIs (operational improvement)",
+      "indicator": "RDM goals and KPIs",
+      "indicatorDescription": "Indicate to what extent goals and KPIs based on the RDM strategy are used to monitor and guide operational improvement",
+      "indicatorLongDescription": "This indicator assesses the extent to which an organisation uses goals and KPIs from its RDM strategy to monitor progress and support improvement. It looks at whether these metrics are clear, regularly reviewed and linked to daily operations. Higher maturity levels show a move from ad hoc or informal tracking to a structured, data-driven approach. This supports accountability, decision making and supports ongoing development of RDM practices.",
       "maturityLevels": [
-        "No RDM goals nor KPIs defined",
-        "RDM goals defined without KPIs",
-        "(Some) RDM goals and KPIs defined (but not monitored)",
-        "RDM goals defined and monitored via KPIs"
+        {
+          "levelId": "mm-strategy-goals-kpis-1",
+          "order": 1,
+          "title": "No RDM goals nor KPIs defined",
+          "impact": "The organisation lacks a clear direction for RDM development. Progress cannot be measured or compared, leading to fragmented efforts and limited strategic growth.",
+          "criteria": [
+            "**No strategic framework**: The organisation has no defined goals or performance indicators related to RDM.",
+            "**Unstructured development**: Activities take place without reference to measurable outcomes or alignment with a broader strategy.",
+            "**No accountability**: There is no mechanism to assess progress, identify gaps or demonstrate improvement.",
+            "**Reactive approach**: Any changes in RDM practice occur in response to immediate issues rather than through planned development."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-goals-kpis-2",
+          "order": 2,
+          "title": "RDM goals defined without KPIs",
+          "impact": "Without measurable indicators, the implementation and impact of the RDM strategy cannot be monitored, evaluated and systematically improved.",
+          "criteria": [
+            "**Strategic intent recognised**: RDM goals are outlined in institutional or organisational strategies but remain high-level and non-measurable.",
+            "**Qualitative orientation**: Goals describe general intentions (e.g., “improve data sharing” or “promote FAIR practices”) without defining concrete success criteria or timelines.",
+            "**No measurement tools**: There are no KPIs or performance metrics to evaluate progress or determine whether goals are being achieved."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-goals-kpis-3",
+          "order": 3,
+          "title": "(Some) RDM goals and KPIs defined (but not monitored)",
+          "impact": "The RDM strategy goals are defined in an unambiguous and measurable way. There is a common monitoring process of RDM strategy implementation between different members, partners and domains.",
+          "criteria": [
+            "**Measurable objectives established**: RDM goals are defined in measurable terms and expressed through specific KPIs.",
+            "**No monitoring process**: While metrics are defined, there is no established mechanism or workflow for tracking progress and evaluating performance.",
+            "**Potential for alignment**: Common goals support coordination between partners and domains, but the absence of monitoring limits shared learning."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-goals-kpis-4",
+          "order": 4,
+          "title": "RDM goals defined and monitored via KPIs",
+          "impact": "A successful RDM culture is developed, progress is monitored and RDM strategy can be appropriately revised.",
+          "criteria": [
+            "**Active monitoring framework**: The RDM strategy includes clear, measurable goals that are regularly tracked through defined KPIs.",
+            "**Integrated reporting**: Results are reviewed at organisational and leadership levels to assess performance and inform strategic decisions.",
+            "**Continuous improvement**: KPI outcomes are used to refine objectives, allocate resources and update the RDM strategy.",
+            "**Evidence-based culture**: Data-driven evaluation supports transparency, accountability, and shared ownership of RDM progress."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicate to what extent goals and KPIs based on the RDM strategy are used to monitor and guide operational improvement",
-      "domainLevel": "1"
+      ]
     },
     {
       "domain": "Strategy and sustainability",
+      "domainLevel": "1",
       "indicatorId": "mm-strategy-policy-adherence",
       "indicatorLevel": "1.4",
-      "indicator": "Adherence to relevant governing RDM policies on international, European, national, local, organisational level",
+      "indicator": "Adherence to policies",
+      "indicatorBriefDescription": "Adherence to relevant governing RDM policies on international, European, national, local, organisational level",
+      "indicatorDescription": "Indicates to what extent the RDM strategy aligns with and adheres to relevant governing policies and guidelines, at institutional, national and international level",
+      "indicatorLongDescription": "This indicator assesses how well the organisation’s RDM practices align with relevant policies and guidelines at the organisational, local, national, European and international levels. It examines whether these policies are understood, translated into practical workflows and supported through guidance and oversight.",
       "maturityLevels": [
-        "Governing policies not taken into consideration",
-        "Governing policies partially taken into consideration",
-        "Governing policies fully taken into consideration"
+        {
+          "levelId": "mm-strategy-policy-adherence-1",
+          "order": 1,
+          "title": "Governing policies not taken into consideration",
+          "impact": "High risk of non-compliance and inconsistent data practices undermines data quality, reuse and responsible research conduct.",
+          "criteria": [
+            "**No systematic alignment**: Research data practices are carried out without awareness of institutional, national or international RDM policies and regulations. Funder mandates, FAIR principles and legal or ethical requirements are not systematically considered.",
+            "**No institutional guidance:** There is no central support, documentation or guidance available to translate external policies and requirements into practical steps for researchers. Researchers rely on personal judgement or ad hoc solutions for daily data management decisions, leading to inconsistent and non-reproducible practices.",
+            "**Lack of oversight:** No mechanisms or workflows exist to verify whether research data practices meet external regulatory or strategic obligations."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-policy-adherence-2",
+          "order": 2,
+          "title": "Governing policies partially taken into consideration",
+          "impact": "Compliance improves in some areas, but inconsistent adoption leads to gaps, duplicated effort and uncertainty for researchers.",
+          "criteria": [
+            "**Basic awareness**: Key external and organisational RDM policies are recognised on an institutional level but not systematically implemented. Some departments or projects implement them (e.g., where required by funders), while others continue to rely on ad hoc practices.",
+            "**Informal translation to practice:** Guidance may exist but is fragmented or not tailored to research workflows. Support staff (e.g., data stewards, ethics committees) may offer advice but processes are not standardised or generically applied.",
+            "**Partial oversight**: Project documentation (e.g., DMPs, ethics applications) may reference and adhere to relevant policies, but review and enforcement inconsistent and lack central coordination."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-policy-adherence-3",
+          "order": 3,
+          "title": "Governing policies fully taken into consideration",
+          "impact": "RDM practices are coherent, compliant and sustainable. They support reliable data reuse, reduced risk and alignment with FAIR principles.",
+          "criteria": [
+            "**Systematic alignment**: Institutional RDM practices and workflows are broadly aligned with relevant policies at organisational, national and international levels.",
+            "**Consistent implementation**: Researchers increasingly follow shared procedures and standards that reflect these policies, though some variations still exist across departments.",
+            "**Supported translation**: Policies are accompanied by practical guidance, examples, checklists and training materials that help staff apply them in daily work. Data stewards and related experts offer coordinated advice to support correct interpretation and application.",
+            "**Clear oversight and feedback**: Basic monitoring (e.g., DMP reviews or repository checks) are in place, and feedback from practice is used to update supporting materials and guidance."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.5",
         "1"
-      ],
-      "indicatorDescription": "Indicates to what extent the RDM strategy aligns with and adheres to relevant governing policies and guidelines, at institutional, national and international level",
-      "domainLevel": "1"
+      ]
     },
     {
       "domain": "Strategy and sustainability",
+      "domainLevel": "1",
       "indicatorId": "mm-strategy-policies-and-procedures",
       "indicatorLevel": "1.5",
       "indicator": "Research data governance: policies and procedures",
+      "indicatorDescription": "Indicates at what level policies on data governance are established and implemented in the organisation",
+      "indicatorLongDescription": "This indicator evaluates the extent to which an organisation has clearly defined, documented and communicated policies and procedures for research data management. It examines how consistently these policies are implemented across the institution, including the availability of support structures, tools and control systems in place.",
       "maturityLevels": [
-        "Minimal or no documented RDM policies and procedures. Individual researchers or departments manage research data independently.",
-        "Some RDM policies and procedures are defined but not yet fully implemented across the organization.",
-        "Well-defined and written RDM policies and processes, supported by technology and formal oversight. A unified approach to research data management in the organisation.",
-        "Proactive, and continuous improvement of well-established research data governance."
+        {
+          "levelId": "mm-strategy-policies-and-procedures-1",
+          "order": 1,
+          "title": "Minimal or no documented RDM policies and procedures. Individual researchers or departments manage research data independently",
+          "impact": "Inconsistent practices and lack of coordination significantly increase compliance risks, lead to duplicated effort, and reduce the likelihood that research data will remain reusable or aligned with FAIR principles over time.",
+          "criteria": [
+            "**Lack of documentation**: There are no formally documented policies or procedures. Individual researchers or groups rely on their own informal protocols.",
+            "**Lack of awareness**: Leadership and researchers have limited understanding of why RDM policies matter or how they support research quality and compliance. Available information is not effectively promoted or communicated.",
+            "**Inconsistent practices**: Data handling methods vary significantly across teams, resulting in fragmented and non-standardised workflows."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-policies-and-procedures-2",
+          "order": 2,
+          "title": "Some RDM policies and procedures are defined but not yet fully implemented across the organization",
+          "impact": "Some progress is visible, but inconsistent implementation still causes gaps and duplication , and limits reliable FAIR data.",
+          "criteria": [
+            "**Implementation hurdles**: The defined RDM policies and procedures are only partially implemented or vary significantly across departments.",
+            "**Awareness**: Limited understanding of RDM principles prevents their consistent adoption across the organisation.",
+            "**Communication gaps**: Existing materials are not well promoted or shared, reducing visibility and impact.",
+            "**Inconsistent support structures**: Support for RDM is not yet standardised. Some departments may have support available, while others rely on ad hoc or informal practices."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-policies-and-procedures-3",
+          "order": 3,
+          "title": "Well-defined and written RDM policies and processes, supported by technology and formal oversight. A unified approach to research data management in the organisation.",
+          "impact": "Tools and coordination help make RDM more consistent, but limited oversight still causes variation and limits how well data can be reused over time.",
+          "criteria": [
+            "**Communication**: Dedicated RDM personnel actively support researchers and help communicate established policies and procedures.",
+            "**Tool support**: Institutional tools and systems are available to support researchers in implementing RDM practices.",
+            "**Oversight**: While formal institution-wide oversight may still be limited, local support structures or review mechanisms provide guidance and feedback."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-policies-and-procedures-4",
+          "order": 4,
+          "title": "Proactive, and continuous improvement of well-established research data governance.",
+          "impact": "Regular reviews and strong alignment reduce overlap and risks, keeping research data reusable and in line with FAIR principles in a sustainable way. .",
+          "criteria": [
+            "**Alignment**: Institutional RDM policies and procedures are fully aligned with national, federal and disciplinary guidelines.",
+            "**Review**: Policies and procedures are regularly reviewed and updated based on technological developments, regulatory changes and user feedback.",
+            "**Personnel**: Dedicated RDM staff actively assess and ensure the continued effectiveness and relevance of RDM practices."
+          ]
+        }
       ],
       "weights": [
         "0.25",
         "0.5",
         "0.75",
         "1"
-      ],
-      "indicatorDescription": "Indicates at what level policies on data governance are established and implemented in the organisation",
-      "domainLevel": "1"
+      ]
     },
     {
       "domain": "Strategy and sustainability",
+      "domainLevel": "1",
       "indicatorId": "mm-strategy-align-with-best-practices",
       "indicatorLevel": "1.6",
-      "indicator": "Organizational RDM efforts align with relevant RDM best practices on international, European, national, local, organisational level (harmonisation)",
+      "indicator": "Align with best practices",
+      "indicatorDescription": "Indicates to what extent the services and activities prioritised in the RDM strategy align and harmonise with externally defined (local, national, international) best practices",
+      "indicatorLongDescription": "This indicator assesses the extent to which RDM services and activities align with best practices and standards at local, national and international levels. It considers whether alignment is proactive and coordinated, or reactive to external requirements. The level of maturity reflects the organisation’s capacity to embed and sustain recognised frameworks within its RDM operations. Such capacity ensures alignment with evolving community standards and actively contributes to a harmonisation of data management practices in research environments.",
       "maturityLevels": [
-        "No consideration",
-        "Some mentioned in strategy",
-        "Networking and alignment actively pursued"
+        {
+          "levelId": "mm-strategy-align-with-best-practices-1",
+          "order": 1,
+          "title": "No consideration",
+          "impact": "RDM efforts remain fragmented and locally focused, limiting adherence to internationally adopted best practices, and alignment with broader research ecosystems.",
+          "criteria": [
+            "**Lack of awareness:** Staff and leadership are not familiar with relevant local, national or international best practices and standards.",
+            "**Isolated approach:** RDM services and activities, where they exist, are developed independently and do not follow established standards or communities consensus on best practices.",
+            "**Inconsistent quality:** Practices vary across departments or projects, leading to duplication of work and inconsistent RDM approaches."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-align-with-best-practices-2",
+          "order": 2,
+          "title": "Some mentioned in strategy",
+          "impact": "Early alignment efforts reduce duplication of work in some areas and demonstrate potential benefits. However, overall progress is inconsistent and relies on personal initiative rather than institutional commitment.",
+          "criteria": [
+            "**Developing alignment:** Awareness of accepted national and international best practices is growing, though implementation is partial or inconsistent.",
+            "**Emerging practices:** Individual departments or units experiment with aligning their workflows to accepted standards (e.g., metadata schemas, FAIR principles), driven by motivated individuals or project requirements."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-align-with-best-practices-3",
+          "order": 3,
+          "title": "Networking and alignment actively pursued",
+          "impact": "RDM activities become coherent and increasingly standardised, strengthening interoperability and compliance with external developments. The organisation is seen as a credible and connected element in the broader research data ecosystem.",
+          "criteria": [
+            "**Networking prioritisation:** The organisation recognises the value of aligning with relevant RDM best practices. Resources are allocated towards active participation in knowledge exchange and improvement of local practices.",
+            "**Participation in development of international standards:** Active engagement in national and international initiatives contributing to the creation or improvement of RDM standards and guidelines.",
+            "**Collaborative improvement:** Continuous feedback loops established through partnerships and networks to align institutional practices with emerging global developments."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.5",
         "1"
-      ],
-      "indicatorDescription": "Indicates to what extent the services and activities prioritised in the RDM strategy align and harmonise with externally defined (local, national, international) best practices",
-      "domainLevel": "1"
+      ]
     },
     {
       "domain": "Strategy and sustainability",
+      "domainLevel": "1",
       "indicatorId": "mm-strategy-funding",
       "indicatorLevel": "1.7",
-      "indicator": "Funding sources for RDM efforts",
+      "indicator": "Funding for RDM",
+      "indicatorDescription": "Indicates the diversity of funding models to support the RDM strategy implementation",
+      "indicatorLongDescription": "This indicator assesses the stability, diversity and sustainability of funding that supports the implementation, maintenance and continuous improvement of RDM services. Maturity reflects the organisation’s capacity to ensure that RDM resources are planned against funding changes.",
       "maturityLevels": [
-        "No specific funding",
-        "Funding from individual grant-based project or minimal stable funding (annual allowance)",
-        "Large stable funding or combination of grant-based and stable funding",
-        "Combination of grant-based, stable funding and detailed cost recovery model"
+        {
+          "levelId": "mm-strategy-funding-1",
+          "order": 1,
+          "title": "No specific funding",
+          "impact": "RDM services are fragmented and inconsistent, with progress depending on individual initiative rather than organisational support.",
+          "criteria": [
+            "**No allocated resources**: RDM activities rely on individual initiative or temporary, ad-hoc arrangements and are performed informally alongside other duties without dedicated support.",
+            "**No budget for infrastructure**: There is no designated funding for RDM tools, infrastructure or staff roles, limiting the ability to establish or maintain services."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-funding-2",
+          "order": 2,
+          "title": "Funding from individual grant-based project or minimal stable funding (annual allowance)",
+          "impact": "Some RDM capabilities exist, but development is limited and continuity is uncertain when project-based funding ends.",
+          "criteria": [
+            "**Project-dependent support** : RDM services or infrastructure are funded primarily through individual project grants or small annual allocations, resulting in variation in service availability depending on active funded projects.",
+            "**Limited continuity**: Funding is temporary, uncertain or insufficient to support growth or long-term planning."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-funding-3",
+          "order": 3,
+          "title": "Large stable funding or combination of grant-based and stable funding",
+          "impact": "RDM support is reliable and sustained, enabling coordinated strategic development and institution-wide adoption of practices.",
+          "criteria": [
+            "**Stable core funding**: Essential RDM services, infrastructure and key staff roles are supported by ongoing institutional funding. Grant-based funding is used to enhance or extend capabilities rather than to sustain core operations.",
+            "**Resilient infrastructure:** Service provision is consistent across the organisation and remains stable even when grant funding changes."
+          ]
+        },
+        {
+          "levelId": "mm-strategy-funding-4",
+          "order": 4,
+          "title": "Combination of grant-based, stable funding and detailed cost recovery model",
+          "impact": "RDM infrastructure is strategically planned, financially sustainable and continuously improved through diversified and resilient funding streams.",
+          "criteria": [
+            "**Sustained core funding**: Stable institutional funding ensures continuity of essential services and staffing.",
+            "**Strategic enhancement**: Grant funding is used proactively to drive innovation, expand capabilities or pilot new services.",
+            "**Cost recovery model**: Service fees or shared-cost models supplement funding, supporting scalability and long-term financial sustainability."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates the diversity of funding models to support the RDM strategy implementation",
-      "domainLevel": "1"
+      ]
     },
     {
       "domain": "Legal and governance",
+      "domainLevel": "2",
       "indicatorId": "mm-legal-framework",
       "indicatorLevel": "2.1",
       "indicator": "Legal framework for research data",
+      "indicatorDescription": "Indicates the maturity of the legal framework for research data, established in the organisation",
+      "indicatorLongDescription": "This indicator assesses the availability and use of standardised frameworks, templates and procedures for legal tasks within the organisation. It evaluates whether legal processes are in place at project initiation, how consistently these processes are supported and how prepared staff are to implement them. The level of maturity reflects the organisation’s capacity to address legal issues proactively through dedicated personnel and well-maintained resources.",
       "maturityLevels": [
-        "Legal processes are ad hoc and reactive, with no standardized framework or templates regarding RDM. Legal tasks are handled informally by various departments. Agreements go through minimal review.",
-        "Standard templates and contractual clauses are being introduced, but not consistently used. The legal department exists but does not yet support project initiation or have fully defined processes for RDM issues.",
-        "The legal framework is well-defined and standardized across the organization. A dedicated personel is responsible for supporting the establishment of a legal framework covering RDM requirements. Comprehensive templates and standardized contractual clauses for RDM issues.",
-        "Continuously improved and optimized legal framework for research data; regularly updated to reflect RDM best practices and regulatory changes. Use of advanced, customizable templates and optimized contractual clauses for RDM issues."
+        {
+          "levelId": "mm-legal-framework-1",
+          "order": 1,
+          "title": "Legal processes are ad hoc and reactive, with no standardized framework or templates regarding RDM. Legal tasks are handled informally by various departments. Agreements go through minimal review.",
+          "impact": "RDM processes and projects are delayed, with no mechanisms in place to mitigate the risk of legal breaches and other potential issues.",
+          "criteria": [
+            "**Reactive:** No specific workflows and templates are defined. Data stewards and/or the legal team become involved only when specifically asked or when there is an immediate need. The way to approach those instances is unclear.",
+            "**Unplanned:** Legal work is carried out on an ad-hoc basis, with tasks distributed informally as needs arise. There is no clear point of contact for specific queries nor specific details about where to find the necessary information, templates or RDM support. Employees and researchers struggle to find support in understanding and navigating legal requirements.",
+            "**Inconsistent delivery:** The support varies in quality and expertise from case to case, and it remains unclear how to ensure compliance with legislation and policies."
+          ]
+        },
+        {
+          "levelId": "mm-legal-framework-2",
+          "order": 2,
+          "title": "Standard templates and contractual clauses are being introduced, but not consistently used. The legal department exists but does not yet support project initiation or have fully defined processes for RDM issues.",
+          "impact": "Progress has been made toward a more consistent legal approach, but the process is still fragmented. Without clear support, key resources may soon be out of date as laws and RDM practices change.",
+          "criteria": [
+            "**Fragments exist:** Elements of a basic legal framework and RDM templates are preserved, available, referenced and in use.",
+            "**Project-driven:** Templates and contractual clauses are developed as required for different projects, but they are used inconsistently across the organisation.",
+            "**Not maintained:** Lack of structure and clarity regarding responsibilities for maintaining and updating these assets as required.",
+            "**Not enforced:** Legal processes are optional, with no institutional mechanisms in place for follow-up,compliance or mandatory implementation."
+          ]
+        },
+        {
+          "levelId": "mm-legal-framework-3",
+          "order": 3,
+          "title": "The legal framework is well-defined and standardized across the organization. A dedicated personnel is responsible for supporting the establishment of a legal framework covering RDM requirements. Comprehensive templates and standardized contractual clauses for RDM issues.",
+          "impact": "A clear and standardised institutional legal framework increases organisational alignment. This will lead to improved compliance, efficiency and reduced risk of fines, legal disputes and reputational damage.",
+          "criteria": [
+            "**Clear framework and alignment:** A comprehensive and well-defined legal framework is established and aligned with the existing frameworks and policies.",
+            "**Standardised processes:** Defined, standardised processes and comprehensive templates are in place and managed by dedicated personnel.",
+            "**Data sensitivity is considered:** Legal requirements reflect data sensitivity and data types, ensuring appropriate handling based on risks.",
+            "**Fragmented implementation and awareness:** Legal processes remain fragmented within individual faculties, laboratories and departments. Systematic and regular training in this area is non-existing or remains limited."
+          ]
+        },
+        {
+          "levelId": "mm-legal-framework-4",
+          "order": 4,
+          "title": "Continuously improved and optimized legal framework for research data; regularly updated to reflect RDM best practices and regulatory changes. Use of advanced, customizable templates and optimized contractual clauses for RDM issues.",
+          "impact": "The legal framework for RDM is improved over time and used consistently across the organisation. This ensures compliance, efficiency, and low risk, supported by well-trained staff.",
+          "criteria": [
+            "**Asset management:** All legal assets (e.g., policies, templates, agreements) are actively and properly managed, maintained and regularly updated.",
+            "**Change management:** Updates are communicated and implemented through well-established change management processes.",
+            "**Comprehensive training:** Regular, targeted and mandatory training covers all legal aspects of the data lifecycle for all relevant personnel (e.g., legal department, data stewards, researchers).",
+            "**Dedicated support:** Full support mechanisms are provided (e.g., ticket systems with progress tracking and defined reaction times, dedicated personnel)."
+          ]
+        }
       ],
       "weights": [
         "0.25",
         "0.5",
         "0.8",
         "1"
-      ],
-      "indicatorDescription": "Indicates the maturity of the legal framework for research data, established in the organisation",
-      "domainLevel": "2"
+      ]
     },
     {
       "domain": "Legal and governance",
+      "domainLevel": "2",
       "indicatorId": "mm-legal-security",
       "indicatorLevel": "2.2",
-      "indicator": "IT security for research data (RD) and associated services",
+      "indicator": "Information security",
+      "indicatorDescription": "Indicates the maturity of IT security for research data, ranging from minimal, reactive protections to certified systems and automated responses",
+      "indicatorLongDescription": "This indicator evaluates the maturity of IT security measures employed to safeguard research data and associated services. It focuses on whether protections are reactive or proactive, how well staff understand and follow security practices, and whether systems are certified, monitored, and continuously improved.",
       "maturityLevels": [
-        "Security measures for RD and services are ad hoc or minimal. There are few or no documented policies and/or procedures. Staff have limited awareness of IT security. Basic protections like antivirus software and standard firewalls are used reactively.",
-        "Implementation of documented policies/procedures for security of RD; regular staff training of recognition and response to cyber threats; access control and password management systems are in place; regular software updates and patches.",
-        "Incident response and disaster recovery plans for RD are in place and tested; proactive security measures, vulnerability testing and assessment; Multi-Factor Authentication (MFA) is enforced for sensitive systems; tools for advanced threat detection and response are in place.",
-        "ISO certification or similar (ISO/ NIST, ...); real-time threat monitoring for RD and automated response mechanisms are in place; regular audits and continuous improvement."
+        {
+          "levelId": "mm-legal-security-1",
+          "order": 1,
+          "title": "Security measures for RD and services are ad hoc or minimal. There are few or no documented policies and/or procedures. Staff have limited awareness of IT security. Basic protections like antivirus software and standard firewalls are used reactively.",
+          "impact": "Research data is at risk from common threats. Security relies on individual vigilance rather than organisational systems.",
+          "criteria": [
+            "**Ad hoc or minimal protections:** Security measures exist but are informal, inconsistent or dependent on individual initiative.",
+            "**Limited awareness:** Staff have a low understanding of IT security risks and responsibilities.",
+            "**Basic tools only:** Antivirus, standard firewalls, and default system protections are applied reactively, with no broader strategy."
+          ]
+        },
+        {
+          "levelId": "mm-legal-security-2",
+          "order": 2,
+          "title": "Implementation of documented policies/procedures for security of RD; regular staff training of recognition and response to cyber threats; access control and password management systems are in place; regular software updates and patches.",
+          "impact": "Security is consistent and reduces common risks, but remains largely ineffective in addressing more sophisticated risks/breach attempts. Staff understand their responsibilities, and basic safeguards are in place.",
+          "criteria": [
+            "**Policies and procedures:** Security measures and procedures for research data are formally documented and applied across the organisation.",
+            "**Staff training:** Regular training sessions on recognising and responding to cyber threats are in place.",
+            "**Access management:** Password policies, user access controls and permissions are used.",
+            "**Regular update:** System and security updates are consistently applied and maintained."
+          ]
+        },
+        {
+          "levelId": "mm-legal-security-3",
+          "order": 3,
+          "title": "Incident response and disaster recovery plans for RD are in place and tested; proactive security measures, vulnerability testing and assessment; Multi-Factor Authentication (MFA) is enforced for sensitive systems; tools for advanced threat detection and response are in place.",
+          "impact": "Research data is actively protected as threats are identified and addressed promptly, and security practices are integrated into daily operations.",
+          "criteria": [
+            "**Incident response:** Response and disaster recovery plans exist and are regularly tested.",
+            "**Proactive security:** Vulnerability assessments, penetration testing, and threat monitoring occur routinely.",
+            "**Advanced protections:** Multi-Factor Authentication (MFA) and advanced detection tools are enforced for sensitive systems."
+          ]
+        },
+        {
+          "levelId": "mm-legal-security-4",
+          "order": 4,
+          "title": "ISO certification or similar (ISO/ NIST, ...); real-time threat monitoring for RD and automated response mechanisms are in place; regular audits and continuous improvement.",
+          "impact": "IT security is robust, proactive, and trusted. Research data protection is embedded into organisational culture, with ongoing monitoring and continuous enhancement.",
+          "criteria": [
+            "**Certification:** Systems are aligned with recognised standards (e.g. ISO 27001, NIST) and are periodically revalidated.",
+            "**Real-time monitoring:** Automated threat detection and response mechanisms are operational.",
+            "**Continuous improvement:** Regular audits, policy updates, and iterative enhancements ensure evolving threats are mitigated."
+          ]
+        }
       ],
       "weights": [
         "0.25",
         "0.5",
         "0.75",
         "1"
-      ],
-      "indicatorDescription": "Indicates the maturity of IT security for research data, ranging from minimal, reactive protections to certified systems and automated responses",
-      "domainLevel": "2"
+      ]
     },
     {
       "domain": "Legal and governance",
+      "domainLevel": "2",
       "indicatorId": "mm-legal-gdpr",
       "indicatorLevel": "2.3",
       "indicator": "Data protection compliancy of research data",
+      "indicatorDescription": "Indicates the level of data protection compliance, the implementation of roles and compliance systems within the organisation",
+      "indicatorLongDescription": "This indicator assesses the level of data protection compliance in an organisation and the implementation of roles and systems that ensure responsible handling of research data. It evaluates how effectively data protection principles are embedded into research data management through the Data Protection Officer and mechanisms such as the Registry of Processing Activities (ROPA), consent management and Data Protection Impact Assessments (DPIAs). Higher maturity levels reflect a shift from reactive compliance toward a systematic,well-governed approach supported by leadership, audits and proactive DPO engagement.",
       "maturityLevels": [
-        "The organisation has a part-time Data Protection Officer (DPO) with general responsibilities (consulting) for RD. Active monitoring for data protection compliance by the DPO. Mostly, there is no standardised framework or templates regarding RDM, and most of the work is reactive.",
-        "Organisation has a full-time DPO. Guidelines, documentations and consultations are actively done by DPO for RD. No procedures in place to involve the DPO.",
-        "Established systems for Data Protection legislation compliance (ROPA, consent management, DPIA, etc.) of RD. No procedures in place to involve the DPO. Sometimes a DPO is involved at the planning stages, but not always.",
-        "Procedures are in place and the organisation is willing and actively involves a DPO at the right stages of the project. The top leaders of the organisation understand the necessity of the DPO and the processes regarding data protection. The organisation does regular auditing (internal or external), and the ongoing evaluation is taking place regarding data protection for RD. Established procedures for the exercise of Data Subject Rights."
+        {
+          "levelId": "mm-legal-gdpr-1",
+          "order": 1,
+          "title": "The organisation has a part-time Data Protection Officer (DPO) with general responsibilities (consulting) for RD. Active monitoring for data protection compliance by the DPO. Mostly, there is no standardised framework or templates regarding RDM, and most of the work is reactive.",
+          "impact": "The researchers can seek legal advice, but the processes for detection of projects that handle personal research data and ensuring compliance are reactive and not established. Compliance depends on individual awareness and ad hoc action.",
+          "criteria": [
+            "**Limited capacity:** The institutional DPO provides general support, with research data being only one of several responsibilities.",
+            "**Reactive approach:** Data protection issues are handled on a case-by-case basis, with little proactive planning or follow-up.",
+            "**Lack of standardisation:** There are no established frameworks, templates or consistent procedures for data protection in RDM.",
+            "**Minimal visibility:** DPO input is often sought only when problems arise rather than during project planning."
+          ]
+        },
+        {
+          "levelId": "mm-legal-gdpr-2",
+          "order": 2,
+          "title": "Organisation has a full-time DPO. Guidelines, documentations and consultations are actively done by DPO for RD. No procedures in place to involve the DPO.",
+          "impact": "Researchers get better support with personal and sensitive data, but they must reach out to the DPO themselves. Without clear procedures, data protection often comes too late to prevent issues.",
+          "criteria": [
+            "**Dedicated expertise:** The organisation employs a dedicated DPO position who provides guidelines, documentation, and consultations for research data activities.",
+            "**Independent operation:** The DPO acts mainly as an advisor rather than an integrated part of RDM planning processes.",
+            "**No formal procedures:** There are no established steps or triggers to involve the DPO systematically in project design or review.",
+            "**Growing awareness:** Staff begin to recognise the DPO’s role, but collaboration remains optional or inconsistent."
+          ]
+        },
+        {
+          "levelId": "mm-legal-gdpr-3",
+          "order": 3,
+          "title": "Established systems for Data Protection legislation compliance (ROPA, consent management, DPIA, etc.) of RD. No procedures in place to involve the DPO. Sometimes a DPO is involved at the planning stages, but not always.",
+          "impact": "Finding projects that handle personal or sensitive data is sporadic but slowly developing. Compliance helps reduce risk, but without regular DPO involvement data protection, RDM practices and ethics are not fully aligned.",
+          "criteria": [
+            "**Irregular DPO engagement:** The DPO is sometimes involved during planning stages but not consistently across all research projects.",
+            "**Partial integration:** Data protection procedures exist but are not yet fully embedded into RDM workflows or project management.",
+            "**Focus on documentation:** Compliance infrastructure is in place, but work is mostly administrative with little collaboration across teams."
+          ]
+        },
+        {
+          "levelId": "mm-legal-gdpr-4",
+          "order": 4,
+          "title": "Procedures are in place and the organisation is willing and actively involves a DPO at the right stages of the project. The top leaders of the organisation understand the necessity of the DPO and the processes regarding data protection. The organisation does regular auditing (internal or external), and the ongoing evaluation is taking place regarding data protection for RD. Established procedures for the exercise of Data Subject Rights.",
+          "impact": "Researchers are familiar with procedures and data protection is embedded in the institutional culture and research workflows. Active DPO engagement lowers risks and demonstrates a mature, accountable organisation.",
+          "criteria": [
+            "**Embedded governance:** The organisation has clear procedures to ensure the DPO is involved at appropriate project stages of the research lifecycle, from planning to data sharing and closure.",
+            "**Leadership commitment:** Senior management actively supports data protection and recognises its strategic importance for responsible research.",
+            "**Rights management procedures:** Established systems ensure timely, transparent and well-documented handling of Data Subject Rights requests."
+          ]
+        }
       ],
       "weights": [
         "0.25",
         "0.5",
         "0.75",
         "1"
-      ],
-      "indicatorDescription": "Indicates the level of data protection compliance, the implementation of roles and compliance systems within the organisation",
-      "domainLevel": "2"
+      ]
     },
     {
       "domain": "Legal and governance",
+      "domainLevel": "2",
       "indicatorId": "mm-legal-ethics",
       "indicatorLevel": "2.4",
-      "indicator": "Ethics / ELSI for research data (regarding animal / human subjects, Nagoya matters)",
+      "indicator": "Ethics",
+      "indicatorBriefDescription": "ELSI for research data (regarding animal / human subjects, Nagoya matters)",
+      "indicatorDescription": "Indicates the level of ethical awareness from minimal considerations to guidelines and standard compliance",
+      "indicatorLongDescription": "This indicator assesses the extent to which ELSI (Ethical, Legal, and Social Issues) principles are integrated into research data management practices. It examines whether ethical considerations are addressed proactively or reactively, the existence and application of institutional guidelines, and the consistency of related procedures such as ethics review, consent, and data handling. The level of maturity reflects the organisation’s ability to promote ethical awareness, provide clear guidance and training, and ensure continuous compliance with established ethical standards.",
       "maturityLevels": [
-        "Ethical considerations for RD are minimal and reactive. There are no formal guidelines or processes for ensuring ethical compliance in research.",
-        "Basic ethical guidelines are established, but not consistently applied. Awareness of ethical issues is growing, and some training is provided.",
-        "Ethical guidelines regarding RD are well-defined and consistently applied. Regular training and monitoring ensure compliance, and there is a clear process for addressing ethical issues.",
-        "Ethical standards regarding RD are fully integrated into the research process. Continuous improvement and proactive measures are in place, with advanced training and robust mechanisms for ensuring ethical integrity."
+        {
+          "levelId": "mm-legal-ethics-1",
+          "order": 1,
+          "title": "Ethical considerations for RD are minimal and reactive. There are no formal guidelines or processes for ensuring ethical compliance in research.",
+          "impact": "Research integrity practices rely heavily on individual initiative, increasing the risk of ethical breaches, participant harm and reputational damage.",
+          "criteria": [
+            "**Reactive:** Ethical questions are addressed only when required by funders or external review boards.",
+            "**Unclear responsibilities:** No designated roles or guidelines exist for managing or advising on ELSI issues in RDM.",
+            "**Limited researcher awareness:** Researchers rely on personal judgment or external requirements to assess ethical implications."
+          ]
+        },
+        {
+          "levelId": "mm-legal-ethics-2",
+          "order": 2,
+          "title": "Basic ethical guidelines are established, but not consistently applied. Awareness of ethical issues is growing, and some training is provided.",
+          "impact": "Ethical awareness is growing, but inconsistency in implementation creates uncertainty and potential compliance gaps.",
+          "criteria": [
+            "**Basic guidance:** Ethical principles for RDM are defined but lack detail and specificity.",
+            "**Fragmented application:** Different parts of the organisation develop their own ethical processes independently, with no centralised system in place.",
+            "**Raising awareness:** Some ethics training sessions are provided, often as part of broader RDM or research integrity training. No specific ethics training is in place, resulting in inconsistent or ad hoc approaches."
+          ]
+        },
+        {
+          "levelId": "mm-legal-ethics-3",
+          "order": 3,
+          "title": "Ethical guidelines regarding RD are well-defined and consistently applied. Regular training and monitoring ensure compliance, and there is a clear process for addressing ethical issues.",
+          "impact": "Ethical standards are integrated into research, ensuring compliance, reducing risk, and improving participant trust.",
+          "criteria": [
+            "**Clear framework and procedures:** Organisational ethics policies cover all stages and most types of research topics.",
+            "**Designated support:** Ethics committees, legal advisors and data stewards work together with each role having specific tasks.",
+            "**Regular training and monitoring:** Researchers and staff receive recurring ethics and ELSI training. Adherence is monitored through reviews and audits."
+          ]
+        },
+        {
+          "levelId": "mm-legal-ethics-4",
+          "order": 4,
+          "title": "Ethical standards regarding RD are fully integrated into the research process. Continuous improvement and proactive measures are in place, with advanced training and robust mechanisms for ensuring ethical integrity.",
+          "impact": "A mature ethics culture fosters trust, transparency, and responsible innovation. Ethical reflection is an integral part of research planning, execution and data stewardship.",
+          "criteria": [
+            "**Regular updates and maintenance:** Ethics and ELSI policies are regularly updated to reflect evolving norms, technologies and societal expectations.",
+            "**Proactive integration:** Ethical review checkpoints are embedded in key processes, including DMPs, data sharing and project registration.",
+            "**Advanced training and reflection:** Regular, targeted and mandatory training encourages reflection on emerging ethical challenges.",
+            "**Continuous improvement:** Feedback loops, monitoring and auditing ensure policies remain relevant and effective."
+          ]
+        }
       ],
       "weights": [
         "0.25",
         "0.5",
         "0.75",
         "1"
-      ],
-      "indicatorDescription": "Indicates the level of ethical awareness from minimal considerations to guidelines and standard compliance",
-      "domainLevel": "2"
+      ]
     },
     {
       "domain": "RDM support",
+      "domainLevel": "3",
       "indicatorId": "mm-support-training",
       "indicatorLevel": "3.1",
       "indicator": "RDM Training",
+      "indicatorDescription": "Indicates how RDM training is organised within the organisation, including the existence, structure, and comprehensiveness",
+      "indicatorLongDescription": "This indicator assesses the availability, structure and sustainability of RDM training within an organisation. It looks at whether training is offered regularly, targeted to specific audiences and supported by institutional resources. Maturity reflects a shift from ad hoc, individual-led efforts to coordinated, ongoing programmes embedded in organisational processes.",
       "maturityLevels": [
-        "No RDM training offered to staff",
-        "Ad-hoc RDM training provided, no or limited targeted approach",
-        "Regular training and/or broad audience reach with targeted contents",
-        "Structured program and train-the-trainer is made available to internal trainers"
+        {
+          "levelId": "mm-support-training-1",
+          "order": 1,
+          "title": "No RDM training offered to staff",
+          "impact": "Skills development absent or inconsistent and largely dependent on individual initiative. Institutional knowledge is easily lost.",
+          "criteria": [
+            "**No planned training:** Sessions are either absent or held only informally and on an irregular basis.",
+            "**No dedicated responsibility:** Responsibility of planning and undertaking the training lies with individuals without a formal mandate.",
+            "**No structure or content:** Materials, if available, are informal, incomplete or lack clear objectives, and are not preserved for future use.",
+            "**No tracking:** Attendance or learning outcomes are not recorded."
+          ]
+        },
+        {
+          "levelId": "mm-support-training-2",
+          "order": 2,
+          "title": "Ad-hoc RDM training provided, no or limited targeted approach",
+          "impact": "Some staff benefit from targeted sessions, but coverage is patchy and momentum is difficult to maintain.",
+          "criteria": [
+            "**Limited scope:** Training takes place occasionally or focuses narrowly on specific tools, policies or projects only.",
+            "**Dependent on short-term effort:** Driven by individual enthusiasm, urgent needs or project funding.",
+            "**Materials not maintained:** Content is often outdated or not systematically shared and preserved.",
+            "**Low visibility:** Awareness among target audiences is limited."
+          ]
+        },
+        {
+          "levelId": "mm-support-training-3",
+          "order": 3,
+          "title": "Regular training and/or broad audience reach with targeted contents",
+          "impact": "Skills and practices are reinforced over time, with training recognised as a standard part of professional development.",
+          "criteria": [
+            "**Recurring schedule:** Training is offered at predictable intervals to defined audiences.",
+            "**Curated materials:** Content is maintained, updated, aligned with recognised standards and, where relevant, connected to complementary resources.",
+            "**Feedback loop:** Participant input is collected and used to refine training.",
+            "**Supported delivery:** A small team or network of trainers shares responsibility."
+          ]
+        },
+        {
+          "levelId": "mm-support-training-4",
+          "order": 4,
+          "title": "Structured program and train-the-trainer is made available to internal trainers",
+          "impact": "Training is a well-established, valued component of research culture, supporting widespread and sustained adoption of RDM best practices.",
+          "criteria": [
+            "**Embedded in workflows:** Training is part of onboarding, doctoral schools or regular staff development.",
+            "**Multiple formats:** Online, in-person, e-learning and blended delivery ensure accessibility.",
+            "**Capacity building:** Train-the-Trainer programmes expand delivery capability for internal trainers.",
+            "**Formal recognition:** Participation counts toward certificates, ECTS or career progression."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates how RDM training is organised within the organisation, including the existence, structure, and comprehensiveness",
-      "domainLevel": "3"
+      ]
     },
     {
       "domain": "RDM support",
+      "domainLevel": "3",
       "indicatorId": "mm-support-training-materials",
       "indicatorLevel": "3.2",
       "indicator": "Availability of RDM training material",
+      "indicatorDescription": "Indicates how RDM training materials are made available within the organisation and beyond, including their accessibility, openness, and visibility",
+      "indicatorLongDescription": "This indicator assesses the availability of RDM training materials, including their accessibility, openness, discoverability, and potential for reuse. It captures whether materials exist, how they are organised, who can access them, and the impact in and/or outside institutions. Availability affects efficiency, consistency, recognition, and alignment with FAIR principles.",
       "maturityLevels": [
-        "Not available",
-        "Available on request",
-        "Accessible to staff and partners only",
-        "Open, multilingual/English and widely promoted"
+        {
+          "levelId": "mm-support-training-materials-1",
+          "order": 1,
+          "title": "Not available",
+          "impact": "Training remains isolated and created just for one occasion. Reuse is impossible, and knowledge is not retained beyond individual sessions. Knowledge sharing relies on the responsibility of participants.",
+          "criteria": [
+            "**No materials produced:** RDM training is delivered without reusable materials. The materials are closed, not openly shared and/or saved.",
+            "**No central storage or access:** Training content is neither archived centrally nor easily discoverable by staff or partners.",
+            "**No discoverability:** Materials are not indexed, linked, or promoted.",
+            "**No reuse intent:** There’s no awareness of licensing or repurposing value."
+          ]
+        },
+        {
+          "levelId": "mm-support-training-materials-2",
+          "order": 2,
+          "title": "Available on request",
+          "impact": "The materials exist but are underutilised. Others cannot find or reuse them without insider knowledge. Visibility remains very low.",
+          "criteria": [
+            "**Ad hoc sharing:** Materials are shared only when someone requests them.",
+            "**Limited and unstructured access:** Training materials are scattered across personal drives or unstructured folders, with no central repository, catalogue, or clear way for staff to locate them.",
+            "**Passive availability:** No central access; staff must know whom to contact to get the training materials.",
+            "**No reuse conditions:** Missing licensing and citation information, or permission guidance.",
+            "**Unrealised openness:** There is intent to share the training materials more widely, but no process is in place."
+          ]
+        },
+        {
+          "levelId": "mm-support-training-materials-3",
+          "order": 3,
+          "title": "Accessible to staff and partners only",
+          "impact": "Training can be reused within the institution, increasing internal efficiency. However, materials remain hidden from the wider research community and do not contribute to broader capacity building.",
+          "criteria": [
+            "**Restricted internal access:** Materials are shared via intranet or internal learning systems and are only available to registered or internal users.",
+            "**Organised access:** Some indexing or archiving exists by course, topic, etc.",
+            "**Partial reuse:** Staff reuse materials for internal sessions or project needs.",
+            "**Minimal metadata:** Files often lack clear licensing, versioning, or authorship.",
+            "**Unclear maintenance:** Updates depend on individual initiative."
+          ]
+        },
+        {
+          "levelId": "mm-support-training-materials-4",
+          "order": 4,
+          "title": "Open, multilingual/English and widely promoted",
+          "impact": "Training materials are reusable and citable, widely visible, and can be shared across institutions and borders, strengthening both adoption and institutional reputation.",
+          "criteria": [
+            "**Open-access platforms:** Content is published on TeSS, GitHub, Zenodo, or similar platforms.",
+            "**Clear licensing:** Reuse is supported through Creative Commons or an equivalent license.",
+            "**Multilingual or English provision:** English versions are provided; local languages may be added upon request.",
+            "**Active promotion:** Channels such as newsletters, training portals, and registries are utilised.",
+            "**Maintained and versioned:** Regular reviews and updates are built into workflows.",
+            "**Indexed and linked:** Content is registered in community platforms or institutional catalogues."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates how RDM training materials are made available within the organisation and beyond, including their accessibility, openness, and visibility",
-      "domainLevel": "3"
+      ]
     },
     {
       "domain": "RDM support",
+      "domainLevel": "3",
       "indicatorId": "mm-support-network",
       "indicatorLevel": "3.3",
-      "indicator": "Framework for different levels (e.g., local, national, international) of networking opportunities for the organizational RDM expertise",
+      "indicator": "Networking engagement",
+      "indicatorDescription": "Indicates how RDM expertise within the organisation is supported through structured networking opportunities at different levels (e.g., local, national, international level)",
+      "indicatorLongDescription": "This indicator assesses whether and how RDM professionals within an organisation are engaged in expert networks (locally, nationally, and internationally) and the extent to which their institution supports their participation. Such networks are vital for sharing expertise, aligning practices, building capacity, and driving collaborative innovation. Support for networking reflects institutional maturity; not just whether individuals participate, but whether such engagement is structurally enabled, resourced, and encouraged.",
       "maturityLevels": [
-        "Only internal interaction - RDM expertise is only shared and accumulated within the organization, i.e., no further networking",
-        "Informal interaction with external RDM experts – Sharing and exchange of RDM expertise is reaching beyond the own institute, but only informally",
-        "Minimal network participation - Formal interaction with external RDM expert network(s) with occasional collaboration with external partners",
-        "Formal support for RDM expert networking participation – Encouragement and/or funds to attend regular forums, meetings, or platforms enable regular collaboration and sharing of RDM expertise"
+        {
+          "levelId": "mm-support-network-1",
+          "order": 1,
+          "title": "Only internal interaction",
+          "briefDescription": "RDM expertise is only shared and accumulated within the organization, i.e., no further networking",
+          "impact": "Expertise remains trapped in silos, leading to inefficiency, low visibility, and limited innovation.",
+          "criteria": [
+            "**No structured participation:** There are no formal connections to RDM networks.",
+            "**Isolation of roles:** Individual RDM staff work alone without peer support.",
+            "**No encouragement from leadership:** Engagement in broader communities is neither valued nor supported.",
+            "**Local-only focus:** Activities stay within institutional boundaries, lacking external visibility."
+          ]
+        },
+        {
+          "levelId": "mm-support-network-2",
+          "order": 2,
+          "title": "Informal interaction with external RDM experts",
+          "briefDescription": "Sharing and exchange of RDM expertise is reaching beyond the own institute, but only informally",
+          "impact": "Informal peer learning exists, but institutional knowledge does not accumulate, nor is it formally documented. Engagement depends on individual initiative.",
+          "criteria": [
+            "**Occasional contact:** Some staff engage with networks informally or at their own initiative.",
+            "**Unstructured and unfunded:** Participation is ad hoc, often in personal time or using project budget.",
+            "**No defined outcomes:** Engagement remains largely passive; institutions do not expect feedback or demonstrable results or outcomes from participation."
+          ]
+        },
+        {
+          "levelId": "mm-support-network-3",
+          "order": 3,
+          "title": "Established network participation",
+          "briefDescription": "Formal interaction with external RDM expert network(s) with occasional collaboration with external partners",
+          "impact": "Service quality and staff development improve, but sustained value still relies on motivated individuals.",
+          "criteria": [
+            "**Recognised engagement:** Network participation is acknowledged and partly supported.",
+            "**Some internal coordination:** Peer groups or contact points exist to track involvement and coordinate participation, ensuring the involvement is monitored and at least partially planned.",
+            "**Emerging value:** Shared learning or updates from network activities begin to inform and improve institutional practices."
+          ]
+        },
+        {
+          "levelId": "mm-support-network-4",
+          "order": 4,
+          "title": "Formal support for RDM expert networking participation",
+          "briefDescription": "Encouragement and/or funds to attend regular forums, meetings, or platforms enable regular collaboration and sharing of RDM expertise",
+          "impact": "Networking becomes a strategic tool for institutional learning and leadership in the wider RDM ecosystem.",
+          "criteria": [
+            "**Structural enablement:** Time, travel, and budget are formally allocated for participation in networks.",
+            "**Embedded strategy:** Policies or expectations guide consistent network engagement.",
+            "**Feedback and recognition:** Network insights are integrated, and contributions are valued in roles and reviews."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates how RDM expertise within the organisation is supported through structured networking opportunities at different levels (e.g., local, national, international level)",
-      "domainLevel": "3"
+      ]
     },
     {
       "domain": "RDM support",
+      "domainLevel": "3",
       "indicatorId": "mm-support-guidelines-researchers",
       "indicatorLevel": "3.4",
       "indicator": "RDM information / guidelines for researchers",
+      "indicatorDescription": "Indicates how clearly RDM information and guidelines are communicated to researchers, and whether they are centralised, maintained, and actively shared",
+      "indicatorLongDescription": "This indicator assesses whether researchers can easily find, understand, and rely on written RDM guidance. It considers the visibility, clarity, maintenance, and communication of materials such as policies, DMP templates, metadata standards, file naming conventions, and consent procedures. The focus is not on service provision and supporting infrastructure, nor on communication and responsiveness, but on whether guidance is available, usable, and discoverable without having to ask.",
       "maturityLevels": [
-        "None",
-        "Unclear and hard to find – Information is scattered or outdated; staff don’t know where to look",
-        "Partially available – Some centralised sources exist and are occasionally updated; visibility varies",
-        "Clearly visible and maintained – There are accessible, up-to-date sources that are actively shared across the organisation"
+        {
+          "levelId": "mm-support-guidelines-researchers-1",
+          "order": 1,
+          "title": "None",
+          "impact": "Researchers work without clear direction, leading to inconsistent practice, duplicated effort, and non-compliance.",
+          "criteria": [
+            "**No written RDM guidance:** Materials are not available or easily findable.",
+            "**No central location:** There are no links to internal or external resources.",
+            "**No practical materials:** Templates, examples, and step-by-step instructions are missing.",
+            "**No support system in place:** Researchers rely entirely on informal, ad hoc peer-to-peer support."
+          ]
+        },
+        {
+          "levelId": "mm-support-guidelines-researchers-2",
+          "order": 2,
+          "title": "Unclear and hard to find",
+          "briefDescription": "Information is scattered or outdated; staff don’t know where to look",
+          "impact": "Resources remain underused or distrusted, resulting in avoidable demands on staff time.",
+          "criteria": [
+            "**Scattered guidance:** Guidance materials exist but are scattered across multiple locations.",
+            "**Outdated content:** Materials are outdated or incomplete.",
+            "**No ownership/responsibility:** Responsibility for updates and quality control is not defined/assigned.",
+            "**Limited scope:** Coverage is limited to a few topics, often in inaccessible language."
+          ]
+        },
+        {
+          "levelId": "mm-support-guidelines-researchers-3",
+          "order": 3,
+          "title": "Partially available",
+          "briefDescription": "Some centralised sources exist and are occasionally updated; visibility varies",
+          "impact": "Researchers can find some guidance, but gaps and irregular updates limit trust and uptake.",
+          "criteria": [
+            "**Central entry point:** A central hub exists, covering key RDM topics.",
+            "**Irregular updates:** Updates of the materials happen occasionally, but without a fixed schedule.",
+            "**Uneven coverage:** Coverage of RDM topics is uneven, with some topics missing or underdeveloped.",
+            "**Partial integration:** Guidance is occasionally referenced in training or onboarding."
+          ]
+        },
+        {
+          "levelId": "mm-support-guidelines-researchers-4",
+          "order": 4,
+          "title": "Clearly visible and maintained",
+          "briefDescription": "There are accessible, up-to-date sources that are actively shared across the organisation",
+          "impact": "Researchers encounter trusted, relevant, and well-maintained guidance early and often, reducing reliance on ad hoc support and enabling consistent good practice.",
+          "criteria": [
+            "**Comprehensive platform:** A single, well-structured platform or site covers the full research lifecycle.",
+            "**Regularly updated:** Guidance is regularly updated, timestamped, and versioned on a set schedule.",
+            "**Active promotion:** Information is actively promoted across multiple institutional channels.",
+            "**Integrated access:** Linked from library, ethics, IT, and research portals for maximum visibility."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates how clearly RDM information and guidelines are communicated to researchers, and whether they are centralised, maintained, and actively shared",
-      "domainLevel": "3"
+      ]
     },
     {
       "domain": "RDM support",
+      "domainLevel": "3",
       "indicatorId": "mm-support-communication",
       "indicatorLevel": "3.5",
       "indicator": "Flow of RDM communication and responsiveness",
+      "indicatorDescription": "Indicates how well communication about data management is maintained within the organisation, particularly the extent to which it is consultive, interactive, responsive, and fosters dialogue",
+      "indicatorLongDescription": "This indicator assesses how well RDM communication works across an organisation. It focuses on whether researchers can ask questions, provide feedback, and receive timely, useful answers. The level of maturity reflects a shift from one-way announcements to open, two-way exchange supported by visible and trusted RDM staff.",
       "maturityLevels": [
-        "One-way and slow – Information is shared top-down only; feedback is rare or unanswered",
-        "Some feedback and interaction – Staff can ask questions or raise issues, but response time and engagement vary",
-        "Responsive and two-way – Communication is timely and interactive, with active listening and feedback loops in place"
+        {
+          "levelId": "mm-support-communication-1",
+          "order": 1,
+          "title": "One-way and slow",
+          "briefDescription": "Information is shared top-down only; feedback is rare or unanswered",
+          "impact": "Communication is passive and untrusted. Researchers work in isolation and remain unaware of available support.",
+          "criteria": [
+            "**Top-down communication:** Information is shared without space for feedback.",
+            "**No designated contact:** Researchers do not know where to direct their questions.",
+            "**Little or no follow-up:** Feedback is rare or unanswered.",
+            "**Invisible support:** RDM staff are unknown or disconnected from research activities."
+          ]
+        },
+        {
+          "levelId": "mm-support-communication-2",
+          "order": 2,
+          "title": "Some feedback and interaction",
+          "briefDescription": "Staff can ask questions or raise issues, but response time and engagement vary",
+          "impact": "Communication is possible but inconsistent. Responses depend on individuals rather than an organised system.",
+          "criteria": [
+            "**Partial feedback loop:** Questions or comments are possible but not always addressed.",
+            "**Inconsistent response:** Quality and speed of replies vary.",
+            "**Informal structure:** Communication depends on personal contacts or individual effort.",
+            "**Limited visibility:** Existing channels are not well-known or regularly used."
+          ]
+        },
+        {
+          "levelId": "mm-support-communication-3",
+          "order": 3,
+          "title": "Responsive and two-way",
+          "briefDescription": "Communication is timely and interactive, with active listening and feedback loops in place",
+          "impact": "Communication is open and trusted. RDM becomes part of daily research practice, and feedback helps shape continuous improvement.",
+          "criteria": [
+            "**Dedicated communication channels:** Helpdesks, shared inboxes, or office hours are available and easy to access.",
+            "**Consistent follow-up:** Questions are logged, answered, and revisited when needed.",
+            "**Visible and active RDM staff:** Data stewards take part in meetings, training, and onboarding.",
+            "**Feedback integration:** User input results in updates in guidance, templates, or services."
+          ]
+        }
       ],
       "weights": [
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates how well communication about data management is maintained within the organisation, particularly the extent to which it is consultive, interactive, responsive, and fosters dialogue",
-      "domainLevel": "3"
+      ]
     },
     {
       "domain": "RDM support",
+      "domainLevel": "3",
       "indicatorId": "mm-support-services",
       "indicatorLevel": "3.6",
-      "indicator": "Formalization of support for RDM services (e.g., tools as service, and similar)",
+      "indicator": "RDM services",
+      "indicatorDescription": "Indicates how RDM service support is organised and delivered, including whether it is documented and integrated with institutional infrastructure",
+      "indicatorLongDescription": "This indicator assesses how well RDM services are established, documented and supported across the organisation. It considers whether researchers can rely on consistent, connected tools and processes throughout the data lifecycle. Maturity increases as institutions move from ad hoc, isolated services to coordinated and professionally managed infrastructures.",
       "maturityLevels": [
-        "Services present but only informally supported",
-        "Services formally supported and documented",
-        "Professional service provision with ticketing system, usage agreements, formal documents, templates, etc; relevant services are integrated with each other"
+        {
+          "levelId": "mm-support-services-1",
+          "order": 1,
+          "title": "Services present but only informally supported",
+          "impact": "Service quality is uneven and researchers risk losing data or duplicating work.",
+          "criteria": [
+            "**Fragmented coverage:** Some services, such as storage or data transfer, exist but they are disconnected and inconsistent. The complete infrastructure to support the entire data lifecycle is missing.",
+            "**No clear ownership:** Responsibilities are undefined, and documentation is missing or outdated.",
+            "**Ad hoc support:** Researchers depend on colleagues or trial-and-error to solve issues."
+          ]
+        },
+        {
+          "levelId": "mm-support-services-2",
+          "order": 2,
+          "title": "Services formally supported and documented",
+          "impact": "Services are visible and documented, but coverage and coordination remain limited. Researchers know where to go for help, yet support may rely on individual initiative.",
+          "criteria": [
+            "**Defined responsibilities:** Each service has an identified owner and a basic governance structure.",
+            "**Documented procedures:** Working instructions, templates and how-to guides are available and up to date.",
+            "**Formal access to support:** Users can report issues or request help through an established contact or channel."
+          ]
+        },
+        {
+          "levelId": "mm-support-services-3",
+          "order": 3,
+          "title": "Professional service provision with ticketing system, usage agreements, formal documents, templates, etc; relevant services are integrated with each other",
+          "impact": "The RDM infrastructure is reliable, trusted and sustainable. Researchers obtain consistent, well-managed support throughout the data lifecycle.",
+          "criteria": [
+            "**Structured governance:** Roles, workflows, and accountability are clear and coordinated.",
+            "**Connected systems:** Key services (e.g., storage, metadata, preservation and sharing) work together under a shared framework.",
+            "**Continuous improvement:** Feedback, ticketing and usage data inform regular updates and staff planning."
+          ]
+        }
       ],
       "weights": [
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates how RDM service support is organised and delivered, including whether it is documented and integrated with institutional infrastructure",
-      "domainLevel": "3"
+      ]
     },
     {
       "domain": "Data and metadata management",
+      "domainLevel": "4",
       "indicatorId": "mm-data-resources",
       "indicatorLevel": "4.1",
       "indicator": "RDM software and resources used by end-users",
+      "indicatorDescription": "Indicates RDM software tools and resources provided by the organisation",
+      "indicatorLongDescription": "This indicator assesses the extent to which RDM is supported by institutionally provided or recommended software, platforms and resources. It considers whether tools are recommended, documented, supported and consistently adopted by end users across the organisation and whether researchers have clear guidance on how to select and use them.",
       "maturityLevels": [
-        "No software or resources for data management present or recommended",
-        "Reference to generic software and resources",
-        "Software and guidelines provided and documented for researchers / relevant groups / relevant RDM processes",
-        "Software and guidelines adopted by researchers / relevant groups / relevant RDM processes"
+        {
+          "levelId": "mm-data-resources-1",
+          "order": 1,
+          "title": "No software or resources for data management present or recommended",
+          "impact": "RDM practices are inconsistent, fragmented and highly dependent on individual preferences for software and resources, leading to duplication of effort.",
+          "criteria": [
+            "**No ecosystem provided**: The organisation does not offer or coordinate RDM-related software or tools. Researchers independently choose their own solutions, and knowledge is not shared across the institution.",
+            "**No recommended systems**: There is no curated list of approved, supported, or preferred tools or resources for managing research data."
+          ]
+        },
+        {
+          "levelId": "mm-data-resources-2",
+          "order": 2,
+          "title": "Reference to generic software and resources",
+          "impact": "Although some solutions exist, the lack of structured guidance leads to uneven usage and uncertainty about appropriate and secure tool choices.",
+          "criteria": [
+            "**Ad hoc recommendations**: The organisation references general or widely known tools (such as GitHub) without offering guidance tailored to research data workflows.",
+            "**Limited support**: Tools are known but not centrally managed, evaluated or supported. Researchers are responsible for selecting, configuring and maintaining them independently."
+          ]
+        },
+        {
+          "levelId": "mm-data-resources-3",
+          "order": 3,
+          "title": "Software and guidelines provided and documented for researchers / relevant groups / relevant RDM processes",
+          "impact": "Researchers can follow consistent and well-documented guidelines, improving efficiency, data quality and compliance across projects.",
+          "criteria": [
+            "**Institutionally supported tools**: The organisation provides or licenses specific RDM tools, platforms or services (e.g., institutional storage, ELNs, repositories) that are recognised as relevant across organisations.",
+            "**Documented guidance**: Clear instructions, use cases and guidelines describe how these tools should be used in relevant research workflows.",
+            "**Targeted support:** Data stewards or IT/RDM support teams assist with tool onboarding and troubleshooting."
+          ]
+        },
+        {
+          "levelId": "mm-data-resources-4",
+          "order": 4,
+          "title": "Software and guidelines adopted by researchers / relevant groups / relevant RDM processes",
+          "impact": "RDM workflows are efficient, coordinated and sustainable, supporting the production of high-quality and reusable data.",
+          "criteria": [
+            "**Consistent adoption**: Institutionally recommended RDM tools and platforms are widely used and embedded in research workflows across departments.",
+            "**Integration**: Tools and resources are interoperable and linked across the data life cycle.",
+            "**Continuous improvement**: Tools, resources and guidance are regularly reviewed and upgraded based on new releases, emerging alternatives, researcher needs and evolving best practices.",
+            "**Ownership:** Each tool or service has a designated responsible owner to ensure maintenance and support."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates RDM software tools and resources provided by the organisation",
-      "domainLevel": "4"
+      ]
     },
     {
       "domain": "Data and metadata management",
+      "domainLevel": "4",
       "indicatorId": "mm-data-standards-rdm",
       "indicatorLevel": "4.2",
       "indicator": "Research data organisation standards",
+      "indicatorDescription": "Indicates the presence and adoption of RD standards, best practices and guidelines provided by the organisation",
+      "indicatorLongDescription": "This indicator assesses the existence, quality and practical use of guidelines or standards of how research data should be structured or organised. It includes file naming conventions, folder structures, metadata, version control and documentation. It also considers whether these are defined, communicated and consistently applied. The level of maturity reflects how effectively these standards are integrated into daily research and project management, from individual habits to systematic and institution-wide application.",
       "maturityLevels": [
-        "No standard present or recommended",
-        "Reference to generic best practices",
-        "Guidelines / standards provided and documented for researchers / relevant groups / relevant RDM processes",
-        "Guidelines / standards adopted by researchers / relevant groups / relevant RDM processes"
+        {
+          "levelId": "mm-data-standards-rdm-1",
+          "order": 1,
+          "title": "No standard present or recommended",
+          "impact": "Data are inconsistently organised and often difficult to interpret or reuse. This results in data of limited quality, usability, reproducibility and discoverability for research purposes.",
+          "criteria": [
+            "**Unstructured**: Research data are stored according to individual habits without shared principles or conventions.",
+            "**Inconsistent**: File naming, documentation and folder structures vary between researchers and projects, making data difficult to understand, navigate or reuse.",
+            "**Lack of awareness**: Researchers are unaware of existing best practices for organising research data."
+          ]
+        },
+        {
+          "levelId": "mm-data-standards-rdm-2",
+          "order": 2,
+          "title": "Reference to generic best practices",
+          "impact": "Some improvements in data organisation appear, but practices remain inconsistent and dependent on individual initiative rather than institutional support.",
+          "criteria": [
+            "**Basic awareness**: RDM personnel recognise the importance of research data organisation standards. General recommendations and external resources (e.g., FAIR principles) are known and occasionally shared, but guidance remains broad and not domain-specific.",
+            "**Non-specific**: No organisation’s standards or templates exist.",
+            "**Limited implementation**: Adoption of practices is voluntary and varies greatly between individuals or research groups."
+          ]
+        },
+        {
+          "levelId": "mm-data-standards-rdm-3",
+          "order": 3,
+          "title": "Guidelines / standards provided and documented for researchers / relevant groups / relevant RDM processes",
+          "impact": "Data management becomes more consistent across projects. However, adoption remains partial and is contingent upon researcher engagement.",
+          "criteria": [
+            "**Clear guidance**: Institutional or departmental guidelines for research data organisation are documented, publicly available and tailored to disciplinary contexts.",
+            "**Structured approach**: Templates, examples and recommendations cover key aspects, including folder hierarchy, file naming, metadata and version control.",
+            "**Supported by training**: Awareness and use of standards are promoted through RDM training, consultation and/or onboarding."
+          ]
+        },
+        {
+          "levelId": "mm-data-standards-rdm-4",
+          "order": 4,
+          "title": "Guidelines / standards adopted by researchers / relevant groups / relevant RDM processes",
+          "impact": "Standards are widely adopted and seamlessly integrated into research workflows, increasing interoperability, automation and reproducibility. Data remain well-organised, accessible and reusable over time, ensuring compliance with FAIR principles.",
+          "criteria": [
+            "**Integrated into workflows**: Data organisation standards are embedded in research processes, supported by tools, automation and infrastructure where relevant.",
+            "**Continuous improvement**: Guidelines are periodically reviewed and updated to reflect best practices, domain-specific needs and user feedback.",
+            "**Supported by training**: Staff and researchers receive regular refresher training to ensure the consistent application of standards."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates the presence and adoption of RD standards, best practices and guidelines provided by the organisation",
-      "domainLevel": "4"
+      ]
     },
     {
       "domain": "Data and metadata management",
+      "domainLevel": "4",
       "indicatorId": "mm-data-standards-documentation",
       "indicatorLevel": "4.3",
       "indicator": "Documentation standards",
+      "indicatorDescription": "Indicates the presence and adoption of DM documentation standards, best practices and guidelines provided by the organisation",
+      "indicatorLongDescription": "This indicator assesses the presence and adoption of data management documentation standards, best practices and guidelines provided by the organisation. It evaluates how systematically documentation requirements are defined, communicated and implemented across research activities.",
       "maturityLevels": [
-        "No standard present or recommended",
-        "Reference to generic best practices",
-        "Guidelines / standards provided and documented for researchers / relevant groups / relevant RDM processes",
-        "Guidelines / standards adopted by researchers / relevant groups / relevant RDM processes"
+        {
+          "levelId": "mm-data-standards-documentation-1",
+          "order": 1,
+          "title": "No standard present or recommended",
+          "briefDescription": "No documentation standards present or recommended",
+          "impact": "Documentation practices are ad hoc and inconsistent, leading to loss of information, limited reproducibility and minimal institutional oversight of research data quality.",
+          "criteria": [
+            "**Absence of guidance**: No formal or informal documentation standards, templates or institutional guidelines exist.",
+            "**Individual** **practice**: Documentation is left to the discretion of individual researchers or groups, often varying widely in quality and format.",
+            "**Inconsistency**: Information about data, methods and analyses is recorded sporadically or incompletely, making verification or reuse difficult.",
+            "**Lack** **of** **awareness**: There is little or no understanding within the organisation of the importance of systematic documentation for research integrity or FAIR data management."
+          ]
+        },
+        {
+          "levelId": "mm-data-standards-documentation-2",
+          "order": 2,
+          "title": "Reference to generic best practices",
+          "impact": "Awareness of documentation good practice begins to emerge, but materials remain generic and inconsistently applied, limiting their usefulness and integration into daily research workflows.",
+          "criteria": [
+            "**Generic guidance:** Documentation standards or guidelines exist but remain broad and unspecialised. They refer to general RDM principles (e.g., FAIR) and use non-domain-specific terminology without concrete examples relevant to particular research contexts or disciplines.",
+            "**Reactive development:** Guidance is often provided in response to external requirements rather than proactively maintained (e.g., from a research council as a condition for funding).",
+            "**Inconsistent delivery:** The quality and content may vary depending on who provides the training or support.",
+            "**Unclear responsibility**: Guidance may be developed or delivered by individuals without broad RDM knowledge or general data managers lacking domain-specific expertise."
+          ]
+        },
+        {
+          "levelId": "mm-data-standards-documentation-3",
+          "order": 3,
+          "title": "Guidelines / standards provided and documented for researchers / relevant groups / relevant RDM processes",
+          "impact": "Documentation practices become consistent and reliable across the organisation, improving clarity, reproducibility and alignment with domain-specific RDM processes.",
+          "criteria": [
+            "**Domain-specific guidance**: Documentation standards are tailored to particular subjects or domains, using relevant domain-specific terminology and practical examples (e.g., example of writing data dictionaries for health research).",
+            "**Proactive and targeted**: Guidance is developed in advance and made available at project start, communicated to the relevant audiences such as departments or research groups.",
+            "**Defined responsibility**: Specific individuals or teams are assigned to maintain and disseminate documentation within their domain or department (e.g., institute or group level data managers).",
+            "**Limited revision**: Documentation exists as a fixed reference and is not yet routinely updated in response to user feedback or changing needs."
+          ]
+        },
+        {
+          "levelId": "mm-data-standards-documentation-4",
+          "order": 4,
+          "title": "Guidelines / standards adopted by researchers / relevant groups / relevant RDM processes",
+          "criteria": [
+            "**Broad adoption**: Documentation has wide awareness and best practices are applied. The material is written with clearly defined target audiences in mind (e.g., collaborators, departments, external bodies, industry partners).",
+            "**Communication**: The existence of the documentation is proactively communicated to the appropriate audiences (e.g., targeted emails to researchers and other relevant parties).",
+            "**Awareness**: Target audiences understand both the purpose and relevance of the documentation as well as the challenges, processes and expectations that it is relevant to.",
+            "**Live documents**: Documentation is regularly reviewed and updated in response to user feedback, evolving practices and emerging requirements."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates the presence and adoption of DM documentation standards, best practices and guidelines provided by the organisation",
-      "domainLevel": "4"
+      ]
     },
     {
       "domain": "Data and metadata management",
+      "domainLevel": "4",
       "indicatorId": "mm-data-infrastructure",
       "indicatorLevel": "4.4",
       "indicator": "Technical research infrastructure",
+      "indicatorDescription": "Indicates the presence, maturity and adoption of the techincal infrastructure provided by the organisation",
+      "indicatorLongDescription": "This indicator assesses the availability, integration and reliability of technical infrastructure supporting research data management across the data life cycle. It covers the hardware, software and digital environments used for data ingestion, analysis, storage, archiving and sharing. Maturity reflects the organisation’s capacity to provide secure, interoperable and FAIR-aligned systems that enable automation, reproducibility, and long-term stewardship through standardised procedures and usage guidelines.",
       "maturityLevels": [
-        "No technical infrastructure for research / RDM is available",
-        "Technical infrastructure for research / RDM is available; general usage recommendation",
-        "Technical infrastructure for research / RDM facilitates data handling along the research data life cycle; more specific usage recommendations",
-        "Usage guidelines (and/or SOPs) and automated processes are present in the technical infrastructure for research / RDM regarding, e.g., storage conditions, archiving rules, deletion rules"
+        {
+          "levelId": "mm-data-infrastructure-1",
+          "order": 1,
+          "title": "No technical infrastructure for research / RDM is available",
+          "impact": "No specific guidance is available to help researchers with data management. Data are vulnerable to loss, corruption or misuse. Collaboration is inefficient, and achieving compliance with data security or FAIR principles is challenging.",
+          "criteria": [
+            "**Fragmented**: There is no centralised or institutional infrastructure supporting research or RDM. Researchers rely on personal devices or ad hoc solutions.",
+            "**Independent data handling**: Data are stored locally or on external drives, shared informally via email or portable media.",
+            "**Lack of protection**: No formal security measures are in place.",
+            "**Undefined**: There are no defined processes or best practices for backup, versioning or long-term archiving."
+          ]
+        },
+        {
+          "levelId": "mm-data-infrastructure-2",
+          "order": 2,
+          "title": "Technical infrastructure for research / RDM is available; general usage recommendation",
+          "impact": "Researchers have access to basic infrastructure but lack clear guidance or enforcement. Data remains inconsistently managed and difficult to find or reuse.",
+          "criteria": [
+            "**Basic availability**: Institutional or cloud-based storage solutions and recommendations are available.",
+            "**Basic backup and storage**: Storage spaces with automated backup exist, but are inconsistently utilised. Data retention and archiving remain largely manual.",
+            "**Minimal standardisation**: Metadata and file organisation practices vary widely; only basic sharing and versioning options are available.",
+            "**Emerging security**: Security and access control rely mainly on passwords, with limited compliance checks."
+          ]
+        },
+        {
+          "levelId": "mm-data-infrastructure-3",
+          "order": 3,
+          "title": "Technical infrastructure for research / RDM facilitates data handling along the research data life cycle; more specific usage recommendations",
+          "impact": "Data management becomes more efficient and secure. Infrastructure supports compliance with institutional and external standards, and researchers increasingly follow consistent RDM practices.",
+          "criteria": [
+            "**Lifecycle support**: Infrastructure facilitates storage, sharing, curation and archiving across the full data lifecycle.",
+            "**Improved reliability**: Automated backups, redundancy systems and access controls with encryption ensure data protection.",
+            "**Structured organisation**: Comprehensive metadata and indexing improve findability and accessibility.",
+            "**Integrated processes**: Platforms are linked with research tools, and procedures follow established data management guidelines."
+          ]
+        },
+        {
+          "levelId": "mm-data-infrastructure-4",
+          "order": 4,
+          "title": "Usage guidelines (and/or SOPs) and automated processes are present in the technical infrastructure for research / RDM regarding, e.g., storage conditions, archiving rules, deletion rules",
+          "impact": "RDM infrastructure is robust, interoperable and FAIR-compliant. Automated processes reduce errors, ensure compliance and enable efficient long-term data stewardship across the organisation.",
+          "criteria": [
+            "**Integrated and automated systems**: The technical infrastructure encompasses the entire RDM workflow, featuring automation for storage, archiving and deletion in accordance with institutional policies.",
+            "**Standardised and enforced**: Metadata and data organisation standards are enforced through built-in mechanisms and audit trails.",
+            "**Secure and compliant**: Continuous compliance monitoring, encrypted storage and traceable access management are in place.",
+            "**Guided and supported use**: Clear usage guidelines and SOPs are embedded in systems, supported by training and user documentation."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates the presence, maturity and adoption of the techincal infrastructure provided by the organisation",
-      "domainLevel": "4"
+      ]
     },
     {
       "domain": "Data and metadata management",
+      "domainLevel": "4",
       "indicatorId": "mm-data-publication",
       "indicatorLevel": "4.5",
       "indicator": "Research data publication",
+      "indicatorDescription": "Indicates organisation provided guidelines, best practices, standards and support for RD publications and the level of adoption by end users",
+      "indicatorLongDescription": "This indicator assesses the organisation's readiness and capacity to provide guidelines, standards and best practices for the publication of research data. It also considers the availability of support mechanisms such as training, consultancy or infrastructure that enable researchers to make their data discoverable, accessible and reusable.",
       "maturityLevels": [
-        "No guideline present or recommended for research data publication",
-        "Reference to generic best practices of research data publication",
-        "Specific guidelines and standards are provided regarding data and metadata",
-        "Research data publication follows a standardized, documented process and support is available"
+        {
+          "levelId": "mm-data-publication-1",
+          "order": 1,
+          "title": "No guideline present or recommended for research data publication",
+          "impact": "Research data publication practices are inconsistent and ad hoc, leading to low visibility, limited reuse and potential non-compliance with funder or policy requirements.",
+          "criteria": [
+            "**No guidelines:** Researchers and staff handling research data have no clear directions on preferred ways for research data publication, licensing and other questions.",
+            "**No dedicated staff:** There is no dedicated staff to advise and support researchers with preparing research data for publishing and choosing appropriate channels."
+          ]
+        },
+        {
+          "levelId": "mm-data-publication-2",
+          "order": 2,
+          "title": "Reference to generic best practices of research data publication",
+          "impact": "Researchers have access to basic external resources but lack practical and context-specific support. Data publication quality and compliance vary and FAIR principles are not consistently applied.",
+          "criteria": [
+            "**Some guidelines exist:** Institutional web pages mention research data publishing and provide links to external resources available for interested researchers and staff.",
+            "**No clear best practice guidance:** While staff is aware of the topic, the in-house know-how is limited and support on specific questions researchers may have is still not available."
+          ]
+        },
+        {
+          "levelId": "mm-data-publication-3",
+          "order": 3,
+          "title": "Specific guidelines and standards are provided regarding data and metadata",
+          "impact": "Researchers receive clear and practical advice on metadata, citation, licensing and access. They can publish data with greater confidence and consistency. This leads to higher data quality, improved discoverability and better alignment with FAIR and legal standards.",
+          "criteria": [
+            "**Clear guidelines exist:** The minimal required metadata for describing research data are clearly defined. Guidance is available for selecting suitable repositories for data publication. The criteria for choosing appropriate licences are described in a clear and actionable way.",
+            "**Practical support:** Practical support is available to researchers. Data stewards or other support staff have sufficient expertise in publishing research data and can advise researchers effectively.",
+            "**Institutional collaboration:** Networks and mechanisms are in place to support researchers working with personal or sensitive data. These structures help them navigate publisher and funder requirements while ensuring data subject rights where relevant."
+          ]
+        },
+        {
+          "levelId": "mm-data-publication-4",
+          "order": 4,
+          "title": "Research data publication follows a standardized, documented process and support is available",
+          "impact": "Research data publication is consistent, reliable and compliant with institutional, legal and FAIR standards. Data are citable, discoverable and reusable, strengthening the organisation’s contribution to open and transparent research.",
+          "criteria": [
+            "**Standardised process:** Research data publication follows a documented institutional workflow that integrates key elements such as citation via personal identifiers, repository selection, metadata validation, licensing and long-term preservation.",
+            "**Comprehensive support:** Dedicated RDM and legal staff provide hands-on assistance through the publication lifecycle, from planning and preparing data according to the DMP to ensuring that permissions, ethical considerations and licensing requirements are met.",
+            "**Quality assurance:** Established review and validation procedures ensure data quality, interoperability (through standard formats and ontologies) and legal compliance. Access types and retention periods are systematically managed."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates organisation provided guidelines, best practices, standards and support for RD publications and the level of adoption by end users",
-      "domainLevel": "4"
+      ]
     },
     {
       "domain": "Data and metadata management",
+      "domainLevel": "4",
       "indicatorId": "mm-data-assets",
       "indicatorLevel": "4.6",
       "indicator": "Catalog of data assets",
+      "indicatorDescription": "Indicates the presence and maturity of a centralized catalog of data assets provided by the organisation",
+      "indicatorLongDescription": "This indicator assesses the establishment, completeness and interoperability of a catalog that records research assets through structured metadata. Research assets include, e.g., datasets, protocols, software, data management plans, strategies and documentation. Maturity reflects the organisation’s capacity to ensure that data assets are systematically described, discoverable and maintained through standardised and sustainable cataloging practices.",
       "maturityLevels": [
-        "Lists of data assets capturing basic (non-standardized) information do not exist or exist within separate sub-units.",
-        "Central catalog exists (although incomplete) with basic metadata about data assets.",
-        "Central catalog exists. Procedures are in place to capture most of the datasets of organizational interest. Search allows to find data asset of interest only based on basic metadata.",
-        "Centralized searchable catalog with standardized metadata allowing search of datasets in alignment with organizational goals and retrieval of metadata via API. All assets have a unique accession number."
+        {
+          "levelId": "mm-data-assets-1",
+          "order": 1,
+          "title": "Lists of data assets capturing basic (non-standardized) information do not exist or exist within separate sub-units",
+          "impact": "Cataloging is fragmented and dependent on individual initiative, preventing reuse and institutional overview.",
+          "criteria": [
+            "**Documentation:** Information about datasets is kept locally, often in README files or spreadsheets.",
+            "**Structure:** No consistent metadata scheme or naming convention is applied.",
+            "**Visibility:** Data are not discoverable beyond the originating research group.",
+            "**Responsibility:** No designated role or policy supports cataloging activities."
+          ]
+        },
+        {
+          "levelId": "mm-data-assets-2",
+          "order": 2,
+          "title": "Central catalog exists (although incomplete) with basic metadata about data assets",
+          "impact": "Visibility improves slightly, but catalog use and data quality remain inconsistent and unsustainable.",
+          "criteria": [
+            "**Infrastructure and coverage:** A central cataloging tool is available but only partly used across the organisation.",
+            "**Metadata:** Entries contain minimal, non-standardised information.",
+            "**Procedures:** There are no agreed workflows or responsibilities for registering or updating assets.",
+            "**Engagement:** Awareness of the catalog is limited in the organisation, e.g., to a few groups or projects only."
+          ]
+        },
+        {
+          "levelId": "mm-data-assets-3",
+          "order": 3,
+          "title": "Central catalog exists. Procedures are in place to capture most of the datasets of organizational interest. Search allows to find data asset of interest only based on basic metadata",
+          "impact": "Cataloging is coordinated and reliable, enabling systematic discovery and internal reuse of data assets.",
+          "criteria": [
+            "**Awareness and coverage:** Information about the existence of the catalog is widely shared within the organisation, and most organisational datasets are registered in the catalog.",
+            "**Standardisation:** Agreed metadata fields are used across research groups, and standard procedures ensure that assets are catalogued.",
+            "**Roles:** Data stewards or designated staff support cataloging and user guidance.",
+            "**Training:** Researchers and other relevant staff know how to register and search for assets using the catalog"
+          ]
+        },
+        {
+          "levelId": "mm-data-assets-4",
+          "order": 4,
+          "title": "Centralized searchable catalog with standardized metadata allowing search of datasets in alignment with organizational goals and retrieval of metadata via API. All assets have a unique accession number",
+          "impact": "The catalog operates as a sustainable, interoperable component of organisational RDM strategy. It drives FAIR data implementation and seamless integration across research infrastructures.",
+          "criteria": [
+            "**Metadata quality:** Metadata are standardised, complete and interoperable, supporting advanced search, filtering and reuse across domains.",
+            "**Integration:** Metadata can be accessed via APIs and are linked to other RDM systems, repositories and research workflows at local, national and/or international levels.",
+            "**Identifiers:** All assets are assigned persistent identifiers (PIDs) or unique accession numbers to ensure traceability and long-term reference.",
+            "**Adoption:** The catalog is widely used by researchers and embedded in institutional RDM workflows and policies."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates the presence and maturity of a centralized catalog of data assets provided by the organisation",
-      "domainLevel": "4"
+      ]
     },
     {
       "domain": "Data and metadata management",
+      "domainLevel": "4",
       "indicatorId": "mm-data-accessibility",
       "indicatorLevel": "4.7",
       "indicator": "Accessibility of research data",
+      "indicatorDescription": "Indicates how effectively the research data is made accessible, from manual processes to standardized, secure, and automated systems",
+      "indicatorLongDescription": "This indicator assesses how effectively the organisation ensures secure, transparent and technically optimised access to research data. It evaluates whether datasets can be discovered and retrieved through trusted and sustainable channels, with appropriate controls for sensitive content. It also considers the use of automation, audit trails, and standards such as persistent identifiers and licences to enable responsible, long-term reuse.",
       "maturityLevels": [
-        "No access standards are in place on the actual format and SOPs are not in place for access decision making (e.g., unofficial approval of management)",
-        "Standard access channel is in place. The data access requests have to be submitted.",
-        "Data use conditions are reviewed upon request. Full audit trail is in place for access.",
-        "Data is easily accessible and retrieval is optimised for efficiency. Access is (semi-)automated. APIs and efficient transfer channels allowing fast automated retrieval. Following standard secure protocols. Data accessibility is seamless, with advanced search and retrieval capabilities following domain standards."
+        {
+          "levelId": "mm-data-accessibility-1",
+          "order": 1,
+          "title": "No access standards are in place on the actual format and SOPs are not in place for access decision making",
+          "briefDescription": "(e.g., unofficial approval of management)",
+          "impact": "Data access is fragmented and unreliable. Sensitive data may be shared without adequate review, and open data may remain undiscoverable or unusable due to inconsistent formats and missing metadata.",
+          "criteria": [
+            "**Lack of structure:** No formal standards or procedures exist for managing or accessing data generated on site or received from partners. Access decisions are informal, undocumented and handled on a case-by-case basis.",
+            "**No defined access formats:** Data formats and channels for sharing or retrieving data are not standardised, thus limiting discoverability, reusability and oversight."
+          ]
+        },
+        {
+          "levelId": "mm-data-accessibility-2",
+          "order": 2,
+          "title": "Standard access channel is in place. The data access requests have to be submitted",
+          "impact": "Data access becomes more predictable and compliant with minimal requirements. Efficiency, governance and decision-making remain largely manual.",
+          "criteria": [
+            "**Basic access process:** A standard mechanism for submitting and managing data access requests is available. Advice exists, but is high-level, and detailed guidance on specific questions is difficult to locate.",
+            "**Repository guidance:** The institution offers basic guidance or lists of trusted repositories such as Zenodo and Figshare, which support metadata standards, persistent identifiers, and open access protocols."
+          ]
+        },
+        {
+          "levelId": "mm-data-accessibility-3",
+          "order": 3,
+          "title": "Data use conditions are reviewed upon request. Full audit trail is in place for access",
+          "impact": "Data access decisions are transparent and traceable. Governance mechanisms support ethical sharing while maintaining accountability and compliance.",
+          "criteria": [
+            "**Integration with journals and funders:** Data access and repository workflows align with funder and journal requirements, including data citations and availability statements.",
+            "**Support upon request:** Some staff members possess the expertise needed to support researchers and review data use conditions. Access to this support is not standardised and depends on individual initiative."
+          ]
+        },
+        {
+          "levelId": "mm-data-accessibility-4",
+          "order": 4,
+          "title": "Data is easily accessible and retrieval is optimised for efficiency. Access is (semi-)automated",
+          "briefDescription": "APIs and efficient transfer channels allowing fast automated retrieval. Following standard secure protocols. Data accessibility is seamless, with advanced search and retrieval capabilities following domain standards.",
+          "impact": "Data accessibility is seamless, efficient and scalable. Researchers and authorised users can retrieve data quickly and securely, while automation and interoperability ensure compliance, reusability and long-term sustainability.",
+          "criteria": [
+            "**Efficient and seamless access:** Data accessibility is streamlined, with efficient retrieval supported by APIs, secure transfer channels and domain-standard search and discovery capabilities.",
+            "**Licensing and reuse:** Researchers are encouraged to publish data under standard open licences such as CC0 or CC-BY for non-sensitive data, promoting reuse and interoperability.",
+            "**Repository guidance:** Curated lists of trusted or domain-specific repositories, such as Zenodo, Figshare, GenBank, ICPSR and PANGAEA, are maintained. These repositories support persistent identifiers, metadata standards and open access protocols.",
+            "**Access governance for sensitive data:** Data access committees are established to review access requests. SOPs define roles and evaluation criteria, and vocabularies such as DUO are used to align permitted uses with access decisions.",
+            "**Automation and APIs:** Access to non-sensitive or approved datasets is facilitated through automated retrieval mechanisms. Authentication and authorisation may be federated through systems such as AAI, eduGAIN or Passport, and metadata is indexed to support advanced discovery."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates how effectively the research data is made accessible, from manual processes to standardized, secure, and automated systems",
-      "domainLevel": "4"
+      ]
     },
     {
       "domain": "Data and metadata management",
+      "domainLevel": "4",
       "indicatorId": "mm-data-dmp",
       "indicatorLevel": "4.8",
       "indicator": "Data management planning",
+      "indicatorDescription": "Indicates the maturity of data management planning support provided by the organisation",
+      "indicatorLongDescription": "This indicator assesses how far the organisation has developed, maintained and embedded its guidance, training, consultancy and data management plan tools. It evaluates the extent to which these services strengthen researchers’ ability to manage, share and preserve their data in line with recognised best practices and with institutional or funder requirements.",
       "maturityLevels": [
-        "Nothing offered",
-        "Best practice and guidelines available",
-        "Consultancy and training available, more standardized guidelines; DMP writing may be required from some researchers",
-        "DMP tool available and machine actionability facilitate further integration; DMP writing may be required for all projects"
+        {
+          "levelId": "mm-data-dmp-1",
+          "order": 1,
+          "title": "Nothing offered",
+          "impact": "Researchers receive little or no support, leading to inconsistent and often ad hoc data management practices across the organisation.",
+          "criteria": [
+            "**Generic advice or less offered:** If information about data management requirements exists, it is minimal and high level.",
+            "**Missing documentation:** No guidelines, tools or best practice advice are available to researchers."
+          ]
+        },
+        {
+          "levelId": "mm-data-dmp-2",
+          "order": 2,
+          "title": "Best practice and guidelines available",
+          "impact": "Researchers can access foundational information that improves awareness of RDM. However, the lack of dedicated personnel and sustained support limits the consistent adoption of best practices.",
+          "criteria": [
+            "**Basic guidance:** Guidelines draw on recognised best practices but are not yet supported by structured training or consultancy.",
+            "**Generic resources:** General RDM tips, recommendations or FAQs are available and maintained."
+          ]
+        },
+        {
+          "levelId": "mm-data-dmp-3",
+          "order": 3,
+          "title": "Consultancy and training available, more standardized guidelines; DMP writing may be required from some researchers",
+          "impact": "Researchers benefit from targeted guidance and structured support, resulting in more consistent data management practices. Full institutional integration of RDM planning and tools is still developing.",
+          "criteria": [
+            "**Dedicated staff:** Specialised staff with expertise in data management planning and RDM are available to support researchers.",
+            "**Defined RDM services:** Consultancy, training, DMP tools and templates and more standardised guidelines are increasingly offered and maintained.",
+            "**Growing consistency:** DMPs are used in some projects but not yet required or implemented across the entire organisation."
+          ]
+        },
+        {
+          "levelId": "mm-data-dmp-4",
+          "order": 4,
+          "title": "DMP tool available and machine actionability facilitate further integration; DMP writing may be required for all projects",
+          "impact": "Researchers have access to comprehensive, coherent and machine-actionable RDM services. Use of these resources is widespread, institutional expectations are clearly communicated and adherence to funder requirements is consistently achieved.",
+          "criteria": [
+            "**Maintenance and quality assurance:** Procedures ensure that all resources and services are updated, maintained and aligned with evolving best practices.",
+            "**Institution-wide adoption:** DMP writing is required for all research projects. DMPs are widely used and regularly reviewed and updated.",
+            "**Integrated RDM services:** A coherent portfolio of RDM services is in place, including consultancy, training, DMP tools and templates and clear requirements supported by checklists and maintenance procedures.",
+            "**Machine-actionable DMPs:** Machine-actionable DMP tools and workflows are implemented, widely used and routinely updated."
+          ]
+        }
       ],
       "weights": [
         "0",
         "0.33",
         "0.66",
         "1"
-      ],
-      "indicatorDescription": "Indicates the maturity of data management planning support provided by the organisation",
-      "domainLevel": "4"
+      ]
     }
   ]
 }

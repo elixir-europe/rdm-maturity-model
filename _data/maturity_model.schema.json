@@ -21,9 +21,46 @@
       "pattern": "^[1-9][0-9]*$"
     },
     "weight": {
-      "description": "Score contribution of one maturity level, as a string between \"0\" and \"1\". Strings rather than numbers is the current convention, shared with the DSW knowledge model export.",
+      "description": "Score contribution of one maturity level, as a string between \"0\" and \"1\". Strings rather than numbers is the current convention, shared with the DSW knowledge model export. Weights live in the indicator's parallel `weights` array, not on the level itself.",
       "type": "string",
       "pattern": "^(0|1|0\\.[0-9]{1,2})$"
+    },
+    "maturityLevel": {
+      "description": "One level of one indicator. Levels became objects in model 2.0.0; before that they were plain title strings.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["levelId", "order", "title"],
+      "properties": {
+        "levelId": {
+          "description": "Stable identifier, formed as the indicatorId followed by the level's order: mm-support-network-2. Referenced by anything that needs to point at a single level, so it outlives rewording of the title.",
+          "type": "string",
+          "pattern": "^mm-[a-z0-9]+(-[a-z0-9]+)*-[1-9][0-9]*$"
+        },
+        "order": {
+          "description": "Position of the level within the indicator, starting at 1 and rising by one. Matches the level's index in maturityLevels and in weights.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "title": {
+          "description": "Short name of the level, used as the heading on the handbook page and in the overview table.",
+          "$ref": "#/$defs/cleanString"
+        },
+        "briefDescription": {
+          "description": "The part of the level's longer wording that says more than the title, with the repeated title stripped off the front, so a renderer can show the title alone or the two together. Present only where a longer wording exists, so most levels do not carry it.",
+          "$ref": "#/$defs/cleanString"
+        },
+        "impact": {
+          "description": "What sitting at this level means in practice for the organisation and its researchers.",
+          "$ref": "#/$defs/cleanString"
+        },
+        "criteria": {
+          "description": "What this level looks like in practice, one named facet per entry. Markdown, conventionally \"**Label:** sentence\", rendered as a bullet list under the level heading.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/cleanString" }
+        }
+      }
     }
   },
 
@@ -78,6 +115,7 @@
           "maturityLevels",
           "weights",
           "indicatorDescription",
+          "indicatorLongDescription",
           "domainLevel"
         ],
         "properties": {
@@ -100,16 +138,24 @@
             "description": "Indicator title.",
             "$ref": "#/$defs/cleanString"
           },
+          "indicatorBriefDescription": {
+            "description": "The part of the indicator's longer name that says more than `indicator` itself, kept where the short name would otherwise lose scope. Present on only a couple of indicators.",
+            "$ref": "#/$defs/cleanString"
+          },
           "indicatorDescription": {
             "description": "One or two sentences on what the indicator measures. Reused verbatim as the description of the handbook page.",
             "$ref": "#/$defs/cleanString"
           },
+          "indicatorLongDescription": {
+            "description": "The paragraph that opens the indicator page: what the indicator assesses, what it looks at, and what rising maturity means for it. Longer than indicatorDescription, which stays the one-line summary.",
+            "$ref": "#/$defs/cleanString"
+          },
           "maturityLevels": {
-            "description": "Level descriptions, lowest first. Three to five levels; five only where a fifth is genuinely needed.",
+            "description": "The levels of this indicator, lowest first. Three to five levels; five only where a fifth is genuinely needed.",
             "type": "array",
             "minItems": 3,
             "maxItems": 5,
-            "items": { "$ref": "#/$defs/cleanString" }
+            "items": { "$ref": "#/$defs/maturityLevel" }
           },
           "weights": {
             "description": "Score for each maturity level, in the same order and the same number as maturityLevels.",

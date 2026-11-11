@@ -1,0 +1,104 @@
+# Contributors to the RDM Maturity Model.
+#
+# Pooled across the whole model rather than recorded per indicator: the model is
+# revised as a whole, and the indicator pages in the DS Handbook are generated from
+# maturity_model.json, so they have no frontmatter of their own to carry an
+# attribution.
+#
+# Maintained by hand. To add someone, add their name and whatever of the fields
+# below are known: git, orcid, affiliation, email. A name on its own is fine -- it
+# renders without an avatar or links.
+#
+# Migrated on 2026-09-15 from the contributors named in the frontmatter of the 25
+# hand-written indicator pages in the DS Handbook, with their details copied from
+# that repository's _data/CONTRIBUTORS.yaml. These spellings were merged as one
+# person: Aida Moure Fernandez and Aída Moure-Fernández -> Aída Moure Fernández;
+# Hana Marcetic and Hana Marčeti -> Hana Marčetić; Aina Jené -> Aina Jene;
+# Nils Lubke -> Nils-Christian Lübke.
+#
+# The DS Handbook renders this list on its maturity model page, and falls back to
+# its own _data/CONTRIBUTORS.yaml for anyone whose details are missing here.
+
+Aída Moure Fernández:
+  git: aidamouref
+  orcid: 0000-0001-8833-5750
+  affiliation: Barcelona Supercomputing Center (BSC), (INB/ELIXIR-ES)
+Aina Jene:
+  git: ainajene
+Alexander Douglass:
+Anna Niehues:
+Anna Strachotova:
+Brane Leskošek:
+Dafne Condori:
+Diana Pilvar:
+  git: diana-pilvar
+  orcid: 0000-0002-5788-2687
+  affiliation: University of Tartu
+  email: diana.pilvar@ut.ee
+Federico Bianchini:
+  git: bianchini88
+  orcid: 0000-0002-9016-4820
+  affiliation: University of Oslo / ELIXIR-NO
+  email: fredebi@uio.no
+Flora D'Anna:
+  git: floradanna
+  orcid: 0000-0003-4665-6673
+  affiliation: VIB Data Core / ELIXIR-BE
+Gil Poiares-Oliveira:
+  git: GilOliveira
+  orcid: 0000-0003-4638-2879
+  email: gpo@biodata.pt
+Hana Marčetić:
+  git: hanamarcetic
+  orcid: 0000-0002-3841-0377
+  affiliation: Luxembourg Centre of Systems Biomedicine
+Helena Schnitzer:
+  git: HelenaSchnitzer
+  orcid: 0000-0002-6382-9452
+  affiliation: Forschungszentrum Jülich GmbH
+  email: h.schnitzer@fz-juelich.de
+Heleri Inno:
+  git: heleriinno
+  orcid: 0000-0003-2043-0772
+  affiliation: University of Tartu / ELIXIR-EE
+Ingeborg Winge:
+Ivan Mičetić:
+  git: ivanmicetic
+Jana Martínková:
+  git: jmartinkova
+  orcid: 0000-0001-8575-6533
+Jeanne Wilbrandt:
+  git: RDMJeanne
+  orcid: 0000-0002-0363-3837
+Magdalena Utko:
+Maria Klapa:
+Marina Popleteeva:
+  git: marikapop
+  orcid: 0000-0002-8409-6147
+  affiliation: Luxembourg Institute of Health
+Miguel Cisneiros:
+Mijke Jetten:
+  git: MijkeJetten
+Minna Ahokas:
+  git: minnami
+  orcid: 0000-0003-2313-0011
+Nick Juty:
+Niclas Jareborg:
+  git: nicjar
+  orcid: 0000-0002-4520-044X
+  email: niclas.jareborg@nbis.se
+Nils-Christian Lübke:
+Riku Riski:
+Rudolf Vohnout:
+  orcid: 0000-0002-6809-7377
+Saliha Zenboudji-Beddek:
+  git: SalihaZ
+  orcid: 0009-0001-3375-7793
+  affiliation: French Institute of Bioinformatics (IFB -UAR 3601 - CNRS)
+Vassilios Ioannidis:
+Wolmar Nyberg Åkerström:
+  orcid: 0000-0002-3890-6620
+Xenia Perez Sitja:
+  git: sitjart
+  orcid: 0000-0002-7166-0183
+  affiliation: Earlham Institute, ELIXIR-UK
