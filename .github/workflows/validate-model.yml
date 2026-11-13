@@ -12,6 +12,8 @@ on:
       - 'scripts/validate_model.py'
       - '.github/workflows/validate-model.yml'
   workflow_dispatch:
+  # release.yml runs this check before it publishes a release.
+  workflow_call:
 
 jobs:
   validate:

@@ -98,27 +98,14 @@ If the message still doesn't make sense, ask in the pull request.
 
 ---
 
-### ds-handbook Integration
+### Releasing
 
-The [ds-handbook](https://github.com/elixir-europe/ds-handbook) repository is configured to pull `maturity_model.json` from `rdm-maturity-model` automatically. This was accomplished by:
+A merged pull request changes the model on `main`, but users get it only with a release. A release tags the model, publishes it on the [releases page](https://github.com/elixir-europe/rdm-maturity-model/releases), archives it on Zenodo and moves the DS Handbook to it. A maintainer does it in four steps:
 
-- **Submodule setup** — `rdm-maturity-model` is set as a submodule of `ds-handbook` (see [.gitmodules](https://github.com/elixir-europe/ds-handbook/blob/main/.gitmodules)).  
-  > When cloning `ds-handbook`, use the `--recurse-submodules` flag to pull the submodule.
-- **CI configuration** — The [Jekyll site CI](https://github.com/elixir-europe/ds-handbook/commit/ea4b714e0b161b896bd3204cfb043de86e506876) GitHub Action is set to pull changes from submodules before every build.
-- **Direct model usage** — `ds-handbook/_data/shared` is a symlink to this repository's `_data/` directory, so Jekyll reads `maturity_model.json` as `site.data.shared.maturity_model` and the model is used directly in Liquid code (e.g. [maturity-model.md](https://github.com/elixir-europe/ds-handbook/blob/743f807efd747ccb35747854e57344562d3455bf/pages/maturity-model.md?plain=1#L9)).
-
-Every new build of `ds-handbook` (via the _Jekyll site CI_ action) will include the latest changes committed to `rdm-maturity-model`.
-
----
-
-### Verifying the Pipeline
-
-To confirm the change reached the website, compare the version number and description in both locations — they should match:
-
-| Source | Where to check |
-|--------|---------------|
-| `rdm-maturity-model` repository | `maturity_model.json` [version](https://github.com/elixir-europe/rdm-maturity-model/blob/main/_data/maturity_model.json#L2-L6) |
-| `ds-handbook` website | [Version information](https://elixir-europe.github.io/ds-handbook/maturity-model#version-information) |
+1. **Open a release pull request.** Set `timestamp` to the release date and check that `versionDescription` covers everything since the last release. Add everyone who contributed to this version to [`_data/contributors.yaml`](https://github.com/elixir-europe/rdm-maturity-model/blob/main/_data/contributors.yaml).
+2. **Run the _Release_ workflow** once that pull request is merged: in the **Actions** tab, choose _Release_, then _Run workflow_ on `main`. It validates the model, and stops if this version is already released or if `timestamp` is more than two weeks old. Otherwise it tags the commit `v<versionNumber>` and creates a GitHub release with `maturity_model.json` and its schema attached.
+3. **Archive the release on Zenodo.** Open the [model on Zenodo](https://doi.org/10.5281/zenodo.18172335) and choose **New version**; only the record's owners can. Upload the files of the GitHub release, set the version and the publication date, and make the creators match `_data/contributors.yaml`. A new version starts from the previous one's metadata, so usually only the new contributors need adding. The DOI 10.5281/zenodo.18172335 always resolves to the latest version.
+4. **Move the DS Handbook to the release.** The handbook is built from the model commit its submodule points to, not from the latest `main`. Open a pull request in [ds-handbook](https://github.com/elixir-europe/ds-handbook) that moves the submodule to the new tag; [How the maturity model gets into the handbook](https://github.com/elixir-europe/ds-handbook/blob/main/docs/maturity-model.md) has the commands. Once it is merged, the handbook's [version information](https://elixir-europe.github.io/ds-handbook/maturity-model#version-information) shows the new version.
 
 ---
 
