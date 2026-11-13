@@ -6,7 +6,7 @@
 
 `_data/maturity_model.json` is the source of truth for the Maturity Model. Edit it directly in this repository — there is no separate authoring surface to export from, and no generated copy of the model in another format.
 
-> A [DSW Knowledge Model](https://registry.ds-wizard.org/knowledge-models/datarex:RDM-MM:0.1.2) of the model exists in the DSW Registry and may become the way the model is managed in future. Until that happens, `maturity_model.json` is the file to edit.
+> The [DSW knowledge model](https://registry.ds-wizard.org/knowledge-models/datarex:RDM-MM:0.1.2) of the model is built from `maturity_model.json` by [`scripts/build_km.py`](scripts/build_km.py). Don't edit it in DSW: the next build would not include the change.
 
 ---
 

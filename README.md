@@ -32,8 +32,9 @@ It can be downloaded as [JSON](_data/maturity_model.json) from the
 The model is also published as a knowledge model in the
 [DSW Registry](https://registry.ds-wizard.org/knowledge-models/datarex:RDM-MM:0.1.2),
 so it can be imported into any [Data Stewardship Wizard](https://ds-wizard.org/) instance.
-Knowledge model `datarex:RDM-MM:0.1.2` carries its own version numbering and corresponds to
-model version 1.2.1.
+From model 2.0.0 on, the knowledge model is built from the JSON by
+[`scripts/build_km.py`](scripts/build_km.py) and has the same version number as the model.
+Versions 0.1.x were made by hand and have their own numbering.
 
 ## Version information
 [![Model version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Felixir-europe%2Frdm-maturity-model%2Fmain%2F_data%2Fmaturity_model.json&query=%24.version.versionNumber&label=model%20version&color=blue)](_data/maturity_model.json)
