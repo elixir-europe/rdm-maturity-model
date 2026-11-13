@@ -26,8 +26,11 @@ please refer to the
 ## Availability
 The RDM Maturity Model is available under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
 
-It can be downloaded as [JSON](_data/maturity_model.json) from the
-[rdm-maturity-model](https://github.com/elixir-europe/rdm-maturity-model) repository.
+Each release can be downloaded as JSON from the
+[releases page](https://github.com/elixir-europe/rdm-maturity-model/releases), and is archived on
+Zenodo under [10.5281/zenodo.18172335](https://doi.org/10.5281/zenodo.18172335), a DOI that always
+resolves to the latest version. The [JSON on `main`](_data/maturity_model.json) can be ahead of the
+latest release.
 
 The model is also published as a knowledge model in the
 [DSW Registry](https://registry.ds-wizard.org/knowledge-models/datarex:RDM-MM:0.1.2),

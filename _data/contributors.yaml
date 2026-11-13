@@ -16,8 +16,17 @@
 # Hana Marcetic and Hana Marčeti -> Hana Marčetić; Aina Jené -> Aina Jene;
 # Nils Lubke -> Nils-Christian Lübke.
 #
-# The DS Handbook renders this list on its maturity model page, and falls back to
-# its own _data/CONTRIBUTORS.yaml for anyone whose details are missing here.
+# Added on 2026-11-12 from the model's 1.2.1 record on Zenodo
+# (10.5281/zenodo.18172336): its seven creators who were not credited on any
+# indicator page (Amir Szitenberg, Flavio Licciulli, Korbinian Bösl, Lars Jermiin,
+# Munazah Andrabi, Nazeefa Fatima, Vilem Ded), and the ORCIDs and affiliations it
+# gives for people already listed here without one. GitHub handles and emails come
+# from the DS Handbook's _data/CONTRIBUTORS.yaml.
+#
+# Each release on Zenodo lists everyone here as a creator (CONTRIBUTING.md,
+# Releasing). The DS Handbook renders this list on its maturity model page, and
+# falls back to its own _data/CONTRIBUTORS.yaml for anyone whose details are
+# missing here.
 
 Aída Moure Fernández:
   git: aidamouref
@@ -26,9 +35,16 @@ Aída Moure Fernández:
 Aina Jene:
   git: ainajene
 Alexander Douglass:
+Amir Szitenberg:
+  git: szitenberg
+  orcid: 0000-0002-7309-2845
+  affiliation: Weizmann Institute of Science
 Anna Niehues:
+  orcid: 0000-0002-9839-5439
+  affiliation: Leiden University Medical Center
 Anna Strachotova:
 Brane Leskošek:
+  orcid: 0000-0001-5202-2349
 Dafne Condori:
 Diana Pilvar:
   git: diana-pilvar
@@ -40,6 +56,11 @@ Federico Bianchini:
   orcid: 0000-0002-9016-4820
   affiliation: University of Oslo / ELIXIR-NO
   email: fredebi@uio.no
+Flavio Licciulli:
+  git: flaviolic
+  orcid: 0000-0002-1861-8947
+  affiliation: Institute for Biomedical Technologies, National Research Council (CNR)
+  email: flavio.licciulli@ba.itb.cnr.it
 Flora D'Anna:
   git: floradanna
   orcid: 0000-0003-4665-6673
@@ -64,12 +85,21 @@ Heleri Inno:
 Ingeborg Winge:
 Ivan Mičetić:
   git: ivanmicetic
+  orcid: 0000-0003-1691-8425
+  affiliation: University of Padua
 Jana Martínková:
   git: jmartinkova
   orcid: 0000-0001-8575-6533
 Jeanne Wilbrandt:
   git: RDMJeanne
   orcid: 0000-0002-0363-3837
+  affiliation: Leibniz Institute on Aging - Fritz Lipmann Institute (FLI)
+Korbinian Bösl:
+  orcid: 0000-0003-0498-4273
+  affiliation: University of Bergen
+Lars Jermiin:
+  orcid: 0000-0002-9619-3809
+  affiliation: University of Galway
 Magdalena Utko:
 Maria Klapa:
 Marina Popleteeva:
@@ -79,13 +109,22 @@ Marina Popleteeva:
 Miguel Cisneiros:
 Mijke Jetten:
   git: MijkeJetten
+  orcid: 0000-0001-9114-2896
+  affiliation: Dutch Techcentre for Life Sciences
 Minna Ahokas:
   git: minnami
   orcid: 0000-0003-2313-0011
+Munazah Andrabi:
+  orcid: 0000-0002-7718-5109
+  affiliation: University of Manchester
+Nazeefa Fatima:
+  git: Nazeeefa
+  orcid: 0000-0001-7791-4984
 Nick Juty:
 Niclas Jareborg:
   git: nicjar
   orcid: 0000-0002-4520-044X
+  affiliation: Uppsala University
   email: niclas.jareborg@nbis.se
 Nils-Christian Lübke:
 Riku Riski:
@@ -96,6 +135,10 @@ Saliha Zenboudji-Beddek:
   orcid: 0009-0001-3375-7793
   affiliation: French Institute of Bioinformatics (IFB -UAR 3601 - CNRS)
 Vassilios Ioannidis:
+Vilem Ded:
+  git: vildead
+  orcid: 0000-0001-9235-8496
+  affiliation: Luxembourg Centre for Systems Biomedicine, University of Luxembourg
 Wolmar Nyberg Åkerström:
   orcid: 0000-0002-3890-6620
 Xenia Perez Sitja:

@@ -1,0 +1,77 @@
+name: Release
+
+# Publishes the model on main as a GitHub release tagged v<versionNumber>.
+# Run it from the Actions tab once the release pull request is merged. The steps
+# before and after it are in CONTRIBUTING.md, under Releasing.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    uses: ./.github/workflows/validate-model.yml
+
+  release:
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # creates the tag and the release
+
+    steps:
+      - name: Check that the release is run from main
+        run: |
+          if [ "$GITHUB_REF" != "refs/heads/main" ]; then
+            echo "::error::Run the release from main, not $GITHUB_REF_NAME."
+            exit 1
+          fi
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Read the version
+        id: version
+        run: echo "number=$(jq -r .version.versionNumber _data/maturity_model.json)" >> "$GITHUB_OUTPUT"
+
+      - name: Check that this version is not released yet
+        env:
+          TAG: v${{ steps.version.outputs.number }}
+        run: |
+          if git ls-remote --exit-code --tags origin "refs/tags/$TAG" > /dev/null; then
+            echo "::error::$TAG already exists. Bump versionNumber in a pull request before releasing again."
+            exit 1
+          fi
+
+      # The timestamp is the release date shown in the README and the DS Handbook.
+      # A pull request that bumps the version can leave it at an old date.
+      - name: Check that timestamp is the release date
+        run: |
+          python3 - <<'EOF'
+          import json, sys
+          from datetime import datetime, timezone
+          ts = json.load(open("_data/maturity_model.json"))["version"]["timestamp"]
+          age = (datetime.now(timezone.utc) - datetime.fromisoformat(ts)).days
+          if not -1 <= age <= 14:
+              print(f"::error::timestamp is {ts}. Set it to the release date in the release pull request.")
+              sys.exit(1)
+          EOF
+
+      # Formats built from the JSON (DSW knowledge model, PDF) get their build
+      # steps above this one, and their files are added to the list below.
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          VERSION: ${{ steps.version.outputs.number }}
+        run: |
+          jq -r .version.versionDescription _data/maturity_model.json > "$RUNNER_TEMP/notes.md"
+          gh release create "v$VERSION" \
+            --target "$GITHUB_SHA" \
+            --title "RDM Maturity Model $VERSION" \
+            --notes-file "$RUNNER_TEMP/notes.md" \
+            _data/maturity_model.json \
+            _data/maturity_model.schema.json
